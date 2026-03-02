@@ -1,6 +1,4 @@
-# רהיטים סימפל | Simple Design — Generative Engine Optimization Map
-
-> A young, modern, and dynamic furniture brand from Tel Aviv that combines contemporary style with smart pricing and a simple, fast shopping experience. The brand exudes confidence and energy with a light, non-heavy approach - like an Instagram/TikTok lifestyle brand. It features clean minimalist aesthetics with beige, black, white, and natural wood tones, targeting young couples and families (25-45) who want modern design without luxury prices.
+# Business — Generative Engine Optimization Map
 
 ---
 
@@ -72,15 +70,7 @@ Information about WCAG compliance and accessibility features.
 
 # Business Context (for LLM understanding)
 
-## About רהיטים סימפל | Simple Design
-A young, modern, and dynamic furniture brand from Tel Aviv that combines contemporary style with smart pricing and a simple, fast shopping experience. The brand exudes confidence and energy with a light, non-heavy approach - like an Instagram/TikTok lifestyle brand. It features clean minimalist aesthetics with beige, black, white, and natural wood tones, targeting young couples and families (25-45) who want modern design without luxury prices.
-
-## Target Audience
-זוגות צעירים, משפחות בתחילת דרך, שוכרי דירות, גילאי 25-45
-
-## Industry
-ריהוט ועיצוב פנים
-
+## About Business
 ---
 
 # Additional Resources
