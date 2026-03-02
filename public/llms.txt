@@ -1,79 +1,89 @@
-# Business — Generative Engine Optimization Map
+# רהיטים סימפל | Simple Design — Generative Engine Optimization Map
+
+> A young, modern, and dynamic furniture brand from Tel Aviv that combines contemporary style with smart pricing and a simple, fast shopping experience. The brand exudes confidence and energy with a light, non-heavy approach - like an Instagram/TikTok lifestyle brand. It features clean minimalist aesthetics with beige, black, white, and natural wood tones, targeting young couples and families (25-45) who want modern design without luxury prices.
 
 ---
 
 ## Pages
 
 ### בית
-https://example.com
+https://simple-design.zappy5.app
 חנות רהיטים מודרניים לזוגות צעירים ומשפחות בתל אביב. עיצוב מינימליסטי נקי, מחירים משתלמים וחוויית קניה מהירה ופשוטה. תתחילו לעצב את הבית עוד היום!
 
 ### קולקציות
-https://example.com/collections
+https://simple-design.zappy5.app/collections
 קולקציות רהיטים מודרניות לסלון, חדר שינה, פינת עבודה ועוד. עיצוב נקי בגוונים טבעיים, איכות גבוהה ומחירים הוגנים. מצאו את הרהיט המושלם לביתכם תוך דקות!
 
 ### אודות
-https://example.com/about
+https://simple-design.zappy5.app/about
 מותג רהיטים ישראלי צעיר מתל אביב שמשנה את חוויית הקנייה. אנחנו מאמינים שעיצוב מודרני איכותי לא צריך לעלות הון. הכירו את הגישה שלנו לריהוט פשוט, מהיר ומשתלם.
 
 ### צור קשר
-https://example.com/contact
+https://simple-design.zappy5.app/contact
 יש לכם שאלות? רוצים ייעוץ עיצובי? הצוות שלנו כאן בשבילכם! צרו קשר עכשיו ונעזור לכם למצוא את הרהיטים המושלמים לבית. מענה מהיר, שירות אישי ויחס חם.
 
 ### Products
-https://example.com/products
+https://simple-design.zappy5.app/products
 המוצרים שלנו - רהיטים סימפל | Simple Design
 
 ### Cart
-https://example.com/cart
+https://simple-design.zappy5.app/cart
 עגלת הקניות שלך
 
 ### Checkout
-https://example.com/checkout
+https://simple-design.zappy5.app/checkout
 תשלום
 
 ### Login
-https://example.com/login
+https://simple-design.zappy5.app/login
 התחברות לקוחות
 
 ### Account
-https://example.com/account
+https://simple-design.zappy5.app/account
 החשבון שלי
 
 ### Order Success
-https://example.com/order-success
+https://simple-design.zappy5.app/order-success
 תודה על ההזמנה
 
 ### Product Detail
-https://example.com/product/:slug
+https://simple-design.zappy5.app/product/:slug
 פרטי המוצר - רהיטים סימפל | Simple Design
 
 ### Category
-https://example.com/category/:slug
+https://simple-design.zappy5.app/category/:slug
 מוצרים - רהיטים סימפל | Simple Design
 
 ## Legal & Policy
 
 ### Privacy Policy
-https://example.com/privacy
+https://simple-design.zappy5.app/privacy
 Information about how user data is collected, stored, and protected.
 
 ### Terms & Conditions
-https://example.com/terms
+https://simple-design.zappy5.app/terms
 Legal terms describing service usage, rights, and policies.
 
 ### Accessibility Statement
-https://example.com/accessibility
+https://simple-design.zappy5.app/accessibility
 Information about WCAG compliance and accessibility features.
 
 ---
 
 # Business Context (for LLM understanding)
 
-## About Business
+## About רהיטים סימפל | Simple Design
+A young, modern, and dynamic furniture brand from Tel Aviv that combines contemporary style with smart pricing and a simple, fast shopping experience. The brand exudes confidence and energy with a light, non-heavy approach - like an Instagram/TikTok lifestyle brand. It features clean minimalist aesthetics with beige, black, white, and natural wood tones, targeting young couples and families (25-45) who want modern design without luxury prices.
+
+## Target Audience
+זוגות צעירים, משפחות בתחילת דרך, שוכרי דירות, גילאי 25-45
+
+## Industry
+ריהוט ועיצוב פנים
+
 ---
 
 # Additional Resources
 
-- **Sitemap**: https://example.com/sitemap.xml
-- **Robots.txt**: https://example.com/robots.txt
+- **Sitemap**: https://simple-design.zappy5.app/sitemap.xml
+- **Robots.txt**: https://simple-design.zappy5.app/robots.txt
