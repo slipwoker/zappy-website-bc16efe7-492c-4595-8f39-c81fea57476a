@@ -1,0 +1,79 @@
+# Business — Generative Engine Optimization Map
+
+---
+
+## Pages
+
+### בית
+https://example.com
+חנות רהיטים מודרניים לזוגות צעירים ומשפחות בתל אביב. עיצוב מינימליסטי נקי, מחירים משתלמים וחוויית קניה מהירה ופשוטה. תתחילו לעצב את הבית עוד היום!
+
+### קולקציות
+https://example.com/collections
+קולקציות רהיטים מודרניות לסלון, חדר שינה, פינת עבודה ועוד. עיצוב נקי בגוונים טבעיים, איכות גבוהה ומחירים הוגנים. מצאו את הרהיט המושלם לביתכם תוך דקות!
+
+### אודות
+https://example.com/about
+מותג רהיטים ישראלי צעיר מתל אביב שמשנה את חוויית הקנייה. אנחנו מאמינים שעיצוב מודרני איכותי לא צריך לעלות הון. הכירו את הגישה שלנו לריהוט פשוט, מהיר ומשתלם.
+
+### צור קשר
+https://example.com/contact
+יש לכם שאלות? רוצים ייעוץ עיצובי? הצוות שלנו כאן בשבילכם! צרו קשר עכשיו ונעזור לכם למצוא את הרהיטים המושלמים לבית. מענה מהיר, שירות אישי ויחס חם.
+
+### Products
+https://example.com/products
+המוצרים שלנו - רהיטים סימפל | Simple Design
+
+### Cart
+https://example.com/cart
+עגלת הקניות שלך
+
+### Checkout
+https://example.com/checkout
+תשלום
+
+### Login
+https://example.com/login
+התחברות לקוחות
+
+### Account
+https://example.com/account
+החשבון שלי
+
+### Order Success
+https://example.com/order-success
+תודה על ההזמנה
+
+### Product Detail
+https://example.com/product/:slug
+פרטי המוצר - רהיטים סימפל | Simple Design
+
+### Category
+https://example.com/category/:slug
+מוצרים - רהיטים סימפל | Simple Design
+
+## Legal & Policy
+
+### Privacy Policy
+https://example.com/privacy
+Information about how user data is collected, stored, and protected.
+
+### Terms & Conditions
+https://example.com/terms
+Legal terms describing service usage, rights, and policies.
+
+### Accessibility Statement
+https://example.com/accessibility
+Information about WCAG compliance and accessibility features.
+
+---
+
+# Business Context (for LLM understanding)
+
+## About Business
+---
+
+# Additional Resources
+
+- **Sitemap**: https://example.com/sitemap.xml
+- **Robots.txt**: https://example.com/robots.txt

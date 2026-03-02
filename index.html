@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <title>רהיטים מודרניים במחיר שפוי לדירה שלך — רהיטים סימפל | Simple Design</title>
+    <meta name="description" content="חנות רהיטים מודרניים לזוגות צעירים ומשפחות בתל אביב. עיצוב מינימליסטי נקי, מחירים משתלמים וחוויית קניה מהירה ופשוטה. תתחילו לעצב את הבית עוד היום!">
+    <meta name="keywords" content="חנות רהיטים, רהיטים מודרניים לדירה שכורה, רהיטים במחיר משתלם לזוגות צעירים, רהיטים מודרניים תל אביב, חנות רהיטים לדירה שכורה">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon-512x512.png">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+    <!-- Zappy Analytics -->
+<script>
+(function() {
+  'use strict';
+  
+  // Configuration
+  var config = {
+    websiteId: 'bc16efe7-492c-4595-8f39-c81fea57476a',
+    apiUrl: 'https://api.zappy5.com/api/analytics/track',
+    sessionDuration: 30 * 60 * 1000, // 30 minutes
+    visitorDuration: 30 * 24 * 60 * 60 * 1000, // 30 days
+    trackPageViews: true,
+    trackClicks: true,
+    trackFormSubmissions: true
+  };
+  
+  // Generate or retrieve persistent visitor ID (30 days)
+  function getVisitorId() {
+    var visitorKey = 'zappy_visitor_' + config.websiteId;
+    var visitor = null;
+    
+    try {
+      visitor = localStorage.getItem(visitorKey);
+      if (visitor) {
+        var visitorData = JSON.parse(visitor);
+        var now = Date.now();
+        
+        // Check if visitor ID is still valid (30 days)
+        if (now - visitorData.created < config.visitorDuration) {
+          // Update last seen timestamp
+          visitorData.lastSeen = now;
+          localStorage.setItem(visitorKey, JSON.stringify(visitorData));
+          return visitorData.id;
+        }
+      }
+    } catch (e) {
+      console.warn('Zappy Analytics: LocalStorage not available');
+    }
+    
+    // Generate new visitor ID
+    var newVisitorId = 'zv_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    
+    try {
+      localStorage.setItem(visitorKey, JSON.stringify({
+        id: newVisitorId,
+        created: Date.now(),
+        lastSeen: Date.now()
+      }));
+    } catch (e) {
+      // Continue without local storage
+    }
+    
+    return newVisitorId;
+  }
+  
+  // Generate or retrieve session ID (30 minutes)
+  function getSessionId() {
+    var sessionKey = 'zappy_session_' + config.websiteId;
+    var session = null;
+    
+    try {
+      session = sessionStorage.getItem(sessionKey);
+      if (session) {
+        var sessionData = JSON.parse(session);
+        var now = Date.now();
+        
+        // Check if session is still valid
+        if (now - sessionData.timestamp < config.sessionDuration) {
+          // Update timestamp
+          sessionData.timestamp = now;
+          sessionStorage.setItem(sessionKey, JSON.stringify(sessionData));
+          return sessionData.id;
+        }
+      }
+    } catch (e) {
+      console.warn('Zappy Analytics: SessionStorage not available');
+    }
+    
+    // Generate new session ID
+    var newSessionId = 'zs_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    
+    try {
+      sessionStorage.setItem(sessionKey, JSON.stringify({
+        id: newSessionId,
+        timestamp: Date.now()
+      }));
+    } catch (e) {
+      // Continue without session storage
+    }
+    
+    return newSessionId;
+  }
+  
+  var visitorId = getVisitorId();
+  var sessionId = getSessionId();
+  
+  // Track an event
+  function trackEvent(eventType, data) {
+    data = data || {};
+    
+    var eventData = {
+      website_id: config.websiteId,
+      event_type: eventType,
+      page_path: window.location.pathname,
+      referrer: document.referrer || 'direct',
+      visitor_id: visitorId,
+      session_id: sessionId,
+      metadata: data
+    };
+    
+    // Use sendBeacon if available (better for page unload events)
+    if (navigator.sendBeacon) {
+      var blob = new Blob([JSON.stringify(eventData)], { type: 'application/json' });
+      navigator.sendBeacon(config.apiUrl, blob);
+    } else {
+      // Fallback to fetch
+      fetch(config.apiUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(eventData),
+        keepalive: true
+      }).catch(function(error) {
+        console.warn('Zappy Analytics: Failed to track event', error);
+      });
+    }
+  }
+  
+  // Track page view
+  if (config.trackPageViews) {
+    trackEvent('pageview', {
+      title: document.title,
+      url: window.location.href
+    });
+  }
+  
+  // Track clicks on important elements
+  if (config.trackClicks) {
+    document.addEventListener('click', function(e) {
+      var target = e.target;
+      
+      // Track button clicks (counted as actions)
+      if (target.tagName === 'BUTTON' || target.closest('button')) {
+        var button = target.tagName === 'BUTTON' ? target : target.closest('button');
+        trackEvent('click', {
+          element: 'button',
+          text: button.textContent.trim().substring(0, 100),
+          id: button.id || null,
+          class: button.className || null
+        });
+      }
+      
+      // Track link clicks (navigation - not counted as actions)
+      else if (target.tagName === 'A' || target.closest('a')) {
+        var link = target.tagName === 'A' ? target : target.closest('a');
+        trackEvent('navigation', {
+          element: 'link',
+          text: link.textContent.trim().substring(0, 100),
+          href: link.href,
+          external: link.hostname !== window.location.hostname
+        });
+      }
+    }, true);
+  }
+  
+  // Track form submissions
+  if (config.trackFormSubmissions) {
+    document.addEventListener('submit', function(e) {
+      var form = e.target;
+      
+      trackEvent('form_submit', {
+        form_id: form.id || null,
+        form_name: form.name || null,
+        form_action: form.action || null,
+        form_method: form.method || 'GET'
+      });
+    }, true);
+  }
+  
+  // Track time on page (send on page unload)
+  var pageLoadTime = Date.now();
+  
+  window.addEventListener('beforeunload', function() {
+    var timeOnPage = Math.floor((Date.now() - pageLoadTime) / 1000); // in seconds
+    
+    trackEvent('page_unload', {
+      time_on_page: timeOnPage,
+      page_path: window.location.pathname
+    });
+  });
+  
+  // Expose tracking function globally for custom events
+  window.zappyAnalytics = {
+    track: trackEvent,
+    getVisitorId: function() { return visitorId; },
+    getSessionId: function() { return sessionId; }
+  };
+  
+})();
+</script>
+<!-- End Zappy Analytics -->
+    <meta property="og:title" content="רהיטים מודרניים במחיר שפוי לדירה שלך — רהיטים סימפל | Simple Design">
+  <meta property="og:description" content="חנות רהיטים מודרניים לזוגות צעירים ומשפחות בתל אביב. עיצוב מינימליסטי נקי, מחירים משתלמים וחוויית קניה מהירה ופשוטה. תתחילו לעצב את הבית עוד היום!">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="he_IL">
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="רהיטים מודרניים במחיר שפוי לדירה שלך — רהיטים סימפל | Simple Design">
+  <meta name="twitter:description" content="חנות רהיטים מודרניים לזוגות צעירים ומשפחות בתל אביב. עיצוב מינימליסטי נקי, מחירים משתלמים וחוויית קניה מהירה ופשוטה. תתחילו לעצב את הבית עוד היום!">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon-512x512.png">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+    <!-- Cookie Consent -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.css">
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.umd.js"></script>
+    <!-- Mickidum Accessibility Toolbar -->
+    <script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script>
+    <link rel="stylesheet" href="/styles.css">
+
+    <style id="zappy-dropdown-submenu-styles">
+      /* ========== DESKTOP DROPDOWN SUBMENU STYLES ========== */
+      /* Base styles for dropdown submenus - parent must be positioned */
+      .nav-menu li:has(.sub-menu), nav li:has(.sub-menu), .navbar li:has(.sub-menu), #navMenu li:has(.sub-menu) { position: relative; }
+      /* Submenu base - hidden by default */
+      .nav-menu .sub-menu, nav .sub-menu, .navbar .sub-menu, #navMenu .sub-menu { display: block !important; position: absolute !important; top: 100%; left: 0; min-width: 220px; background: white; border-radius: 8px; box-shadow: 0 8px 25px rgba(0,0,0,0.15); padding: 8px 0; opacity: 0; visibility: hidden; transform: translateY(10px); transition: all 0.3s ease; z-index: 1000; list-style: none; pointer-events: none; }
+      /* CRITICAL: Desktop hover styles to show dropdown */
+      .nav-menu li:hover > .sub-menu, nav li:hover > .sub-menu, .navbar li:hover > .sub-menu, #navMenu li:hover > .sub-menu { opacity: 1 !important; visibility: visible !important; transform: translateY(0) !important; pointer-events: auto !important; }
+      /* Submenu item styling */
+      .sub-menu li { list-style: none; margin: 0; padding: 0; }
+      .sub-menu a { display: block !important; padding: 10px 16px !important; color: #333 !important; font-weight: 500; text-decoration: none; white-space: nowrap; transition: background-color 0.2s; }
+      .sub-menu a:hover { background-color: #f5f5f5; }
+      /* RTL (Hebrew/Arabic) dropdown positioning */
+      [dir="rtl"] .nav-menu .sub-menu, [dir="rtl"] nav .sub-menu, [dir="rtl"] .navbar .sub-menu, html[lang="he"] .nav-menu .sub-menu, html[lang="he"] nav .sub-menu, html[lang="he"] .navbar .sub-menu, html[lang="ar"] .nav-menu .sub-menu, html[lang="ar"] nav .sub-menu, html[lang="ar"] .navbar .sub-menu { left: auto !important; right: 0 !important; }
+      /* Hide empty dropdown menus */
+      .sub-menu:empty, .sub-menu:not(:has(li:not(.zappy-hidden-menu-item))), .sub-menu:not(:has(li)) { display: none !important; opacity: 0 !important; visibility: hidden !important; pointer-events: none !important; }
+      /* Desktop: show submenu on Menu Group hover */
+      li:has(.menu-group-title):hover > .sub-menu { opacity: 1 !important; visibility: visible !important; transform: translateY(0) !important; pointer-events: auto !important; }
+      /* Menu Group title styling */
+      .nav-menu > li > .menu-group-title, #navMenu > li > .menu-group-title { display: inline-block; padding: 0.5rem 1rem; cursor: default; user-select: none; }
+      
+      /* ========== MOBILE SUBMENU STYLES ========== */
+      @media (max-width: 768px) {
+        .nav-menu .sub-menu, nav .sub-menu, .navbar .sub-menu, #navMenu .sub-menu { position: static !important; transform: none !important; box-shadow: none !important; background: transparent !important; max-height: 0; overflow: hidden; opacity: 0; visibility: hidden; transition: max-height 0.3s ease, opacity 0.3s ease; padding: 0 !important; border-radius: 0 !important; }
+        .sub-menu.mobile-expanded { max-height: 500px !important; opacity: 1 !important; visibility: visible !important; padding: 8px 0 8px 16px !important; }
+        [dir="rtl"] .sub-menu.mobile-expanded, html[lang="he"] .sub-menu.mobile-expanded { padding: 8px 16px 8px 0 !important; }
+        /* Disable hover behavior on mobile */
+        .nav-menu li:hover > .sub-menu, nav li:hover > .sub-menu, .navbar li:hover > .sub-menu, #navMenu li:hover > .sub-menu { opacity: 0; visibility: hidden; pointer-events: none; }
+        .nav-menu li > .sub-menu.mobile-expanded, nav li > .sub-menu.mobile-expanded, .navbar li > .sub-menu.mobile-expanded, #navMenu li > .sub-menu.mobile-expanded { opacity: 1 !important; visibility: visible !important; pointer-events: auto !important; }
+        .nav-menu li:has(.sub-menu), nav li:has(.sub-menu), .navbar li:has(.sub-menu), #navMenu li:has(.sub-menu) { display: flex !important; flex-wrap: wrap !important; align-items: center !important; position: relative !important; min-height: 44px !important; }
+        .nav-menu li:has(.sub-menu) > a, nav li:has(.sub-menu) > a, .navbar li:has(.sub-menu) > a, #navMenu li:has(.sub-menu) > a { flex: 1 !important; min-width: 0 !important; }
+        .nav-menu li:has(.sub-menu) > .menu-group-title, nav li:has(.sub-menu) > .menu-group-title, .navbar li:has(.sub-menu) > .menu-group-title, #navMenu li:has(.sub-menu) > .menu-group-title { flex: 1 !important; min-width: 0 !important; padding: 0 !important; line-height: inherit !important; }
+        .nav-menu li:has(.sub-menu) > .sub-menu, nav li:has(.sub-menu) > .sub-menu, .navbar li:has(.sub-menu) > .sub-menu, #navMenu li:has(.sub-menu) > .sub-menu { flex-basis: 100% !important; width: 100% !important; }
+        .nav-menu li:has(.sub-menu) > a [class*="chevron"], .nav-menu li:has(.sub-menu) > a [class*="arrow"], .nav-menu li:has(.sub-menu) > a .fa-chevron-down, .nav-menu li:has(.sub-menu) > a .fa-angle-down, nav li:has(.sub-menu) > a [class*="chevron"], nav li:has(.sub-menu) > a [class*="arrow"], #navMenu li:has(.sub-menu) > a [class*="chevron"], #navMenu li:has(.sub-menu) > a [class*="arrow"] { display: none !important; visibility: hidden !important; }
+        .mobile-submenu-toggle { display: flex !important; align-items: center !important; justify-content: center !important; width: 44px !important; height: auto !important; background: transparent !important; border: none !important; cursor: pointer !important; color: var(--text-dark) !important; position: static !important; flex-shrink: 0 !important; align-self: stretch !important; z-index: 2 !important; padding: 0 !important; margin: 0 !important; }
+        .mobile-submenu-toggle::after { content: '' !important; width: 0 !important; height: 0 !important; border-left: 6px solid transparent !important; border-right: 6px solid transparent !important; border-top: 7px solid currentColor !important; transition: transform 0.3s ease !important; }
+        .mobile-submenu-toggle.expanded::after { transform: rotate(180deg) !important; }
+        .sub-menu a { padding: 10px 0 !important; display: block !important; color: var(--text-dark) !important; }
+        .navbar .sub-menu li a, nav.navbar .sub-menu li a, .zappy-products-dropdown .sub-menu a { color: var(--text-dark) !important; }
+      }
+      @media (min-width: 769px) { .mobile-submenu-toggle { display: none !important; } }
+    </style>
+
+    <style id="zappy-widget-visibility">
+      #mic-access-tool-general-button, .mic-access-tool-general-button,
+      #mic-init-access-tool .mic-access-tool-general-button, #mic-init-access-tool #mic-access-tool-general-button,
+      ._access-icon, #mic-access-tool-box, .mic-access-tool-box,
+      #mic-init-access-tool #mic-access-tool-box, div[id*="mic-access-tool-box"], ._access-menu {
+        display: none !important; visibility: hidden !important; opacity: 0 !important; pointer-events: none !important;
+      }
+    </style>
+</head>
+<body>
+
+
+    <div class="mobile-search-panel" id="mobile-search-panel">
+      <div class="search-wrapper">
+        <input type="text" id="mobile-search-input" placeholder="חיפוש מוצרים..." autocomplete="off">
+        <button class="search-submit" id="mobile-search-submit" title="חיפוש">
+          <svg width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>
+        </button>
+        <button class="close-search" id="close-mobile-search">
+          <svg width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"></path></svg>
+        </button>
+      </div>
+      <div class="search-results" id="mobile-search-results"></div>
+    </div>
+  
+<script>window.ZAPPY_WEBSITE_ID = "bc16efe7-492c-4595-8f39-c81fea57476a";window.ZAPPY_API_BASE = (window.location.pathname.includes('/preview') ? "https://api.zappy5.com" : "https://api.zappy5.com");</script>
+  <nav class="navbar" dir="rtl">
+  <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+    <svg class="hamburger-icon" width="24" height="24" viewbox="0 0 24 24" fill="none">
+      <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+    </svg>
+    <svg class="close-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" style="display:none;">
+      <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+    </svg>
+  </button>
+  
+  <button class="phone-header-btn" aria-label="Call">
+    <svg width="20" height="20" viewbox="0 0 24 24" fill="currentColor">
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+    </svg>
+  </button>
+  
+  <div class="nav-container">
+    <div class="nav-brand">
+      <a href="/" class="logo-link">
+        <img src="/assets/business-logo.webp" alt="רהיטים סימפל | Simple Design" class="logo">
+      </a>
+    </div>
+    
+    <ul class="nav-menu" id="navMenu">
+
+    <li class="menu-item-has-children zappy-products-dropdown">
+      <a href="/products">
+        מוצרים
+        <svg class="dropdown-arrow" width="12" height="12" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M6 9l6 6 6-6"></path>
+        </svg>
+      </a>
+      <ul class="sub-menu" id="zappy-nav-category-links">
+        <li><a href="/products">כל המוצרים</a></li>
+        <!-- Categories will be loaded dynamically -->
+      </ul>
+    </li>
+  <li><a href="/collections">קולקציות</a></li><li><a href="/about">אודות</a></li><li><a href="/contact">צור קשר</a></li></ul><div class="nav-ecommerce-icons nav-icons-left"><a href="/login" class="login-link nav-login" title="התחברות"><svg class="login-icon" width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></a><a href="#cart" class="cart-link nav-cart" id="cart-drawer-toggle" title="עגלת קניות"><svg class="cart-icon" width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg><span class="cart-count">0</span></a><div class="nav-search-box">
+    <input type="text" class="nav-search-input" id="nav-search-input" placeholder="חיפוש מוצרים..." autocomplete="off">
+    <button class="nav-search-btn" id="nav-search-btn" title="חיפוש">
+      <svg class="search-icon" width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>
+    </button>
+    <div class="nav-search-results" id="nav-search-results"></div>
+  </div></div><div class="nav-ecommerce-icons nav-icons-right"><button class="nav-search-toggle" id="mobile-search-toggle" title="חיפוש"><svg width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg></button></div>
+    
+    
+  </div>
+</nav>
+
+    <nav class="zappy-catalog-menu rtl" id="zappy-catalog-menu" dir="rtl">
+      <div class="catalog-menu-container">
+        <a href="/products" class="catalog-menu-item catalog-menu-all">כל המוצרים</a>
+        <div class="catalog-menu-categories" id="zappy-category-links">
+          <!-- Categories will be loaded dynamically -->
+        </div>
+      </div>
+    </nav>
+  
+  
+  <main>
+    <section class="index-hero-section" data-layout-spec="בית-hero" data-hero-type="fullscreen-scrim">
+  <!-- Background Image Layer -->
+  <div class="index-hero-section__bg-wrapper">
+    <img data-hero-bg="true" data-placeholder="index-hero-bg-image" data-context="Bright, airy Tel Aviv apartment interior with natural daylight streaming through large windows. Modern minimalist living room featuring a contemporary beige/cream fabric sofa with clean lines and wooden legs. Neutral walls (off-white/cream), light wooden flooring. Styled with a simple coffee table, indoor plant, minimal decor. Warm, inviting atmosphere with soft shadows. Professional interior photography style, high-end furniture catalog aesthetic. Focus on the sofa as hero product. Natural color palette: beige, white, light wood tones, soft grays." width="1920" height="1080" src="/assets/site-index-hero-bg-image.webp" alt="סלון מודרני בתל אביב עם ספה עכשווית" class="index-hero-section__bg-image">
+  </div>
+
+  <!-- Scrim Overlay for Text Legibility -->
+  <div class="index-hero-section__scrim" aria-hidden="true"></div>
+
+  <!-- Content Overlay Card -->
+  <div class="index-hero-section__content-wrapper">
+    <div class="index-hero-section__overlay-card">
+      <h1 class="index-hero-section__headline">רהיטים מודרניים. מחירים פשוטים. החלטות מהירות.</h1>
+      <h3 class="index-hero-section__subtitle">עיצוב עכשווי בחכמה, עם משלוח והרכבה קלים. בלי מחירי יוקרה, רק סטייל שעובד.</h3>
+      <div class="index-hero-section__cta-group">
+        <a href="/collections" class="index-hero-section__btn index-hero-section__btn--primary">גלו את הקולקציות</a>
+        <a href="/contact" class="index-hero-section__btn index-hero-section__btn--secondary">דברו איתנו</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Divider SVG -->
+  <div class="index-hero-section__divider-wrapper">
+    <svg data-no-icon-edit="true" aria-hidden="true" viewbox="0 0 1200 100" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,100 L0,35 Q150,42 300,28 T600,35 Q750,28 900,38 T1200,32 L1200,100 Z" fill="var(--bg-light)"></path>
+    </svg>
+  </div>
+</section>
+
+    <section class="featured-products-section" id="featured-products" data-zappy-dynamic="true">
+      <div class="container">
+        <h2 class="section-title">מוצרים מומלצים</h2>
+        <div class="product-grid featured-grid" id="zappy-featured-products">
+          <div class="loading-products">טוען מוצרים...</div>
+        </div>
+        <div class="view-all-products">
+          <a href="/products" class="btn btn-primary">צפה בכל המוצרים →</a>
+        </div>
+      </div>
+    </section>
+  
+
+    <section class="featured-categories-section" id="featured-categories" data-zappy-dynamic="true">
+      <div class="container">
+        <h2 class="section-title">קנו לפי קטגוריה</h2>
+        <div class="category-blocks" id="zappy-featured-categories">
+          <div class="loading-categories">טוען מוצרים...</div>
+        </div>
+      </div>
+    </section>
+  
+
+<section class="index-categories-section" data-layout-spec="בית-categories">
+  <div class="index-categories-container">
+    <div class="index-categories-header">
+      <h2>קנו לפי חלל ומצב רוח</h2>
+      <p>התחילו עם החדר שאתם הכי רוצים לרענן — כל מה שצריך כבר כאן.</p>
+    </div>
+
+    <div class="index-categories-pills">
+      <a href="#" class="category-pill">
+        <svg data-element-type="icon" data-icon-type="svg" width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="8" width="18" height="12" rx="2"></rect>
+          <path d="M3 8V6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2"></path>
+        </svg>
+        <span>ספות</span>
+      </a>
+      <a href="#" class="category-pill">
+        <svg data-element-type="icon" data-icon-type="svg" width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="4" width="18" height="16" rx="2"></rect>
+          <line x1="7" y1="8" x2="7" y2="16"></line>
+          <line x1="17" y1="8" x2="17" y2="16"></line>
+        </svg>
+        <span>פינת אוכל</span>
+      </a>
+      <a href="#" class="category-pill">
+        <svg data-element-type="icon" data-icon-type="svg" width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+          <path d="M6 8h.01M10 8h.01"></path>
+        </svg>
+        <span>חדר שינה</span>
+      </a>
+      <a href="#" class="category-pill">
+        <svg data-element-type="icon" data-icon-type="svg" width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+          <rect x="8" y="8" width="8" height="8"></rect>
+        </svg>
+        <span>אחסון</span>
+      </a>
+      <a href="#" class="category-pill">
+        <svg data-element-type="icon" data-icon-type="svg" width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="7" width="20" height="14" rx="2"></rect>
+          <path d="M16 3v4M8 3v4"></path>
+        </svg>
+        <span>משרד ביתי</span>
+      </a>
+      <a href="#" class="category-pill">
+        <svg data-element-type="icon" data-icon-type="svg" width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="8" r="4"></circle>
+          <path d="M12 12v10"></path>
+          <path d="M8 16l4-4 4 4"></path>
+        </svg>
+        <span>חדר ילדים</span>
+      </a>
+      <a href="#" class="category-pill">
+        <svg data-element-type="icon" data-icon-type="svg" width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="3" width="7" height="7"></rect>
+          <rect x="14" y="3" width="7" height="7"></rect>
+          <rect x="14" y="14" width="7" height="7"></rect>
+          <rect x="3" y="14" width="7" height="7"></rect>
+        </svg>
+        <span>דירות קטנות</span>
+      </a>
+      <a href="#" class="category-pill">
+        <svg data-element-type="icon" data-icon-type="svg" width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+        </svg>
+        <span>אקססוריז</span>
+      </a>
+    </div>
+
+    <div class="index-categories-tiles">
+      <div class="category-tile">
+        <div class="category-tile-image">
+          <img data-placeholder="index-categories-image-1" data-context="Modern minimalist living room with a beige fabric sofa, white coffee table, and natural wood accents. Bright natural light, clean lines, Scandinavian aesthetic. Tel Aviv apartment style." width="600" height="400" src="/assets/site-index-categories-image-1.webp" alt="סלון מודרני עם ספה בז׳ ושולחן קפה לבן">
+        </div>
+        <div class="category-tile-content">
+          <h3>חיוניים לסלון</h3>
+          <p>הספה המושלמת, שולחן קפה חכם, ופתרונות אחסון שמשתלבים בכל חלל.</p>
+        </div>
+      </div>
+
+      <div class="category-tile">
+        <div class="category-tile-image">
+          <img data-placeholder="index-categories-image-2" data-context="Elegant dining area with modern wooden table and black chairs. Pendant light fixture above table, warm atmosphere, natural wood tones mixed with black accents. Israeli contemporary design." width="600" height="400" src="/assets/site-index-categories-image-2.webp" alt="פינת אוכל עם שולחן עץ וכיסאות שחורים">
+        </div>
+        <div class="category-tile-content">
+          <h3>אוכל בקלות</h3>
+          <p>שולחנות וכיסאות שהופכים כל ארוחה לרגע מיוחד, בלי לפרוץ את התקציב.</p>
+        </div>
+      </div>
+
+      <div class="category-tile">
+        <div class="category-tile-image">
+          <img data-placeholder="index-categories-image-3" data-context="Cozy bedroom with natural wood bed frame, white bedding, beige throw pillows, and minimalist nightstand. Soft morning light, calm atmosphere, Scandinavian bedroom design with houseplants." width="600" height="400" src="/assets/site-index-categories-image-3.webp" alt="חדר שינה עם מיטת עץ ומצעים לבנים">
+        </div>
+        <div class="category-tile-content">
+          <h3>שינה טובה יותר</h3>
+          <p>מיטות נוחות, ארונות חכמים ופתרונות אחסון שהופכים את חדר השינה למקלט.</p>
+        </div>
+      </div>
+
+      <div class="category-tile">
+        <div class="category-tile-image">
+          <img data-placeholder="index-categories-image-4" data-context="Compact storage solution with white modular shelving unit, woven baskets, and minimalist organization. Small apartment friendly, rental-friendly furniture, no drilling required. Clean Scandinavian aesthetic." width="600" height="400" src="/assets/site-index-categories-image-4.webp" alt="יחידת אחסון מודולרית לבנה עם סלים">
+        </div>
+        <div class="category-tile-content">
+          <h3>אחסון לדירה שכורה</h3>
+          <p>פתרונות ללא קידוח, מדפים מודולריים וארגונים חכמים שעוברים איתכם לכל דירה.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="index-categories-divider-wrapper">
+    <svg data-no-icon-edit="true" aria-hidden="true" viewbox="0 0 1200 60" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,60 L0,32 Q60,28 120,34 T240,30 Q300,33 360,28 T480,32 Q540,29 600,33 T720,28 Q780,32 840,29 T960,33 Q1020,28 1080,32 T1200,30 L1200,60 Z" fill="var(--secondary)"></path>
+    </svg>
+  </div>
+</section>
+
+<section class="index-showcase-section" data-layout-spec="בית-showcase">
+  <div class="index-showcase-container">
+    <div class="index-showcase-grid">
+      <div class="index-showcase-content">
+        <h2>עיצוב מודרני במחירים הוגנים</h2>
+        <p>אנחנו מאמינים שעיצוב איכותי לא צריך לעלות הון. חומרים חכמים, ייצור יעיל ועיצוב ישיר – זו הנוסחה שלנו לרהיטים שמשדרגים כל דירה מבלי לרוקן את הארנק.</p>
+        
+        <div class="index-showcase-proof-cards">
+          <div class="index-showcase-card">
+            <h3>חומרים חכמים</h3>
+            <p>שילוב של עץ מלא, MDF איכותי וציפויים עמידים שנראים מעולה ומחזיקים מעמד לאורך זמן.</p>
+          </div>
+          
+          <div class="index-showcase-card">
+            <h3>התאמה מודולרית</h3>
+            <p>רהיטים שמתאימים לכל חלל – מדירות סטודיו קטנות ועד בתים משפחתיים, עם אפשרויות התאמה גמישות.</p>
+          </div>
+          
+          <div class="index-showcase-card">
+            <h3>משלוח עירוני נוח</h3>
+            <p>אריזה חכמה ומשלוח מהיר לכל רחבי גוש דן והסביבה, עם הרכבה פשוטה שלוקחת דקות.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="index-showcase-imagery">
+        <div class="index-showcase-main-image-wrapper">
+          <img data-placeholder="index-showcase-image-1" data-context="Modern minimalist living room interior with beige sofa, natural wood coffee table, and clean white walls. Bright natural lighting, Scandinavian style furniture, warm neutral tones. Professional interior photography for furniture store showcase." width="600" height="700" src="/assets/site-index-showcase-image-1.webp" alt="סלון מודרני עם רהיטים מינימליסטיים">
+        </div>
+        <div class="index-showcase-secondary-image-wrapper">
+          <img data-placeholder="index-showcase-image-2" data-context="Close-up detail shot of natural wood furniture texture, showing quality craftsmanship and modern joinery. Warm wood tones, clean lines, minimalist design aesthetic. Professional product photography for furniture brand." width="280" height="200" src="/assets/site-index-showcase-image-2.webp" alt="פרט של עץ טבעי איכותי">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="index-showcase-divider-wrapper">
+    <svg data-no-icon-edit="true" aria-hidden="true" viewbox="0 0 1200 60" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="showcase-divider-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" style="stop-color:#E7D8C4;stop-opacity:1"></stop>
+          <stop offset="100%" style="stop-color:#FBFAF7;stop-opacity:1"></stop>
+        </linearGradient>
+        <filter id="showcase-noise">
+          <feTurbulence type="fractalNoise" basefrequency="0.9" numoctaves="4" seed="2"></feTurbulence>
+          <feColorMatrix type="saturate" values="0"></feColorMatrix>
+          <feBlend mode="multiply" in="SourceGraphic"></feBlend>
+        </filter>
+      </defs>
+      <rect x="0" y="0" width="1200" height="60" fill="url(#showcase-divider-gradient)" filter="url(#showcase-noise)" opacity="0.4"></rect>
+      <path d="M0,60 L0,0 L1200,0 L1200,60 Z" fill="var(--bg-light)"></path>
+    </svg>
+  </div>
+</section>
+
+<section class="index-testimonials-section" data-layout-spec="בית-testimonials">
+  <div class="index-testimonials-section__container">
+    <div class="index-testimonials-section__header">
+      <h2 class="index-testimonials-section__title">אהובים בדירות אמיתיות</h2>
+      <p class="index-testimonials-section__intro">עיצוב קל לשוכרים, זוגות צעירים ומשפחות בתחילת דרך</p>
+    </div>
+    
+    <div class="index-testimonials-section__grid">
+      <article class="index-testimonials-section__card">
+        <h3 class="index-testimonials-section__card-title">בדיוק מה שחיפשנו</h3>
+        <p class="index-testimonials-section__card-quote">"הספה הזאת משתלבת מושלם בסלון הקטן שלנו. איכות מצוינת במחיר שלא האמנו שאפשרי. הרכבה סופר פשוטה, עשינו את זה ביחד תוך חצי שעה."</p>
+        <div class="index-testimonials-section__card-attribution">שירה ויונתן, תל אביב</div>
+      </article>
+      
+      <article class="index-testimonials-section__card">
+        <h3 class="index-testimonials-section__card-title">נוחות מטורפת</h3>
+        <p class="index-testimonials-section__card-quote">"קנינו את כורסת הטלוויזיה והיא פשוט מושלמת. נוחה, נראית יוקרתית, ומתאימה בול לדירה שכורה כי אפשר להזיז אותה בקלות. ממליצים בחום!"</p>
+        <div class="index-testimonials-section__card-attribution">דנה, חיפה</div>
+      </article>
+      
+      <article class="index-testimonials-section__card">
+        <h3 class="index-testimonials-section__card-title">מעולה למשפחה צעירה</h3>
+        <p class="index-testimonials-section__card-quote">"השולחן והכיסאות הגיעו מהר והרכבה הייתה קלה. הילדים אוהבים לשבת ולצייר, וזה בדיוק בגובה הנכון. מחיר הוגן מאוד לאיכות כזו."</p>
+        <div class="index-testimonials-section__card-attribution">רועי ומיכל, ראשון לציון</div>
+      </article>
+      
+      <article class="index-testimonials-section__card">
+        <h3 class="index-testimonials-section__card-title">עיצוב חכם ומעשי</h3>
+        <p class="index-testimonials-section__card-quote">"המדף הזה חסך לנו המון מקום. נראה מינימליסטי ומודרני, מחזיק הכל בסלון הקטן שלנו. בדיוק הסגנון שרצינו בלי לשלם הון."</p>
+        <div class="index-testimonials-section__card-attribution">אורי, ירושלים</div>
+      </article>
+      
+      <article class="index-testimonials-section__card">
+        <h3 class="index-testimonials-section__card-title">התאים בול לדירה שלנו</h3>
+        <p class="index-testimonials-section__card-quote">"חיפשנו ארון נמוך לטלוויזיה שלא יתפוס יותר מדי מקום. זה בדיוק מה שצריך - נקי, פשוט, ומתאים גם לדירה שכורה. מאוד מרוצים מהבחירה."</p>
+        <div class="index-testimonials-section__card-attribution">נועה ואלון, הרצליה</div>
+      </article>
+      
+      <article class="index-testimonials-section__card">
+        <h3 class="index-testimonials-section__card-title">יחס מחיר-ערך מושלם</h3>
+        <p class="index-testimonials-section__card-quote">"לא ציפינו לקבל רהיטים כל כך יפים במחיר כזה. המיטה נוחה, עיצוב נקי ומודרני, והרכבה מהירה. ממש שמחים עם הקניה!"</p>
+        <div class="index-testimonials-section__card-attribution">ליאור ותמר, פתח תקווה</div>
+      </article>
+    </div>
+  </div>
+  
+  <div class="index-testimonials-section__divider-wrapper">
+    <svg data-no-icon-edit="true" aria-hidden="true" viewbox="0 0 1200 60" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,60 L0,30 Q100,28 200,32 T400,28 Q500,32 600,28 T800,32 Q900,28 1000,32 T1200,30 L1200,60 Z" fill="#1E1E1E" stroke="var(--border-dark)" stroke-width="1.5" stroke-dasharray="8,6" stroke-linecap="round"></path>
+    </svg>
+  </div>
+</section>
+
+<section class="index-cta-section" data-layout-spec="בית-cta">
+  <div class="index-cta-container">
+    <div class="index-cta-content">
+      <h2>מוכנים לרענן את הבית?</h2>
+      <p>גלו את הקולקציות שלנו או שלחו לנו הודעה קצרה – נעזור לכם לבחור את הגדלים והגימורים המושלמים לשדרוג המרחב שלכם.</p>
+      <div class="index-cta-buttons">
+        <a href="/collections" class="btn-primary">לכל הקולקציות</a>
+        <a href="/contact" class="btn-secondary">צרו קשר</a>
+      </div>
+    </div>
+    <div class="index-cta-images">
+      <div class="index-cta-image-wrapper">
+        <img data-placeholder="index-cta-image-1" data-context="Modern minimalist living room interior with beige sofa, natural wood coffee table, and soft neutral tones - slightly desaturated lifestyle photography with consistent warm lighting for Israeli furniture brand" width="600" height="400" src="/assets/site-index-cta-image-1.webp" alt="חדר מגורים מודרני עם רהיטים מינימליסטיים">
+      </div>
+      <div class="index-cta-image-wrapper">
+        <img data-placeholder="index-cta-image-2" data-context="Close-up of modern wooden dining table with elegant chairs in natural light - slightly desaturated lifestyle shot with warm tones for contemporary furniture showroom" width="600" height="400" src="/assets/site-index-cta-image-2.webp" alt="פינת אוכל עם שולחן עץ וכסאות מעוצבים">
+      </div>
+    </div>
+  </div>
+</section>
+  </main>
+  
+  <footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-top">
+      <div class="footer-column company-info">
+        <img src="/assets/business-logo.webp" alt="רהיטים סימפל | Simple Design" class="logo">
+        <p class="company-tagline">עיצוב פנים וריהוט איכותי לבית מושלם</p>
+      </div>
+      
+      <div class="footer-column quick-links">
+        <h3 class="footer-heading">קישורים מהירים</h3>
+        <ul class="footer-links">
+          <li><a href="/collections">קולקציות</a></li>
+          <li><a href="/about">אודות</a></li>
+          <li><a href="/contact">צור קשר</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-column contact-info">
+        <h3 class="footer-heading">יצירת קשר</h3>
+        <ul class="contact-list">
+          <li><i class="fas fa-envelope"></i> <a href="mailto:[business_email]">[business_email]</a></li>
+          <li><i class="fas fa-phone"></i> <a href="tel:[business_phone]">[business_phone]</a></li>
+          <li><a href="/"><i class="fas fa-map-marker-alt"></i> <span>[business_address]</span></a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-column social-media">
+        <h3 class="footer-heading">עקבו אחרינו</h3>
+        <div class="social-links">
+          <a href="[facebook_handle]" aria-label="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+          <a href="[instagram_handle]" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+          <a href="[whatsapp_handle]" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <div class="copyright">
+        <p>© 2026 רהיטים סימפל | Simple Design. All rights reserved.</p>
+      </div>
+      <div class="footer-legal">
+        <a href="/privacy">Privacy Policy</a>
+        <span class="separator">|</span>
+        <a href="/terms">Terms &amp; Conditions</a><span class="separator">|</span>
+            <a href="/return-policy" aria-label="מדיניות החזרות">
+              מדיניות החזרות
+            </a>
+        <span class="separator">|</span>
+        <a href="/accessibility">Accessibility</a>
+        <span class="separator">|</span>
+        <a href="https://zappy5.com" target="_blank" class="zappy-attribution">Generated by Zappy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+  
+  <a href="https://wa.me/[whatsapp_handle]" class="whatsapp-float" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  
+  <div data-integration="accessibility:toolbar"></div>
+
+    <script src="/script.js"></script>
+
+    <script id="zappy-mobile-submenu-script">
+    (function() {
+      function initMobileSubmenuToggles() {
+        if (window.innerWidth > 768) {
+          document.querySelectorAll('.mobile-submenu-toggle').forEach(function(btn) { btn.remove(); });
+          document.querySelectorAll('.sub-menu.mobile-expanded').forEach(function(menu) { menu.classList.remove('mobile-expanded'); });
+          return;
+        }
+        var items = document.querySelectorAll('.nav-menu li:has(.sub-menu), nav li:has(.sub-menu), .navbar li:has(.sub-menu), #navMenu li:has(.sub-menu)');
+        items.forEach(function(li) {
+          if (li.querySelector('.mobile-submenu-toggle')) return;
+          var submenu = li.querySelector('.sub-menu');
+          var parentLink = li.querySelector(':scope > a');
+          if (!submenu || !parentLink) return;
+          var toggleBtn = document.createElement('button');
+          toggleBtn.className = 'mobile-submenu-toggle';
+          toggleBtn.setAttribute('aria-label', 'Toggle submenu');
+          toggleBtn.setAttribute('type', 'button');
+          parentLink.insertAdjacentElement('afterend', toggleBtn);
+          toggleBtn.addEventListener('click', function(e) {
+            e.preventDefault(); e.stopPropagation();
+            document.querySelectorAll('.sub-menu.mobile-expanded').forEach(function(menu) {
+              if (menu !== submenu) { menu.classList.remove('mobile-expanded'); var t = menu.parentElement.querySelector('.mobile-submenu-toggle'); if(t) t.classList.remove('expanded'); }
+            });
+            submenu.classList.toggle('mobile-expanded');
+            toggleBtn.classList.toggle('expanded');
+          });
+        });
+      }
+      if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', initMobileSubmenuToggles); }
+      else { initMobileSubmenuToggles(); }
+      var resizeTimer; window.addEventListener('resize', function() { clearTimeout(resizeTimer); resizeTimer = setTimeout(initMobileSubmenuToggles, 250); });
+      // Re-initialize when mobile menu becomes visible (MutationObserver)
+      var observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+          if (mutation.type === 'attributes') {
+            var target = mutation.target;
+            if (target.classList && (target.classList.contains('active') || target.classList.contains('open'))) {
+              setTimeout(initMobileSubmenuToggles, 100);
+            }
+          }
+        });
+      });
+      setTimeout(function() {
+        document.querySelectorAll('.mobile-menu, .nav-menu, #navMenu, nav').forEach(function(menu) {
+          observer.observe(menu, { attributes: true, attributeFilter: ['class', 'style'] });
+        });
+      }, 500);
+    })();
+    </script>
+</body>
+</html>
