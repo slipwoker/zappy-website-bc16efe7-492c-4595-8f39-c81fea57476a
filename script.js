@@ -7195,7 +7195,7 @@ window.onload = function() {
 
       var wid = 'bc16efe7-492c-4595-8f39-c81fea57476a';
 
-      var apiBase = (window.ZAPPY_API_BASE || window.location.origin).replace(/\/$/,'');
+      var apiBase = (window.ZAPPY_API_BASE || 'https://api.zappy5.com').replace(/\/$/,'');
       apiBase = apiBase + '/api/email/contact-form';
 
       fetch(apiBase, {

@@ -4,66 +4,66 @@
 
 ## Pages
 
-### בית
-https://simple-design.zappy5.app
+### רהיטים מודרניים במחיר שפוי לדירה שלך — רהיטים סימפל | Simple Design
+https://simpledesign.co.il
 חנות רהיטים מודרניים לזוגות צעירים ומשפחות בתל אביב. עיצוב מינימליסטי נקי, מחירים משתלמים וחוויית קניה מהירה ופשוטה. תתחילו לעצב את הבית עוד היום!
 
-### קולקציות
-https://simple-design.zappy5.app/collections
+### גלו את הקולקציות החדשות שלנו לכל חדר — רהיטים סימפל | Simple Design
+https://simpledesign.co.il/collections
 קולקציות רהיטים מודרניות לסלון, חדר שינה, פינת עבודה ועוד. עיצוב נקי בגוונים טבעיים, איכות גבוהה ומחירים הוגנים. מצאו את הרהיט המושלם לביתכם תוך דקות!
 
-### אודות
-https://simple-design.zappy5.app/about
+### הסיפור מאחורי המותג הצעיר והדינמי — רהיטים סימפל | Simple Design
+https://simpledesign.co.il/about
 מותג רהיטים ישראלי צעיר מתל אביב שמשנה את חוויית הקנייה. אנחנו מאמינים שעיצוב מודרני איכותי לא צריך לעלות הון. הכירו את הגישה שלנו לריהוט פשוט, מהיר ומשתלם.
 
-### צור קשר
-https://simple-design.zappy5.app/contact
-יש לכם שאלות? רוצים ייעוץ עיצובי? הצוות שלנו כאן בשבילכם! צרו קשר עכשיו ונעזור לכם למצוא את הרהיטים המושלמים לבית. מענה מהיר, שירות אישי ויחס חם.
-
-### Products
-https://simple-design.zappy5.app/products
+### מוצרים
+https://simpledesign.co.il/products
 המוצרים שלנו - רהיטים סימפל | Simple Design
 
-### Cart
-https://simple-design.zappy5.app/cart
+### עגלת קניות
+https://simpledesign.co.il/cart
 עגלת הקניות שלך
 
-### Checkout
-https://simple-design.zappy5.app/checkout
+### תשלום
+https://simpledesign.co.il/checkout
 תשלום
 
-### Login
-https://simple-design.zappy5.app/login
+### התחברות
+https://simpledesign.co.il/login
 התחברות לקוחות
 
-### Account
-https://simple-design.zappy5.app/account
+### החשבון שלי
+https://simpledesign.co.il/account
 החשבון שלי
 
-### Order Success
-https://simple-design.zappy5.app/order-success
+### ההזמנה התקבלה!
+https://simpledesign.co.il/order-success
 תודה על ההזמנה
 
-### Product Detail
-https://simple-design.zappy5.app/product/:slug
+### פרטי המוצר
+https://simpledesign.co.il/product/:slug
 פרטי המוצר - רהיטים סימפל | Simple Design
 
-### Category
-https://simple-design.zappy5.app/category/:slug
+### מוצרים
+https://simpledesign.co.il/category/:slug
 מוצרים - רהיטים סימפל | Simple Design
+
+### בואו נדבר על הרהיטים שחלמתם עליהם — רהיטים סימפל | Simple Design
+https://simpledesign.co.il/contact
+יש לכם שאלות? רוצים ייעוץ עיצובי? הצוות שלנו כאן בשבילכם! צרו קשר עכשיו ונעזור לכם למצוא את הרהיטים המושלמים לבית. מענה מהיר, שירות אישי ויחס חם.
 
 ## Legal & Policy
 
 ### Privacy Policy
-https://simple-design.zappy5.app/privacy
+https://simpledesign.co.il/privacy
 Information about how user data is collected, stored, and protected.
 
 ### Terms & Conditions
-https://simple-design.zappy5.app/terms
+https://simpledesign.co.il/terms
 Legal terms describing service usage, rights, and policies.
 
 ### Accessibility Statement
-https://simple-design.zappy5.app/accessibility
+https://simpledesign.co.il/accessibility
 Information about WCAG compliance and accessibility features.
 
 ---
@@ -75,5 +75,5 @@ Information about WCAG compliance and accessibility features.
 
 # Additional Resources
 
-- **Sitemap**: https://simple-design.zappy5.app/sitemap.xml
-- **Robots.txt**: https://simple-design.zappy5.app/robots.txt
+- **Sitemap**: https://simpledesign.co.il/sitemap.xml
+- **Robots.txt**: https://simpledesign.co.il/robots.txt

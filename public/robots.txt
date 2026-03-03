@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://simple-design.zappy5.app/sitemap.xml
+Sitemap: https://simpledesign.co.il/sitemap.xml
