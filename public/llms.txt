@@ -16,35 +16,35 @@ https://simpledesign.co.il/collections
 https://simpledesign.co.il/about
 מותג רהיטים ישראלי צעיר מתל אביב שמשנה את חוויית הקנייה. אנחנו מאמינים שעיצוב מודרני איכותי לא צריך לעלות הון. הכירו את הגישה שלנו לריהוט פשוט, מהיר ומשתלם.
 
-### מוצרים
+### Products
 https://simpledesign.co.il/products
 המוצרים שלנו - רהיטים סימפל | Simple Design
 
-### עגלת קניות
+### Cart
 https://simpledesign.co.il/cart
 עגלת הקניות שלך
 
-### תשלום
+### Checkout
 https://simpledesign.co.il/checkout
 תשלום
 
-### התחברות
+### Login
 https://simpledesign.co.il/login
 התחברות לקוחות
 
-### החשבון שלי
+### Account
 https://simpledesign.co.il/account
 החשבון שלי
 
-### ההזמנה התקבלה!
+### Order Success
 https://simpledesign.co.il/order-success
 תודה על ההזמנה
 
-### פרטי המוצר
+### Product Detail
 https://simpledesign.co.il/product/:slug
 פרטי המוצר - רהיטים סימפל | Simple Design
 
-### מוצרים
+### Category
 https://simpledesign.co.il/category/:slug
 מוצרים - רהיטים סימפל | Simple Design
 
