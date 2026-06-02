@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:g="http://base.google.com/ns/1.0" version="2.0">
+  <channel>
+    <title>רהיטים סימפל | Simple Design</title>
+    <link>https://simpledesign.co.il</link>
+    <description>Product feed for רהיטים סימפל | Simple Design</description>
+    <lastBuildDate>Tue, 02 Jun 2026 18:16:58 GMT</lastBuildDate>
+    <item>
+      <g:id>eee62416-1e0f-400e-98b5-c4089d57a43a</g:id>
+      <g:title>שידה איפור דגם אליפות </g:title>
+      <g:description>שידה איפור דגם אליפות</g:description>
+      <g:link>https://simpledesign.co.il/product/shydh-aypvr-dgm-alypvt-gy5436</g:link>
+      <g:image_link>https://simpledesign.co.il/assets/product-1772831481850-unpc1.webp</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>1999.00 ILS</g:price>
+      <g:sale_price>1500.00 ILS</g:sale_price>
+      <g:condition>new</g:condition>
+      <g:brand>רהיטים סימפל | Simple Design</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+    </item>
+    <item>
+      <g:id>b7f2c3b3-9f00-4728-aedf-43cbd3dbc3b9</g:id>
+      <g:title>מזנון דגם פסים </g:title>
+      <g:description>מזנון דגם פסים</g:description>
+      <g:link>https://simpledesign.co.il/product/mznvn-dgm-psym-j3krjl</g:link>
+      <g:image_link>https://simpledesign.co.il/assets/product-1772831386413-w683c.webp</g:image_link>
+      <g:additional_image_link>https://simpledesign.co.il/assets/product-1772831390266-pqbw2w.webp</g:additional_image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>3480.00 ILS</g:price>
+      <g:sale_price>2490.00 ILS</g:sale_price>
+      <g:condition>new</g:condition>
+      <g:brand>רהיטים סימפל | Simple Design</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+    </item>
+    <item>
+      <g:id>bb38882f-0e21-4a48-8825-835808f4b34c</g:id>
+      <g:title>שולחן אליפסה דגם ניקול </g:title>
+      <g:description>שולחן אליפסה ללא כסאות דגם ניקול במידות 180סמ או 200 סמ סגור שנפתח בעוד 40+40 בשני פלטות רגיל סי אנ סי צבע שמנת</g:description>
+      <g:link>https://simpledesign.co.il/product/shvlchn-alypsh-dgm-nykvl-6lsn1x</g:link>
+      <g:image_link>https://simpledesign.co.il/assets/product-1772825346877-7jv2md.webp</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>7800.00 ILS</g:price>
+      <g:sale_price>3780.00 ILS</g:sale_price>
+      <g:condition>new</g:condition>
+      <g:brand>רהיטים סימפל | Simple Design</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+    </item>
+    <item>
+      <g:id>f7d3375d-d636-453d-8ffe-8167808cf88c</g:id>
+      <g:title>מיטה יחיד דגם SAVANA</g:title>
+      <g:description>מיטה יחיד Savana</g:description>
+      <g:link>https://simpledesign.co.il/product/myth-ychyd-dgm-savana-w6pxns</g:link>
+      <g:image_link>https://simpledesign.co.il/assets/product-1772825258643-hom9g.webp</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>1480.00 ILS</g:price>
+      <g:sale_price>1199.00 ILS</g:sale_price>
+      <g:condition>new</g:condition>
+      <g:brand>Savana </g:brand>
+    </item>
+    <item>
+      <g:id>61b2ace8-8532-40ae-ac61-1d5ba887b20b</g:id>
+      <g:title>שולחן כדרים 105 ס״מ </g:title>
+      <g:description>שולחן כדורים שלוש כדורים עם שולחן זכוכית</g:description>
+      <g:link>https://simpledesign.co.il/product/shvlchn-kdrym-105-sm-4zfsdf</g:link>
+      <g:image_link>https://simpledesign.co.il/assets/product-1772804326206-ttcsq8.webp</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>2800.00 ILS</g:price>
+      <g:sale_price>1800.00 ILS</g:sale_price>
+      <g:condition>new</g:condition>
+      <g:brand>רהיטים סימפל | Simple Design</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+    </item>
+  </channel>
+</rss>

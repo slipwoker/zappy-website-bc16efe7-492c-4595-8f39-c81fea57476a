@@ -1,0 +1,120 @@
+{
+  "@context": "https://schema.org",
+  "generated_at": "2026-06-02T18:16:58.175Z",
+  "base_url": "https://simpledesign.co.il",
+  "currency": "ILS",
+  "count": 5,
+  "products": [
+    {
+      "id": "eee62416-1e0f-400e-98b5-c4089d57a43a",
+      "slug": "shydh-aypvr-dgm-alypvt-gy5436",
+      "name": "שידה איפור דגם אליפות ",
+      "name_translations": {},
+      "description": "",
+      "short_description": null,
+      "sku": null,
+      "brand": null,
+      "price": 1500,
+      "base_price": 1999,
+      "sale_price": 1500,
+      "currency": "ILS",
+      "images": [
+        "https://simpledesign.co.il/assets/product-1772831481850-unpc1.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://simpledesign.co.il/product/shydh-aypvr-dgm-alypvt-gy5436",
+      "categories": [],
+      "updated_at": "2026-03-06T21:11:46.047Z"
+    },
+    {
+      "id": "b7f2c3b3-9f00-4728-aedf-43cbd3dbc3b9",
+      "slug": "mznvn-dgm-psym-j3krjl",
+      "name": "מזנון דגם פסים ",
+      "name_translations": {},
+      "description": "",
+      "short_description": null,
+      "sku": null,
+      "brand": null,
+      "price": 2490,
+      "base_price": 3480,
+      "sale_price": 2490,
+      "currency": "ILS",
+      "images": [
+        "https://simpledesign.co.il/assets/product-1772831386413-w683c.webp",
+        "https://simpledesign.co.il/assets/product-1772831390266-pqbw2w.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://simpledesign.co.il/product/mznvn-dgm-psym-j3krjl",
+      "categories": [],
+      "updated_at": "2026-03-06T21:10:57.745Z"
+    },
+    {
+      "id": "bb38882f-0e21-4a48-8825-835808f4b34c",
+      "slug": "shvlchn-alypsh-dgm-nykvl-6lsn1x",
+      "name": "שולחן אליפסה דגם ניקול ",
+      "name_translations": {},
+      "description": "<p>שולחן אליפסה ללא כסאות דגם ניקול במידות 180סמ או 200 סמ סגור שנפתח בעוד 40+40 בשני פלטות </p><p>רגיל סי אנ סי צבע שמנת </p>",
+      "short_description": null,
+      "sku": null,
+      "brand": null,
+      "price": 3780,
+      "base_price": 7800,
+      "sale_price": 3780,
+      "currency": "ILS",
+      "images": [
+        "https://simpledesign.co.il/assets/product-1772825346877-7jv2md.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://simpledesign.co.il/product/shvlchn-alypsh-dgm-nykvl-6lsn1x",
+      "categories": [],
+      "updated_at": "2026-03-06T19:30:41.369Z"
+    },
+    {
+      "id": "f7d3375d-d636-453d-8ffe-8167808cf88c",
+      "slug": "myth-ychyd-dgm-savana-w6pxns",
+      "name": "מיטה יחיד דגם SAVANA",
+      "name_translations": {},
+      "description": "<p>מיטה יחיד Savana </p><p><br></p>",
+      "short_description": null,
+      "sku": null,
+      "brand": "Savana ",
+      "price": 1199,
+      "base_price": 1480,
+      "sale_price": 1199,
+      "currency": "ILS",
+      "images": [
+        "https://simpledesign.co.il/assets/product-1772825258643-hom9g.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://simpledesign.co.il/product/myth-ychyd-dgm-savana-w6pxns",
+      "categories": [],
+      "updated_at": "2026-03-06T19:28:49.310Z"
+    },
+    {
+      "id": "61b2ace8-8532-40ae-ac61-1d5ba887b20b",
+      "slug": "shvlchn-kdrym-105-sm-4zfsdf",
+      "name": "שולחן כדרים 105 ס״מ ",
+      "name_translations": {},
+      "description": "<p>שולחן כדורים שלוש כדורים עם שולחן זכוכית </p>",
+      "short_description": null,
+      "sku": null,
+      "brand": null,
+      "price": 1800,
+      "base_price": 2800,
+      "sale_price": 1800,
+      "currency": "ILS",
+      "images": [
+        "https://simpledesign.co.il/assets/product-1772804326206-ttcsq8.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://simpledesign.co.il/product/shvlchn-kdrym-105-sm-4zfsdf",
+      "categories": [],
+      "updated_at": "2026-03-06T13:39:45.392Z"
+    }
+  ]
+}

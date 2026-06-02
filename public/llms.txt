@@ -1,4 +1,6 @@
-# Business — Generative Engine Optimization Map
+# רהיטים סימפל | Simple Design — Generative Engine Optimization Map
+
+> A young, modern, and dynamic furniture brand from Tel Aviv that combines contemporary style with smart pricing and a simple, fast shopping experience. The brand exudes confidence and energy with a light, non-heavy approach - like an Instagram/TikTok lifestyle brand. It features clean minimalist aesthetics with beige, black, white, and natural wood tones, targeting young couples and families (25-45) who want modern design without luxury prices.
 
 ---
 
@@ -68,12 +70,63 @@ Information about WCAG compliance and accessibility features.
 
 ---
 
-# Business Context (for LLM understanding)
+## Products
 
-## About Business
+**Total active products: 5**
+
+### שידה איפור דגם אליפות 
+https://simpledesign.co.il/product/shydh-aypvr-dgm-alypvt-gy5436
+- Price: 1500.00 ILS (sale, was 1999.00 ILS)
+- Availability: In stock
+- Image: https://simpledesign.co.il/assets/product-1772831481850-unpc1.webp
+
+### מזנון דגם פסים 
+https://simpledesign.co.il/product/mznvn-dgm-psym-j3krjl
+- Price: 2490.00 ILS (sale, was 3480.00 ILS)
+- Availability: In stock
+- Image: https://simpledesign.co.il/assets/product-1772831386413-w683c.webp
+
+### שולחן אליפסה דגם ניקול 
+https://simpledesign.co.il/product/shvlchn-alypsh-dgm-nykvl-6lsn1x
+- Price: 3780.00 ILS (sale, was 7800.00 ILS)
+- Availability: In stock
+- Description: שולחן אליפסה ללא כסאות דגם ניקול במידות 180סמ או 200 סמ סגור שנפתח בעוד 40+40 בשני פלטות רגיל סי אנ סי צבע שמנת
+- Image: https://simpledesign.co.il/assets/product-1772825346877-7jv2md.webp
+
+### מיטה יחיד דגם SAVANA
+https://simpledesign.co.il/product/myth-ychyd-dgm-savana-w6pxns
+- Price: 1199.00 ILS (sale, was 1480.00 ILS)
+- Availability: In stock
+- Brand: Savana 
+- Description: מיטה יחיד Savana
+- Image: https://simpledesign.co.il/assets/product-1772825258643-hom9g.webp
+
+### שולחן כדרים 105 ס״מ 
+https://simpledesign.co.il/product/shvlchn-kdrym-105-sm-4zfsdf
+- Price: 1800.00 ILS (sale, was 2800.00 ILS)
+- Availability: In stock
+- Description: שולחן כדורים שלוש כדורים עם שולחן זכוכית
+- Image: https://simpledesign.co.il/assets/product-1772804326206-ttcsq8.webp
+
 ---
 
-# Additional Resources
+# Business Context (for LLM understanding)
 
-- **Sitemap**: https://simpledesign.co.il/sitemap.xml
-- **Robots.txt**: https://simpledesign.co.il/robots.txt
+## About רהיטים סימפל | Simple Design
+A young, modern, and dynamic furniture brand from Tel Aviv that combines contemporary style with smart pricing and a simple, fast shopping experience. The brand exudes confidence and energy with a light, non-heavy approach - like an Instagram/TikTok lifestyle brand. It features clean minimalist aesthetics with beige, black, white, and natural wood tones, targeting young couples and families (25-45) who want modern design without luxury prices.
+
+## Target Audience
+זוגות צעירים, משפחות בתחילת דרך, שוכרי דירות, גילאי 25-45
+
+## Industry
+ריהוט ועיצוב פנים
+
+---
+
+# Machine-readable feeds
+
+- Sitemap (XML): https://simpledesign.co.il/sitemap.xml
+- Robots: https://simpledesign.co.il/robots.txt
+- Flattened page text (for LLMs): https://simpledesign.co.il/llms-full.txt
+- Products (JSON): https://simpledesign.co.il/products.json
+- Products (Google Merchant RSS): https://simpledesign.co.il/product-feed.xml
