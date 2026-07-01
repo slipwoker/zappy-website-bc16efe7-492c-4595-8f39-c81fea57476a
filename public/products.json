@@ -1,10 +1,30 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-06-02T18:16:58.175Z",
+  "generated_at": "2026-07-01T22:21:53.194Z",
   "base_url": "https://simpledesign.co.il",
   "currency": "ILS",
-  "count": 5,
+  "count": 6,
   "products": [
+    {
+      "id": "4360c8f6-ad01-4beb-aee3-a2b6dcb6b32d",
+      "slug": "shydh-aypvr-hvlyvvd-lbnh-am-mrah-mvart-msc1ix",
+      "name": "שידה איפור הוליווד לבנה עם מראה מוארת",
+      "name_translations": {},
+      "description": "שידת איפור הוליוודית לבנה ומרהיבה עם מראה ענקית 100/80 ס״מ מוקפת ב-12 נורות LED. כוללת רמקולי Bluetooth מובנים, 7 מגירות אחסון מרווחות, משטח זכוכית יוקרתי עם חלוקות נוחות, וכיסא מתנה. עיצוב יוקרתי ומודרני בגימור לבן מבריק עם ידיות קריסטל. מתאימה לכל חדר – משדרגת את החלל במראה יוקרתי ומושלם.",
+      "short_description": null,
+      "sku": null,
+      "brand": null,
+      "price": 2399,
+      "base_price": 2399,
+      "sale_price": null,
+      "currency": "ILS",
+      "images": [],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://simpledesign.co.il/product/shydh-aypvr-hvlyvvd-lbnh-am-mrah-mvart-msc1ix",
+      "categories": [],
+      "updated_at": "2026-07-01T22:21:21.920Z"
+    },
     {
       "id": "eee62416-1e0f-400e-98b5-c4089d57a43a",
       "slug": "shydh-aypvr-dgm-alypvt-gy5436",
