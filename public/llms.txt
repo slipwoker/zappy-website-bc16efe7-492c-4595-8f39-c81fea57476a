@@ -75,10 +75,12 @@ Information about WCAG compliance and accessibility features.
 **Total active products: 7**
 
 ### שידה כניסה דגם רועי
-https://simpledesign.co.il/product/shydh-knysh-dgm-rvay-w2dxq1
+https://simpledesign.co.il/product/shydh-knysh-dgm-rvay-yvk8yi
 - Price: 2499.00 ILS
 - Availability: In stock
-- Description: שידת כניסה מודרנית בעיצוב מחורץ (Fluted) אלגנטי בגימור לבן עם משטח עליון בגוון אפור בהיר. כוללת 2 מגירות עם ידיות נסתרות. ✅ ניתן להזמין בכל מידה וצבע! 💰 מחיר מיוחד למידה 130 ס״מ: 2,499 ₪ (במקום 3,999 ₪) 📏 כל תוספת של 10 ס״מ – רק 250 ₪ נוספים 📐 החל ממידה 160 ס״מ ומעלה מחיר השקה מיוחד – במקום 3,999 ₪!
+- Category: שידות 
+- Description: שידת כניסה מודרנית בעיצוב אלגנטי בגימור לבן עם משטח עליון בגוון אפור בהיר. כוללת 2 מגירות עם ידיות נסתרות. ✅ ניתן להזמין בכל מידה וצבע! 💰 מחיר מיוחד למידה 130 ס״מ: 2,499 ₪ (במקום 3,999 ₪) 📏 כל תוספת של 10 ס״מ – רק 250 ₪ נוספים 📐 החל ממידה 160 ס״מ ומעלה מחיר השקה מיוחד – במקום 3,999 ₪!
+- Image: https://simpledesign.co.il/assets/product-enhanced-1782945836158-lvwds.webp
 
 ### שידה איפור הוליווד לבנה עם מראה מוארת
 https://simpledesign.co.il/product/shydh-aypvr-hvlyvvd-lbnh-am-mrah-mvart-msc1ix

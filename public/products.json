@@ -1,16 +1,16 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-01T22:43:17.687Z",
+  "generated_at": "2026-07-01T22:44:38.555Z",
   "base_url": "https://simpledesign.co.il",
   "currency": "ILS",
   "count": 7,
   "products": [
     {
       "id": "e0b6c4ea-98eb-4162-a6be-7ba77396286a",
-      "slug": "shydh-knysh-dgm-rvay-w2dxq1",
+      "slug": "shydh-knysh-dgm-rvay-yvk8yi",
       "name": "שידה כניסה דגם רועי",
       "name_translations": {},
-      "description": "שידת כניסה מודרנית בעיצוב מחורץ (Fluted) אלגנטי בגימור לבן עם משטח עליון בגוון אפור בהיר. כוללת 2 מגירות עם ידיות נסתרות.\n\n✅ ניתן להזמין בכל מידה וצבע!\n💰 מחיר מיוחד למידה 130 ס״מ: 2,499 ₪ (במקום 3,999 ₪)\n📏 כל תוספת של 10 ס״מ – רק 250 ₪ נוספים\n📐 החל ממידה 160 ס״מ ומעלה\n\nמחיר השקה מיוחד – במקום 3,999 ₪!",
+      "description": "<p>שידת כניסה מודרנית בעיצוב  אלגנטי בגימור לבן עם משטח עליון בגוון אפור בהיר. כוללת 2 מגירות עם ידיות נסתרות. ✅ ניתן להזמין בכל מידה וצבע! 💰 מחיר מיוחד למידה 130 ס״מ: 2,499 ₪ (במקום 3,999 ₪) 📏 כל תוספת של 10 ס״מ – רק 250 ₪ נוספים 📐 החל ממידה 160 ס״מ ומעלה מחיר השקה מיוחד – במקום 3,999 ₪!</p>",
       "short_description": null,
       "sku": null,
       "brand": null,
@@ -18,12 +18,16 @@
       "base_price": 2499,
       "sale_price": 2499,
       "currency": "ILS",
-      "images": [],
+      "images": [
+        "https://simpledesign.co.il/assets/product-enhanced-1782945836158-lvwds.webp"
+      ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://simpledesign.co.il/product/shydh-knysh-dgm-rvay-w2dxq1",
-      "categories": [],
-      "updated_at": "2026-07-01T22:27:22.975Z"
+      "url": "https://simpledesign.co.il/product/shydh-knysh-dgm-rvay-yvk8yi",
+      "categories": [
+        "שידות "
+      ],
+      "updated_at": "2026-07-01T22:44:15.103Z"
     },
     {
       "id": "4360c8f6-ad01-4beb-aee3-a2b6dcb6b32d",
