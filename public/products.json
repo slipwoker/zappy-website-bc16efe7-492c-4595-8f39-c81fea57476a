@@ -1,6 +1,6 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-30T22:54:06.651Z",
+  "generated_at": "2026-07-30T22:57:51.421Z",
   "base_url": "https://simpledesign.co.il",
   "currency": "ILS",
   "count": 9,
@@ -29,7 +29,7 @@
     },
     {
       "id": "a7ff41d2-f811-4e27-a414-7acead0cd61e",
-      "slug": "shydt-aypvr-dgm-hvvlyd-mtr-yyjkmt",
+      "slug": "shydt-aypvr-dgm-hvvlyd-mtr-j27sta",
       "name": "שידת איפור דגם “הווליד מטר ”",
       "name_translations": {},
       "description": "",
@@ -41,14 +41,16 @@
       "sale_price": 1999,
       "currency": "ILS",
       "images": [
-        "https://simpledesign.co.il/assets/product-1785451630998-zqqf9b.webp",
-        "https://simpledesign.co.il/assets/product-1785451642290-28s3nb.webp"
+        "https://simpledesign.co.il/assets/product-enhanced-1785452213256-4khtp5.webp",
+        "https://simpledesign.co.il/assets/product-enhanced-1785452178188-14jrw9.webp"
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://simpledesign.co.il/product/shydt-aypvr-dgm-hvvlyd-mtr-yyjkmt",
-      "categories": [],
-      "updated_at": "2026-07-30T22:48:25.982Z"
+      "url": "https://simpledesign.co.il/product/shydt-aypvr-dgm-hvvlyd-mtr-j27sta",
+      "categories": [
+        "שידות "
+      ],
+      "updated_at": "2026-07-30T22:57:15.544Z"
     },
     {
       "id": "e0b6c4ea-98eb-4162-a6be-7ba77396286a",
