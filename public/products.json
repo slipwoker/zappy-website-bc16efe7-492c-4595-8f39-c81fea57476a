@@ -1,10 +1,33 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-30T22:43:31.264Z",
+  "generated_at": "2026-07-30T22:48:06.273Z",
   "base_url": "https://simpledesign.co.il",
   "currency": "ILS",
-  "count": 7,
+  "count": 8,
   "products": [
+    {
+      "id": "a7ff41d2-f811-4e27-a414-7acead0cd61e",
+      "slug": "shydt-aypvr-dgm-hvvlyd-mtr-1bfutw",
+      "name": "שידת איפור דגם “הווליד מטר ”",
+      "name_translations": {},
+      "description": "",
+      "short_description": "שידת איפור דגם “הווליד מטר ” – עכשיו 1499₪ \nכולל משטח זכוכית / חלוקה במיגרות\nהעליונות / מראה 80/80\nמראה 3 , תאורה לבן , צהוב , אור חם, מערכת שמע Bluetooth, עמדת חשמל + שקעי הטענה, — וכולל כסא מתנה.\nמידה השידה 100 ס״מ אורך \nגובה 80 ס״מ \nעומק 50 ס״מ \nמידות המראה 80/80 ",
+      "sku": null,
+      "brand": null,
+      "price": 0,
+      "base_price": 0,
+      "sale_price": null,
+      "currency": "ILS",
+      "images": [
+        "https://simpledesign.co.il/assets/product-1785451630998-zqqf9b.webp",
+        "https://simpledesign.co.il/assets/product-1785451642290-28s3nb.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://simpledesign.co.il/product/shydt-aypvr-dgm-hvvlyd-mtr-1bfutw",
+      "categories": [],
+      "updated_at": "2026-07-30T22:47:30.510Z"
+    },
     {
       "id": "e0b6c4ea-98eb-4162-a6be-7ba77396286a",
       "slug": "shydh-knysh-dgm-rvay-yvk8yi",
