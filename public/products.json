@@ -1,13 +1,13 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-30T22:57:51.421Z",
+  "generated_at": "2026-07-30T22:58:51.557Z",
   "base_url": "https://simpledesign.co.il",
   "currency": "ILS",
   "count": 9,
   "products": [
     {
       "id": "aa2d30e7-ae00-4563-bfe5-25158bed8c66",
-      "slug": "shydt-aypvr-dgm-hvlvvyd-140-sm-vip-83fsi6",
+      "slug": "shydt-aypvr-dgm-hvlvvyd-140-sm-vip-ads2f3",
       "name": "שידת איפור דגם  הולוויד 140 ס״מ VIP",
       "name_translations": {},
       "description": "",
@@ -15,30 +15,32 @@
       "sku": null,
       "brand": null,
       "price": 2399,
-      "base_price": 2399,
-      "sale_price": null,
+      "base_price": 2999,
+      "sale_price": 2399,
       "currency": "ILS",
       "images": [
         "https://simpledesign.co.il/assets/product-enhanced-1785451980606-5d1u4o.webp"
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://simpledesign.co.il/product/shydt-aypvr-dgm-hvlvvyd-140-sm-vip-83fsi6",
-      "categories": [],
-      "updated_at": "2026-07-30T22:53:29.411Z"
+      "url": "https://simpledesign.co.il/product/shydt-aypvr-dgm-hvlvvyd-140-sm-vip-ads2f3",
+      "categories": [
+        "שידות "
+      ],
+      "updated_at": "2026-07-30T22:58:46.619Z"
     },
     {
       "id": "a7ff41d2-f811-4e27-a414-7acead0cd61e",
-      "slug": "shydt-aypvr-dgm-hvvlyd-mtr-j27sta",
+      "slug": "shydt-aypvr-dgm-hvvlyd-mtr-r28grz",
       "name": "שידת איפור דגם “הווליד מטר ”",
       "name_translations": {},
       "description": "",
       "short_description": "שידת איפור דגם “הווליד מטר ” – עכשיו 1499₪ \nכולל משטח זכוכית / חלוקה במיגרות\nהעליונות / מראה 80/80\nמראה 3 , תאורה לבן , צהוב , אור חם, מערכת שמע Bluetooth, עמדת חשמל + שקעי הטענה, — וכולל כסא מתנה.\nמידה השידה 100 ס״מ אורך \nגובה 80 ס״מ \nעומק 50 ס״מ \nמידות המראה 80/80 ",
       "sku": null,
       "brand": null,
-      "price": 1999,
-      "base_price": 1499,
-      "sale_price": 1999,
+      "price": 1499,
+      "base_price": 1999,
+      "sale_price": 1499,
       "currency": "ILS",
       "images": [
         "https://simpledesign.co.il/assets/product-enhanced-1785452213256-4khtp5.webp",
@@ -46,11 +48,11 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://simpledesign.co.il/product/shydt-aypvr-dgm-hvvlyd-mtr-j27sta",
+      "url": "https://simpledesign.co.il/product/shydt-aypvr-dgm-hvvlyd-mtr-r28grz",
       "categories": [
         "שידות "
       ],
-      "updated_at": "2026-07-30T22:57:15.544Z"
+      "updated_at": "2026-07-30T22:58:16.121Z"
     },
     {
       "id": "e0b6c4ea-98eb-4162-a6be-7ba77396286a",
