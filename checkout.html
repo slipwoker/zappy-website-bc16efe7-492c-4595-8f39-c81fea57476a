@@ -1427,7 +1427,20 @@ body:has(.zappy-announcement-bar) .navbar:not(.zappy-catalog-menu):not(.mobile-s
       <div class="footer-column quick-links">
         <h3 class="footer-heading">קישורים מהירים</h3>
         <ul class="footer-links">
-          <li><a href="/collections">קולקציות</a></li>
+          
+    <li class="menu-item-has-children zappy-products-dropdown">
+      <a href="/collections">
+        מוצרים
+        <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M6 9l6 6 6-6"/>
+        </svg>
+      </a>
+      <ul class="sub-menu" id="zappy-nav-category-links" dir="rtl">
+        <li><a href="/collections" data-i18n="ecom_products">מוצרים</a></li>
+        <!-- Categories will be loaded dynamically -->
+      <li data-category-id="5c08e76e-23bb-4a22-9789-6755ec55e7ad" data-category-slug="cafeteria-and-catering"><a href="/category/cafeteria-and-catering" dir="rtl">מזנון ושולחן </a></li><li data-category-id="b842dacf-2b6d-4c33-b048-aca37e26aadb" data-category-slug="mickey-mouse-dining-set"><a href="/category/mickey-mouse-dining-set" dir="rtl">מנזון דגם מיקי ושולחן סלון תואם </a></li><li data-category-id="d85cd6f6-94a8-433c-ac23-a9a8cac7c990" data-category-slug="cabinetry"><a href="/category/cabinetry" dir="rtl">שידות </a></li></ul>
+    </li>
+  
           <li><a href="/about">אודות</a></li>
           <li><a href="/contact">צור קשר</a></li>
         </ul>
