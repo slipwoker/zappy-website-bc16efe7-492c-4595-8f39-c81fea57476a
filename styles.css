@@ -10091,6 +10091,10 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Heebo', sans-serif; font-weight: 700; }
   transform: translateY(-2px) !important;
   box-shadow: 0 8px 24px rgba(61,44,30,0.1) !important;
 }
+
+body {
+  font-family: 'Assistant', sans-serif !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
