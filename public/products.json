@@ -1,6 +1,6 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-30T22:39:56.184Z",
+  "generated_at": "2026-07-30T22:43:13.077Z",
   "base_url": "https://simpledesign.co.il",
   "currency": "ILS",
   "count": 7,
@@ -31,15 +31,15 @@
     },
     {
       "id": "4360c8f6-ad01-4beb-aee3-a2b6dcb6b32d",
-      "slug": "shydh-aypvr-hvlyvvd-lbnh-am-mrah-mvart-qfqb49",
+      "slug": "shydh-aypvr-hvlyvvd-lbnh-am-mrah-mvart-n8nljk",
       "name": "שידה איפור הוליווד לבנה עם מראה מוארת",
       "name_translations": {},
-      "description": "<p>שידת איפור הוליוודית לבנה ומרהיבה עם מראה ענקית 100/80 ס״מ מוקפת ב-12 נורות LED. כוללת רמקולי Bluetooth מובנים, 7 מגירות אחסון מרווחות, משטח זכוכית יוקרתי עם חלוקות נוחות, וכיסא מתנה. עיצוב יוקרתי ומודרני בגימור לבן מבריק עם ידיות קריסטל. מתאימה לכל חדר – משדרגת את החלל במראה יוקרתי ומושלם.</p>",
+      "description": "<p>שידת איפור הוליוודית לבנה ומרהיבה עם מראה ענקית 100/80 ס״מ מוקפת ב-12 נורות LED. כוללת רמקולי Bluetooth מובנים, 13 מגירות אחסון מרווחות, משטח זכוכית יוקרתי עם חלוקות נוחות, וכיסא מתנה. עיצוב יוקרתי ומודרני בגימור לבן מבריק עם ידיות קריסטל. מתאימה לכל חדר – משדרגת את החלל במראה יוקרתי ומושלם.</p>",
       "short_description": null,
       "sku": null,
       "brand": null,
-      "price": 2399,
-      "base_price": 2399,
+      "price": 1799,
+      "base_price": 1799,
       "sale_price": null,
       "currency": "ILS",
       "images": [
@@ -48,9 +48,9 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://simpledesign.co.il/product/shydh-aypvr-hvlyvvd-lbnh-am-mrah-mvart-qfqb49",
+      "url": "https://simpledesign.co.il/product/shydh-aypvr-hvlyvvd-lbnh-am-mrah-mvart-n8nljk",
       "categories": [],
-      "updated_at": "2026-07-30T22:39:19.898Z"
+      "updated_at": "2026-07-30T22:42:56.075Z"
     },
     {
       "id": "eee62416-1e0f-400e-98b5-c4089d57a43a",
