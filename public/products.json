@@ -1,10 +1,32 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-30T22:49:00.858Z",
+  "generated_at": "2026-07-30T22:53:51.129Z",
   "base_url": "https://simpledesign.co.il",
   "currency": "ILS",
-  "count": 8,
+  "count": 9,
   "products": [
+    {
+      "id": "aa2d30e7-ae00-4563-bfe5-25158bed8c66",
+      "slug": "shydt-aypvr-dgm-hvlvvyd-140-sm-vip-83fsi6",
+      "name": "שידת איפור דגם  הולוויד 140 ס״מ VIP",
+      "name_translations": {},
+      "description": "",
+      "short_description": "שידת איפור דגם “140 ס״מ VIP  ” – עכשיו 2399₪ כולל משטח זכוכית / חלוקה במיגרות\nהעליונות מראה 140/80\nמראה מחליפה צבעים, מערכת שמע Bluetooth, עמדת חשמל + שקעי הטענה, — וכולל כסא מתנה.\nכל השידות עומק 50 ס״מ גובה 80 ס״מ ",
+      "sku": null,
+      "brand": null,
+      "price": 2399,
+      "base_price": 2399,
+      "sale_price": null,
+      "currency": "ILS",
+      "images": [
+        "https://simpledesign.co.il/assets/product-enhanced-1785451980606-5d1u4o.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://simpledesign.co.il/product/shydt-aypvr-dgm-hvlvvyd-140-sm-vip-83fsi6",
+      "categories": [],
+      "updated_at": "2026-07-30T22:53:29.411Z"
+    },
     {
       "id": "a7ff41d2-f811-4e27-a414-7acead0cd61e",
       "slug": "shydt-aypvr-dgm-hvvlyd-mtr-yyjkmt",
