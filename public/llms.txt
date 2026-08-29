@@ -72,7 +72,14 @@ Information about WCAG compliance and accessibility features.
 
 ## Products
 
-**Total active products: 12**
+**Total active products: 13**
+
+### מיטה דגם פסים
+https://simpledesign.co.il/product/myth-dgm-psym-jin04e
+- Price: 0.00 ILS
+- Availability: In stock
+- Description: מיטה מגיעה במגוון מידות וצבעים , אפשר כן ארגז או בלי
+- Image: https://simpledesign.co.il/assets/product-enhanced-1788036544699-s83x7q.webp
 
 ### מזנון אגוז טרוונטין 
 https://simpledesign.co.il/product/mznvn-agvz-trvvntyn-v6rlzg
