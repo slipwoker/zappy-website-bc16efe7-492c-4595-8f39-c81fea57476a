@@ -399,10 +399,14 @@
     return 'zappy_purchase_fired_' + String(orderId || '');
   }
 
+  function purchaseMetaDedupKey(orderId) {
+    return 'zappy_purchase_meta_fired_' + String(orderId || '');
+  }
+
   function alreadyFiredPurchase(orderId) {
     if (!orderId) return false;
     try {
-      return sessionStorage.getItem(purchaseDedupKey(orderId)) === '1';
+      return window.sessionStorage.getItem(purchaseDedupKey(orderId)) === '1';
     } catch (e) {
       return false;
     }
@@ -410,8 +414,77 @@
 
   function markPurchaseFired(orderId) {
     if (!orderId) return;
-    try { sessionStorage.setItem(purchaseDedupKey(orderId), '1'); } catch (e) {}
+    try { window.sessionStorage.setItem(purchaseDedupKey(orderId), '1'); } catch (e) {}
   }
+
+  function alreadyFiredPurchaseMeta(orderId) {
+    if (!orderId) return false;
+    try {
+      return window.sessionStorage.getItem(purchaseMetaDedupKey(orderId)) === '1';
+    } catch (e) {
+      return false;
+    }
+  }
+
+  function markPurchaseMetaFired(orderId) {
+    if (!orderId) return;
+    try { window.sessionStorage.setItem(purchaseMetaDedupKey(orderId), '1'); } catch (e) {}
+  }
+
+  function getPendingMetaEvents() {
+    try {
+      if (!Array.isArray(window.__zappyPendingMetaEvents)) {
+        window.__zappyPendingMetaEvents = [];
+      }
+      return window.__zappyPendingMetaEvents;
+    } catch (e) {
+      return [];
+    }
+  }
+
+  function enqueueMetaEvent(eventName, params, orderId) {
+    var q = getPendingMetaEvents();
+    if (orderId) {
+      for (var i = 0; i < q.length; i++) {
+        if (q[i] && q[i].orderId === orderId && q[i].eventName === eventName) return;
+      }
+    }
+    q.push({ eventName: eventName, params: params || {}, orderId: orderId || null });
+  }
+
+  /**
+   * Live sites replace the eager Meta snippet with a consent-gated lazy
+   * loader. Payment providers bounce the shopper back to /order-success
+   * before CookieConsent hydrates, so confirm-order used to fire Purchase
+   * while window.fbq was still undefined — then sessionStorage blocked a
+   * retry. Queue until fbq exists, then flush.
+   */
+  function flushPendingMetaEvents() {
+    if (typeof window.fbq !== 'function') return;
+    var q = getPendingMetaEvents().slice();
+    try { window.__zappyPendingMetaEvents = []; } catch (e) {}
+    for (var i = 0; i < q.length; i++) {
+      var item = q[i];
+      if (!item || !item.eventName) continue;
+      if (item.orderId && alreadyFiredPurchaseMeta(item.orderId)) continue;
+      try {
+        window.fbq('track', item.eventName, item.params || {});
+        if (item.orderId) markPurchaseMetaFired(item.orderId);
+      } catch (e2) {}
+    }
+  }
+  window.zappyFlushPendingMetaEvents = flushPendingMetaEvents;
+
+  var metaFlushAttempts = 0;
+  var metaFlushTimer = setInterval(function() {
+    metaFlushAttempts++;
+    flushPendingMetaEvents();
+    var pendingLen = 0;
+    try { pendingLen = (window.__zappyPendingMetaEvents || []).length; } catch (e) {}
+    if ((pendingLen === 0 && typeof window.fbq === 'function') || metaFlushAttempts > 60) {
+      clearInterval(metaFlushTimer);
+    }
+  }, 500);
 
   /**
    * Fire a marketing event to first-party analytics + GA4/GTM/Meta when present.
@@ -431,15 +504,19 @@
         metadata.pagePath = pagePath();
       }
 
+      var oid = '';
+      var purchaseAlreadySent = false;
+      var purchaseMetaAlreadySent = false;
       if (eventId === 'checkout_complete') {
-        var oid = String(metadata.orderId || metadata.order_id || metadata.transaction_id || '');
-        if (oid && alreadyFiredPurchase(oid)) return;
-        if (oid) markPurchaseFired(oid);
+        oid = String(metadata.orderId || metadata.order_id || metadata.transaction_id || '');
+        purchaseAlreadySent = !!(oid && alreadyFiredPurchase(oid));
+        purchaseMetaAlreadySent = !!(oid && alreadyFiredPurchaseMeta(oid));
+        if (purchaseAlreadySent && purchaseMetaAlreadySent) return;
       }
 
       // First-party (skip when already tracked via zappyTrackEcomAnalytics path
       // that opts out, or when caller already recorded under a different name)
-      if (!opts.skipFirstParty) {
+      if (!opts.skipFirstParty && !purchaseAlreadySent) {
         try {
           if (window.zappyAnalytics && typeof window.zappyAnalytics.track === 'function') {
             window.zappyAnalytics.track(eventId, metadata);
@@ -448,40 +525,53 @@
       }
 
       // GTM / dataLayer — platform-standard ecommerce event names
-      try {
-        window.dataLayer = window.dataLayer || [];
-        if (plat.ecom) {
-          var ga4ForGtm = buildGa4Params(eventId, metadata);
-          var ecommerce = {};
-          if (ga4ForGtm.transaction_id) ecommerce.transaction_id = ga4ForGtm.transaction_id;
-          if (ga4ForGtm.value != null) ecommerce.value = ga4ForGtm.value;
-          if (ga4ForGtm.currency) ecommerce.currency = ga4ForGtm.currency;
-          if (ga4ForGtm.items) ecommerce.items = ga4ForGtm.items;
-          window.dataLayer.push({ event: plat.gtm, ecommerce: ecommerce });
-          // Secondary Zappy-specific trigger for merchants who want it
-          if (eventId === 'checkout_complete' || eventId === 'checkout_started') {
-            window.dataLayer.push({ event: eventId, ecommerce: ecommerce });
+      if (!purchaseAlreadySent) {
+        try {
+          window.dataLayer = window.dataLayer || [];
+          if (plat.ecom) {
+            var ga4ForGtm = buildGa4Params(eventId, metadata);
+            var ecommerce = {};
+            if (ga4ForGtm.transaction_id) ecommerce.transaction_id = ga4ForGtm.transaction_id;
+            if (ga4ForGtm.value != null) ecommerce.value = ga4ForGtm.value;
+            if (ga4ForGtm.currency) ecommerce.currency = ga4ForGtm.currency;
+            if (ga4ForGtm.items) ecommerce.items = ga4ForGtm.items;
+            window.dataLayer.push({ event: plat.gtm, ecommerce: ecommerce });
+            // Secondary Zappy-specific trigger for merchants who want it
+            if (eventId === 'checkout_complete' || eventId === 'checkout_started') {
+              window.dataLayer.push({ event: eventId, ecommerce: ecommerce });
+            }
+          } else {
+            var dl = { event: plat.gtm };
+            for (var k in metadata) {
+              if (Object.prototype.hasOwnProperty.call(metadata, k)) dl[k] = metadata[k];
+            }
+            window.dataLayer.push(dl);
           }
+        } catch (e2) {}
+
+        // GA4 gtag
+        try {
+          if (typeof window.gtag === 'function') {
+            window.gtag('event', plat.ga4, buildGa4Params(eventId, metadata));
+          }
+        } catch (e3) {}
+
+        if (oid) markPurchaseFired(oid);
+      }
+
+      // Meta Pixel — live sites lazy-load fbq after marketing consent. If the
+      // stub is not defined yet, queue and flush when the pixel arrives.
+      try {
+        if (purchaseMetaAlreadySent) {
+          // already delivered to Meta
         } else {
-          var dl = { event: plat.gtm };
-          for (var k in metadata) {
-            if (Object.prototype.hasOwnProperty.call(metadata, k)) dl[k] = metadata[k];
+          var metaParams = buildMetaParams(eventId, metadata);
+          if (typeof window.fbq === 'function') {
+            window.fbq('track', plat.meta, metaParams);
+            if (oid) markPurchaseMetaFired(oid);
+          } else {
+            enqueueMetaEvent(plat.meta, metaParams, eventId === 'checkout_complete' ? oid : null);
           }
-          window.dataLayer.push(dl);
-        }
-      } catch (e2) {}
-
-      // GA4 gtag
-      try {
-        if (typeof window.gtag === 'function') {
-          window.gtag('event', plat.ga4, buildGa4Params(eventId, metadata));
-        }
-      } catch (e3) {}
-
-      // Meta Pixel (only when fbq is loaded — consent-gated lazy loader)
-      try {
-        if (typeof window.fbq === 'function') {
-          window.fbq('track', plat.meta, buildMetaParams(eventId, metadata));
         }
       } catch (e4) {}
     } catch (err) {}
@@ -597,7 +687,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="מוצרים" />
     <meta name="twitter:description" content="המוצרים שלנו - רהיטים סימפל | Simple Design" />
-    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"LocalBusiness","@id":"https://simpledesign.co.il#organization","name":"רהיטים סימפל | Simple Design","url":"https://simpledesign.co.il","description":"A young, modern, and dynamic furniture brand from Tel Aviv that combines contemporary style with smart pricing and a simple, fast shopping experience. The brand exudes confidence and energy with a light, non-heavy approach - like an Instagram/TikTok lifestyle brand. It features clean minimalist aesthetics with beige, black, white, and natural wood tones, targeting young couples and families (25-45) who want modern design without luxury prices.","address":{"@type":"PostalAddress","streetAddress":"התחיה 17, תל אביב, ישראל"},"contactPoint":[{"@type":"ContactPoint","contactType":"customer service","email":"info@company.com","telephone":"036307450"}]},{"@type":"WebSite","@id":"https://simpledesign.co.il#website","url":"https://simpledesign.co.il","name":"רהיטים סימפל | Simple Design","publisher":{"@id":"https://simpledesign.co.il#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://simpledesign.co.il"},{"@type":"ListItem","position":2,"name":"Products","item":"https://simpledesign.co.il/products"}]},{"@type":"ItemList","@id":"https://simpledesign.co.il/products#itemlist","numberOfItems":9,"itemListElement":[{"@type":"ListItem","position":1,"url":"https://simpledesign.co.il/product/shydt-aypvr-dgm-hvlvvyd-140-sm-vip-ads2f3","name":"שידת איפור דגם  הולוויד 140 ס״מ VIP"},{"@type":"ListItem","position":2,"url":"https://simpledesign.co.il/product/shydt-aypvr-dgm-hvvlyd-mtr-r28grz","name":"שידת איפור דגם “הווליד מטר ”"},{"@type":"ListItem","position":3,"url":"https://simpledesign.co.il/product/shydh-knysh-dgm-rvay-yvk8yi","name":"שידה כניסה דגם רועי"},{"@type":"ListItem","position":4,"url":"https://simpledesign.co.il/product/shydh-aypvr-hvlyvvd-lbnh-am-mrah-mvart-do0gph","name":"שידה איפור הוליווד לבנה עם מראה מוארת"},{"@type":"ListItem","position":5,"url":"https://simpledesign.co.il/product/shydh-aypvr-dgm-alypvt-gy5436","name":"שידה איפור דגם אליפות "},{"@type":"ListItem","position":6,"url":"https://simpledesign.co.il/product/mznvn-dgm-psym-j3krjl","name":"מזנון דגם פסים "},{"@type":"ListItem","position":7,"url":"https://simpledesign.co.il/product/shvlchn-alypsh-dgm-nykvl-6lsn1x","name":"שולחן אליפסה דגם ניקול "},{"@type":"ListItem","position":8,"url":"https://simpledesign.co.il/product/myth-ychyd-dgm-savana-w6pxns","name":"מיטה יחיד דגם SAVANA"},{"@type":"ListItem","position":9,"url":"https://simpledesign.co.il/product/shvlchn-kdrym-105-sm-4zfsdf","name":"שולחן כדרים 105 ס״מ "}]}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"LocalBusiness","@id":"https://simpledesign.co.il#organization","name":"רהיטים סימפל | Simple Design","url":"https://simpledesign.co.il","description":"A young, modern, and dynamic furniture brand from Tel Aviv that combines contemporary style with smart pricing and a simple, fast shopping experience. The brand exudes confidence and energy with a light, non-heavy approach - like an Instagram/TikTok lifestyle brand. It features clean minimalist aesthetics with beige, black, white, and natural wood tones, targeting young couples and families (25-45) who want modern design without luxury prices.","address":{"@type":"PostalAddress","streetAddress":"התחיה 17, תל אביב, ישראל"},"contactPoint":[{"@type":"ContactPoint","contactType":"customer service","email":"info@company.com","telephone":"036307450"}]},{"@type":"WebSite","@id":"https://simpledesign.co.il#website","url":"https://simpledesign.co.il","name":"רהיטים סימפל | Simple Design","publisher":{"@id":"https://simpledesign.co.il#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://simpledesign.co.il"},{"@type":"ListItem","position":2,"name":"Products","item":"https://simpledesign.co.il/products"}]},{"@type":"ItemList","@id":"https://simpledesign.co.il/products#itemlist","numberOfItems":9,"itemListElement":[{"@type":"ListItem","position":1,"url":"https://simpledesign.co.il/product/shydt-aypvr-dgm-hvlvvyd-140-sm-vip-k6q9rs","name":"שידת איפור דגם  הולוויד 140 ס״מ VIP"},{"@type":"ListItem","position":2,"url":"https://simpledesign.co.il/product/shydt-aypvr-dgm-hvvlyd-mtr-wvqwf7","name":"שידת איפור דגם “הווליד מטר ”"},{"@type":"ListItem","position":3,"url":"https://simpledesign.co.il/product/shydh-knysh-dgm-rvay-yvk8yi","name":"שידה כניסה דגם רועי"},{"@type":"ListItem","position":4,"url":"https://simpledesign.co.il/product/shydh-aypvr-hvlyvvd-lbnh-am-mrah-mvart-y5onac","name":"שידה איפור הוליווד לבנה עם מראה מוארת"},{"@type":"ListItem","position":5,"url":"https://simpledesign.co.il/product/shydh-aypvr-dgm-alypvt-gy5436","name":"שידה איפור דגם אליפות "},{"@type":"ListItem","position":6,"url":"https://simpledesign.co.il/product/mznvn-dgm-psym-j3krjl","name":"מזנון דגם פסים "},{"@type":"ListItem","position":7,"url":"https://simpledesign.co.il/product/shvlchn-alypsh-dgm-nykvl-6lsn1x","name":"שולחן אליפסה דגם ניקול "},{"@type":"ListItem","position":8,"url":"https://simpledesign.co.il/product/myth-ychyd-dgm-savana-w6pxns","name":"מיטה יחיד דגם SAVANA"},{"@type":"ListItem","position":9,"url":"https://simpledesign.co.il/product/shvlchn-kdrym-105-sm-4zfsdf","name":"שולחן כדרים 105 ס״מ "}]}]}</script>
     
     <style id="zappy-critical-above-fold-css">
 html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{box-sizing:inherit}body{margin:0;min-width:320px;overflow-x:clip}img,svg,video{max-width:100%;height:auto}main{display:block}.container{width:min(100% - 32px,1200px);margin-inline:auto}.navbar,nav.navbar,header .navbar,header[role="banner"]{position:relative;z-index:1000;width:100%}.nav-container,.navbar .container{display:flex;align-items:center;justify-content:space-between;min-height:64px}.logo,.logo-link img{display:block;width:35px;height:35px;object-fit:contain}.nav-menu,#navMenu{list-style:none;margin:0;padding:0}.navbar a,.nav-menu a,#navMenu a,.navbar .nav-links a{color:inherit;text-decoration:none}.navbar .sub-menu,.nav-menu .sub-menu,#navMenu .sub-menu{display:none}.fa,.fas,.far,.fab,.fa-solid,.fa-regular,.fa-brands{display:inline-block;min-width:1em;text-align:center}html:not(#zappy-noop)[data-zappy-site-type="ecommerce"] .phone-header-btn,html:not(#zappy-noop) .navbar:has(.nav-ecommerce-icons)>.phone-header-btn{display:none!important;visibility:hidden!important;width:0!important;height:0!important;pointer-events:none!important}.zappy-preview-empty-store-cta{display:none!important;visibility:hidden!important;height:0!important;max-height:0!important;overflow:hidden!important;margin:0!important;padding:0!important;border:0!important;box-shadow:none!important}.zappy-catalog-menu{background:var(--surface-color,var(--surface,linear-gradient(135deg,#f8f9fa 0%,#fff 100%)));border-bottom:1px solid var(--border-color,#e5e7eb);padding:0;position:sticky;top:0;z-index:90}.zappy-catalog-menu[dir=rtl],.zappy-catalog-menu.rtl{direction:rtl}.zappy-catalog-menu[dir=ltr],.zappy-catalog-menu.ltr{direction:ltr}.catalog-menu-container{max-width:1440px;margin:0 auto;display:flex;align-items:center;gap:8px;padding:10px 24px;overflow:visible}.catalog-menu-categories,.catalog-menu-list{display:flex;align-items:center;gap:4px;flex-wrap:wrap;margin:0;padding:0;list-style:none}.catalog-menu-item{display:inline-flex;align-items:center;padding:8px 16px;font-size:14px;font-weight:500;color:var(--text-color,var(--text,#374151));text-decoration:none;border-radius:20px;white-space:nowrap}.catalog-menu-all{background:var(--primary-color,var(--primary,#111));color:var(--text-light,#fff)!important}.catalog-menu-parent{position:relative;display:inline-flex;align-items:center}.catalog-menu-trigger{display:inline-flex;align-items:center;gap:6px}.catalog-menu-chevron{flex-shrink:0}.catalog-menu-parent>.sub-menu{display:none!important;visibility:hidden!important;opacity:0!important;pointer-events:none!important}.hero-section,.index-hero-section,section[class*="hero"]{position:relative;overflow:hidden}.hero-section,.index-hero-section{min-height:560px}section[data-hero-type*="fullscreen"]{min-height:100vh}.hero-bg-wrapper,.hero-bg-image,section[class*="hero"] [class*="hero-bg"]{position:absolute;inset:0;width:100%;height:100%}.hero-bg-wrapper img,.hero-bg-image img,section[class*="hero"] [data-hero-bg],section[class*="hero"] img[data-hero-background="true"]{width:100%!important;height:100%!important;object-fit:cover!important;display:block}.hero-content,section[class*="hero"] .container{position:relative;z-index:2}@media(max-width:768px){:root{--header-height:72px;--total-header-height:72px;--zappy-mobile-menu-top:72px}html[data-zappy-site-type="ecommerce"] body{padding-top:var(--total-header-height,72px)}html[data-zappy-site-type="ecommerce"] body>nav.navbar,html[data-zappy-site-type="ecommerce"] body>.navbar:not(.zappy-catalog-menu){position:fixed!important;top:0;left:0;right:0;z-index:100000;width:100%;margin-bottom:0}.zappy-catalog-menu{position:fixed;top:var(--header-height,72px);left:0;right:0;z-index:99999}.nav-container,.navbar .container{min-height:60px}.nav-menu,#navMenu{max-width:100vw;overflow-x:hidden}.hero-section,.index-hero-section,section[class*="hero"],section[data-hero-type*="fullscreen"]{min-height:100svh}.hero-bg-wrapper,.hero-bg-image,.hero-scrim{min-height:100svh}}
@@ -1249,9 +1339,7 @@ body:has(.zappy-announcement-bar) .navbar:not(.zappy-catalog-menu):not(.mobile-s
           <div class="products-layout" id="products-layout">
             <aside class="product-sidebar" id="product-sidebar" style="display:none;"></aside>
             <div class="products-main">
-              <div class="product-grid" id="zappy-product-grid">
-                <div class="loading-products">טוען מוצרים...</div>
-              </div>
+              <div class="product-grid" id="zappy-product-grid"><div class="loading-products"></div></div>
             </div>
           </div>
         </section>
