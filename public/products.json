@@ -1,13 +1,13 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-30T23:10:23.665Z",
+  "generated_at": "2026-08-29T20:33:33.792Z",
   "base_url": "https://simpledesign.co.il",
   "currency": "ILS",
   "count": 9,
   "products": [
     {
       "id": "aa2d30e7-ae00-4563-bfe5-25158bed8c66",
-      "slug": "shydt-aypvr-dgm-hvlvvyd-140-sm-vip-ads2f3",
+      "slug": "shydt-aypvr-dgm-hvlvvyd-140-sm-vip-k6q9rs",
       "name": "שידת איפור דגם  הולוויד 140 ס״מ VIP",
       "name_translations": {},
       "description": "",
@@ -15,7 +15,7 @@
       "sku": null,
       "brand": null,
       "price": 2399,
-      "base_price": 2999,
+      "base_price": 2399,
       "sale_price": 2399,
       "currency": "ILS",
       "images": [
@@ -23,15 +23,15 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://simpledesign.co.il/product/shydt-aypvr-dgm-hvlvvyd-140-sm-vip-ads2f3",
+      "url": "https://simpledesign.co.il/product/shydt-aypvr-dgm-hvlvvyd-140-sm-vip-k6q9rs",
       "categories": [
         "שידות "
       ],
-      "updated_at": "2026-07-30T22:58:46.619Z"
+      "updated_at": "2026-08-29T20:32:21.519Z"
     },
     {
       "id": "a7ff41d2-f811-4e27-a414-7acead0cd61e",
-      "slug": "shydt-aypvr-dgm-hvvlyd-mtr-r28grz",
+      "slug": "shydt-aypvr-dgm-hvvlyd-mtr-wvqwf7",
       "name": "שידת איפור דגם “הווליד מטר ”",
       "name_translations": {},
       "description": "",
@@ -39,7 +39,7 @@
       "sku": null,
       "brand": null,
       "price": 1499,
-      "base_price": 1999,
+      "base_price": 1499,
       "sale_price": 1499,
       "currency": "ILS",
       "images": [
@@ -48,11 +48,11 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://simpledesign.co.il/product/shydt-aypvr-dgm-hvvlyd-mtr-r28grz",
+      "url": "https://simpledesign.co.il/product/shydt-aypvr-dgm-hvvlyd-mtr-wvqwf7",
       "categories": [
         "שידות "
       ],
-      "updated_at": "2026-07-30T22:58:16.121Z"
+      "updated_at": "2026-08-29T20:32:49.362Z"
     },
     {
       "id": "e0b6c4ea-98eb-4162-a6be-7ba77396286a",
@@ -80,7 +80,7 @@
     },
     {
       "id": "4360c8f6-ad01-4beb-aee3-a2b6dcb6b32d",
-      "slug": "shydh-aypvr-hvlyvvd-lbnh-am-mrah-mvart-do0gph",
+      "slug": "shydh-aypvr-hvlyvvd-lbnh-am-mrah-mvart-y5onac",
       "name": "שידה איפור הוליווד לבנה עם מראה מוארת",
       "name_translations": {},
       "description": "<p>שידת איפור הוליוודית לבנה ומרהיבה עם מראה ענקית 100/80 ס״מ מוקפת ב-12 נורות LED. כוללת רמקולי Bluetooth מובנים, 13 מגירות אחסון מרווחות, משטח זכוכית יוקרתי עם חלוקות נוחות, וכיסא מתנה. עיצוב יוקרתי ומודרני בגימור לבן מבריק עם ידיות קריסטל. מתאימה לכל חדר – משדרגת את החלל במראה יוקרתי ומושלם.</p>",
@@ -88,7 +88,7 @@
       "sku": null,
       "brand": null,
       "price": 1799,
-      "base_price": 2499,
+      "base_price": 1799,
       "sale_price": 1799,
       "currency": "ILS",
       "images": [
@@ -97,11 +97,11 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://simpledesign.co.il/product/shydh-aypvr-hvlyvvd-lbnh-am-mrah-mvart-do0gph",
+      "url": "https://simpledesign.co.il/product/shydh-aypvr-hvlyvvd-lbnh-am-mrah-mvart-y5onac",
       "categories": [
         "שידות "
       ],
-      "updated_at": "2026-07-30T22:59:30.620Z"
+      "updated_at": "2026-08-29T20:33:17.217Z"
     },
     {
       "id": "eee62416-1e0f-400e-98b5-c4089d57a43a",
