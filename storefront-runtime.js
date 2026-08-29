@@ -10480,6 +10480,40 @@ async function loadRelatedProducts(currentProduct, t) {
 }
 /* ==ZAPPY E-COMMERCE JS END== */
 
+/* ZAPPY_CUSTOM_JS_START:0e14a8fb9545 */
+(function () {
+  function __zappyCustomInit() {
+    try {
+(function() {
+  function cleanPrices() {
+    document.querySelectorAll('.price, .original-price').forEach(function(el) {
+      var t = el.textContent || '';
+      var cleaned = t.replace(/undefined/gi, '').trim();
+      if (cleaned !== t) {
+        el.textContent = cleaned;
+      }
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', cleanPrices);
+  } else {
+    cleanPrices();
+  }
+  // Re-run periodically for dynamic product grid renders
+  setInterval(cleanPrices, 1500);
+})();
+    } catch (e) {
+      if (typeof console !== 'undefined' && console.warn) { console.warn('[zappy-custom-js]', e); }
+    }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', __zappyCustomInit);
+  } else {
+    __zappyCustomInit();
+  }
+})();
+/* ZAPPY_CUSTOM_JS_END:0e14a8fb9545 */
+
 
 /* ZAPPY_PUBLISHED_LIGHTBOX_RUNTIME */
 (function(){
