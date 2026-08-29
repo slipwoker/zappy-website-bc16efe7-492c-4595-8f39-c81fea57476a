@@ -146,6 +146,8 @@ Description: חנות רהיטים מודרניים לזוגות צעירים ו
 ## מוצרים מומלצים
 
 
+טוען מוצרים...
+
 
 צפה בכל המוצרים →
 
@@ -158,6 +160,8 @@ Description: חנות רהיטים מודרניים לזוגות צעירים ו
 
 ## קנו לפי קטגוריה
 
+
+טוען מוצרים...
 
 
 
@@ -1550,6 +1554,8 @@ Description: המוצרים שלנו - רהיטים סימפל | Simple Design
 
 
 
+
+טוען מוצרים...
 
 
 
@@ -3753,6 +3759,8 @@ Description: מוצרים - רהיטים סימפל | Simple Design
 
 
 
+טוען מוצרים...
+
 
 
 
@@ -5140,9 +5148,11 @@ Terms & Conditions  |
 ## Product Catalog
 
 ### שידת איפור דגם  הולוויד 140 ס״מ VIP
-URL: https://simpledesign.co.il/product/shydt-aypvr-dgm-hvlvvyd-140-sm-vip-k6q9rs
+URL: https://simpledesign.co.il/product/shydt-aypvr-dgm-hvlvvyd-140-sm-vip-zle9zo
 Price: 2399.00 ILS
 Availability: In stock
+
+שידת איפור דגם “140 ס״מ VIP ” – עכשיו 2399₪ כולל משטח זכוכית / חלוקה במיגרות העליונות מראה 140/80 מראה מחליפה צבעים, מערכת שמע Bluetooth, עמדת חשמל + שקעי הטענה, — וכולל כסא מתנה. כל השידות עומק 50 ס״מ גובה 80 ס״מ שידה 140סמ , גובה ללא מראה 80 ס״מ
 
 ---
 
