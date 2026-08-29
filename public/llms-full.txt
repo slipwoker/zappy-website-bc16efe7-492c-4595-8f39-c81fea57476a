@@ -146,6 +146,8 @@ Description: חנות רהיטים מודרניים לזוגות צעירים ו
 ## מוצרים מומלצים
 
 
+טוען מוצרים...
+
 
 צפה בכל המוצרים →
 
@@ -158,6 +160,8 @@ Description: חנות רהיטים מודרניים לזוגות צעירים ו
 
 ## קנו לפי קטגוריה
 
+
+טוען מוצרים...
 
 
 
@@ -1550,6 +1554,8 @@ Description: המוצרים שלנו - רהיטים סימפל | Simple Design
 
 
 
+
+טוען מוצרים...
 
 
 
@@ -3753,6 +3759,8 @@ Description: מוצרים - רהיטים סימפל | Simple Design
 
 
 
+טוען מוצרים...
+
 
 
 
@@ -5177,7 +5185,7 @@ Availability: In stock
 ---
 
 ### שידת איפור דגם  הולוויד 140 ס״מ VIP
-URL: https://simpledesign.co.il/product/shydt-aypvr-dgm-hvlvvyd-140-sm-vip-8rnqwj
+URL: https://simpledesign.co.il/product/shydt-aypvr-dgm-hvlvvyd-140-sm-vip-mb6t2i
 Price: 2399.00 ILS
 Availability: In stock
 
@@ -5186,7 +5194,7 @@ Availability: In stock
 ---
 
 ### שידת איפור דגם “הווליד מטר ”
-URL: https://simpledesign.co.il/product/shydt-aypvr-dgm-hvvlyd-mtr-tyfc1r
+URL: https://simpledesign.co.il/product/shydt-aypvr-dgm-hvvlyd-mtr-r62clc
 Price: 1499.00 ILS
 Availability: In stock
 
@@ -5204,7 +5212,7 @@ Availability: In stock
 ---
 
 ### שידה איפור הוליווד לבנה עם מראה מוארת
-URL: https://simpledesign.co.il/product/shydh-aypvr-hvlyvvd-lbnh-am-mrah-mvart-63a5pj
+URL: https://simpledesign.co.il/product/shydh-aypvr-hvlyvvd-lbnh-am-mrah-mvart-eqjbgv
 Price: 1799.00 ILS
 Availability: In stock
 
