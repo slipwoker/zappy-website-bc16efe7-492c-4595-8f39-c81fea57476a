@@ -146,8 +146,6 @@ Description: חנות רהיטים מודרניים לזוגות צעירים ו
 ## מוצרים מומלצים
 
 
-טוען מוצרים...
-
 
 צפה בכל המוצרים →
 
@@ -160,8 +158,6 @@ Description: חנות רהיטים מודרניים לזוגות צעירים ו
 
 ## קנו לפי קטגוריה
 
-
-טוען מוצרים...
 
 
 
@@ -1554,8 +1550,6 @@ Description: המוצרים שלנו - רהיטים סימפל | Simple Design
 
 
 
-
-טוען מוצרים...
 
 
 
@@ -3759,8 +3753,6 @@ Description: מוצרים - רהיטים סימפל | Simple Design
 
 
 
-טוען מוצרים...
-
 
 
 
@@ -5212,7 +5204,7 @@ Availability: In stock
 ---
 
 ### שידה איפור הוליווד לבנה עם מראה מוארת
-URL: https://simpledesign.co.il/product/shydh-aypvr-hvlyvvd-lbnh-am-mrah-mvart-y5onac
+URL: https://simpledesign.co.il/product/shydh-aypvr-hvlyvvd-lbnh-am-mrah-mvart-63a5pj
 Price: 1799.00 ILS
 Availability: In stock
 
