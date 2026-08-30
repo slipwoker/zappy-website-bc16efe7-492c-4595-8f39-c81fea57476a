@@ -72,7 +72,14 @@ Information about WCAG compliance and accessibility features.
 
 ## Products
 
-**Total active products: 27**
+**Total active products: 28**
+
+### סט מזנון ושולחן סלון דגם "אורגניק" – עיצוב אמורפי מודרני
+https://simpledesign.co.il/product/st-mznvn-vshvlchn-slvn-dgm-avrgnyk-aytsvb-amvrpy-mvdrny-sq5l6c
+- Price: 0.00 ILS
+- Availability: In stock
+- Description: הגיע הזמן להתחדש! סט יוקרתי לסלון הכולל מזנון בקווים מעוגלים ושולחן קפה בצורה אמורפית טבעית. עכשיו במבצע ברהיטי סימפל, עם אפשרות לעד 24 תשלומים ללא תפיסת מסגרת!
+- Image: https://simpledesign.co.il/assets/product-1788102540530-bvxmuu.webp
 
 ### סט מזנון ושולחנות סלון דגם "סהרה" – עיצוב טבעי בקווים מעוגלים
 https://simpledesign.co.il/product/st-mznvn-vshvlchnvt-slvn-dgm-shrh-aytsvb-tbay-bkvvym-mavglym-fee00d

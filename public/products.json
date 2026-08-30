@@ -1,10 +1,32 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-08-30T15:08:52.703Z",
+  "generated_at": "2026-08-30T15:10:27.679Z",
   "base_url": "https://simpledesign.co.il",
   "currency": "ILS",
-  "count": 27,
+  "count": 28,
   "products": [
+    {
+      "id": "f1cd141a-871f-4dbb-a879-c3d5911694c9",
+      "slug": "st-mznvn-vshvlchn-slvn-dgm-avrgnyk-aytsvb-amvrpy-mvdrny-sq5l6c",
+      "name": "סט מזנון ושולחן סלון דגם \"אורגניק\" – עיצוב אמורפי מודרני",
+      "name_translations": {},
+      "description": "<p class=\"ql-align-right\"><strong>הכניסו לסלון שלכם זרימה טבעית ועיצוב לא שגרתי עם הסט המרהיב מדגם &quot;אורגניק&quot;. הסט שובר את המוסכמות של קווים ישרים ומשלב צורות אמורפיות רכות שמעניקות לחלל מראה פתוח, מודרני ומרגיע. זו ההזדמנות שלכם להתחדש ברהיטים איכותיים בעיצוב פרימיום, במחירים שלא תמצאו במקום אחר.</strong></p><p class=\"ql-align-right\"><strong>מה הופך את הסט למיוחד?</strong></p><p class=\"ql-align-right\"><strong> שולחן סלון אמורפי: שולחן קפה בעל פלטה בצורה אורגנית ייחודית (א-סימטרית), היוצרת עניין ויזואלי במרכז הסלון. הפלטה בעלת טקסטורה עדינה ובהירה שמאירה את החלל ומשתלבת נהדר עם כל סוגי הריפוד.</strong></p><p class=\"ql-align-right\"><strong> מזנון טלוויזיה תואם: מזנון מרשים עם קצוות מעוגלים (קפסולה) הממשיכים את הקו הזורם של השולחן. המזנון מציע תאי אחסון מרווחים מאחורי דלתות נקיות, ומשלב נישה מרכזית כהה המיועדת למכשירי מדיה, עיצוב או קונסולות.</strong></p><p class=\"ql-align-right\"><strong> תנאי רכישה חסרי תקדים: שדרגו את הבית בראש שקט עם פריסה נוחה של עד 24 תשלומים ללא תפיסת מסגרת האשראי.</strong></p><p></p>",
+      "short_description": "הגיע הזמן להתחדש! סט יוקרתי לסלון הכולל מזנון בקווים מעוגלים ושולחן קפה בצורה אמורפית טבעית. עכשיו במבצע ברהיטי סימפל, עם אפשרות לעד 24 תשלומים ללא תפיסת מסגרת!",
+      "sku": null,
+      "brand": null,
+      "price": 0,
+      "base_price": 0,
+      "sale_price": null,
+      "currency": "ILS",
+      "images": [
+        "https://simpledesign.co.il/assets/product-1788102540530-bvxmuu.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://simpledesign.co.il/product/st-mznvn-vshvlchn-slvn-dgm-avrgnyk-aytsvb-amvrpy-mvdrny-sq5l6c",
+      "categories": [],
+      "updated_at": "2026-08-30T15:09:50.536Z"
+    },
     {
       "id": "4ce089ce-e36d-4c8d-b249-524db49efefd",
       "slug": "st-mznvn-vshvlchnvt-slvn-dgm-shrh-aytsvb-tbay-bkvvym-mavglym-fee00d",
