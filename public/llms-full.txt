@@ -159,8 +159,6 @@ Description: חנות רהיטים מודרניים לזוגות צעירים ו
 ## קנו לפי קטגוריה
 
 
-טוען מוצרים...
-
 
 
 
@@ -1552,8 +1550,6 @@ Description: המוצרים שלנו - רהיטים סימפל | Simple Design
 
 
 
-
-טוען מוצרים...
 
 
 
@@ -3757,8 +3753,6 @@ Description: מוצרים - רהיטים סימפל | Simple Design
 
 
 
-טוען מוצרים...
-
 
 
 
@@ -5144,7 +5138,7 @@ Terms & Conditions  |
 ## Product Catalog
 
 ### שולחן סלון אגוז דגם מייק
-URL: https://simpledesign.co.il/product/shvlchn-slvn-agvz-dgm-myyk-8w4vtm
+URL: https://simpledesign.co.il/product/shvlchn-slvn-agvz-dgm-myyk-6pl6bz
 Price: 0.00 ILS
 Availability: In stock
 

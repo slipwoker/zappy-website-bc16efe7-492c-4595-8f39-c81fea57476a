@@ -75,9 +75,10 @@ Information about WCAG compliance and accessibility features.
 **Total active products: 20**
 
 ### שולחן סלון אגוז דגם מייק
-https://simpledesign.co.il/product/shvlchn-slvn-agvz-dgm-myyk-8w4vtm
+https://simpledesign.co.il/product/shvlchn-slvn-agvz-dgm-myyk-6pl6bz
 - Price: 0.00 ILS
 - Availability: In stock
+- Image: https://simpledesign.co.il/assets/product-enhanced-1788080382420-e4e0w9.webp
 
 ### מזנון דגם 
 https://simpledesign.co.il/product/mznvn-dgm-t38vl6
