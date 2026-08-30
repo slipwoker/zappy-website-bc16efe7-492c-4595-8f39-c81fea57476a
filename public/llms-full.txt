@@ -159,6 +159,8 @@ Description: חנות רהיטים מודרניים לזוגות צעירים ו
 ## קנו לפי קטגוריה
 
 
+טוען מוצרים...
+
 
 
 
@@ -1550,6 +1552,8 @@ Description: המוצרים שלנו - רהיטים סימפל | Simple Design
 
 
 
+
+טוען מוצרים...
 
 
 
@@ -3753,6 +3757,8 @@ Description: מוצרים - רהיטים סימפל | Simple Design
 
 
 
+טוען מוצרים...
+
 
 
 
@@ -5318,7 +5324,7 @@ Availability: In stock
 ---
 
 ### שידת איפור מקצועית דגם VIP 140 ס"מ – כולל מראה חכמה, בלוטוס וכיסא מתנה!
-URL: https://simpledesign.co.il/product/shydt-aypvr-mktsvayt-dgm-vip-140-sm-kvll-mrah-chkmh-blvtvs-vkysa-mtnh-a7y81z
+URL: https://simpledesign.co.il/product/shydt-aypvr-mktsvayt-dgm-vip-140-sm-kvll-mrah-chkmh-blvtvs-vkysa-mtnh-z7llqh
 Price: 2399.00 ILS
 Availability: In stock
 
@@ -5345,7 +5351,7 @@ Availability: In stock
 ---
 
 ### שידת איפור הוליוודית לבנה ומרהיבה – 13 מגירות, תאורת לד, בלוטוס וכיסא מתנה!
-URL: https://simpledesign.co.il/product/shydt-aypvr-hvlyvvdyt-lbnh-vmrhybh-13-mgyrvt-tavrt-ld-blvtvs-vkysa-mtnh-to6v0w
+URL: https://simpledesign.co.il/product/shydt-aypvr-hvlyvvdyt-lbnh-vmrhybh-13-mgyrvt-tavrt-ld-blvtvs-vkysa-mtnh-i1h50i
 Price: 1799.00 ILS
 Availability: In stock
 
