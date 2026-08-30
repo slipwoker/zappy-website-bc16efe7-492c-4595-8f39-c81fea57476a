@@ -72,7 +72,14 @@ Information about WCAG compliance and accessibility features.
 
 ## Products
 
-**Total active products: 30**
+**Total active products: 31**
+
+### פינת אוכל אובלית יוקרתית – שילוב פלטת דמוי שיש ורגלי עץ מעוצבות
+https://simpledesign.co.il/product/pynt-avkl-avblyt-yvkrtyt-shylvb-pltt-dmvy-shysh-vrgly-ats-mavtsbvt-cnrtxg
+- Price: 0.00 ILS
+- Availability: In stock
+- Description: שדרגו את חוויית האירוח עם סט פינת אוכל מרשים המשלב פלטה במראה שיש, בסיס עץ מעוקל וכיסאות עץ עוטפים ומרופדים. היכנסו לפרטים ולהזמנות!
+- Image: https://simpledesign.co.il/assets/product-1788103120574-4r8pwo.webp
 
 ### סט מזנון וזוג שולחנות סלון בגימור מחורץ יוקרתי
 https://simpledesign.co.il/product/st-mznvn-vzvg-shvlchnvt-slvn-bgymvr-mchvrts-yvkrty-zvzfxh
