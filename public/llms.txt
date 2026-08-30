@@ -72,7 +72,20 @@ Information about WCAG compliance and accessibility features.
 
 ## Products
 
-**Total active products: 17**
+**Total active products: 19**
+
+### מזנון דגם 
+https://simpledesign.co.il/product/mznvn-dgm-t38vl6
+- Price: 0.00 ILS
+- Availability: In stock
+- Image: https://simpledesign.co.il/assets/product-1788080206915-sfme1c.webp
+
+### ספה דגם גב מתכוון
+https://simpledesign.co.il/product/sph-dgm-gb-mtkvvn-nxulna
+- Price: 0.00 ILS
+- Availability: In stock
+- Description: ספה שלוש חלקים מגיע במגוון מידות גם מתכוון
+- Image: https://simpledesign.co.il/assets/product-1788080144189-7zstja.webp
 
 ### שולחן אוכל עגול אלון 
 https://simpledesign.co.il/product/shvlchn-avkl-agvl-alvn-wd488t

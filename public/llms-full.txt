@@ -159,6 +159,8 @@ Description: חנות רהיטים מודרניים לזוגות צעירים ו
 ## קנו לפי קטגוריה
 
 
+טוען מוצרים...
+
 
 
 
@@ -1550,6 +1552,8 @@ Description: המוצרים שלנו - רהיטים סימפל | Simple Design
 
 
 
+
+טוען מוצרים...
 
 
 
@@ -3753,6 +3757,8 @@ Description: מוצרים - רהיטים סימפל | Simple Design
 
 
 
+טוען מוצרים...
+
 
 
 
@@ -5136,6 +5142,20 @@ Terms & Conditions  |
 ---
 
 ## Product Catalog
+
+### מזנון דגם 
+URL: https://simpledesign.co.il/product/mznvn-dgm-t38vl6
+Price: 0.00 ILS
+Availability: In stock
+
+---
+
+### ספה דגם גב מתכוון
+URL: https://simpledesign.co.il/product/sph-dgm-gb-mtkvvn-nxulna
+Price: 0.00 ILS
+Availability: In stock
+
+---
 
 ### שולחן אוכל עגול אלון 
 URL: https://simpledesign.co.il/product/shvlchn-avkl-agvl-alvn-wd488t

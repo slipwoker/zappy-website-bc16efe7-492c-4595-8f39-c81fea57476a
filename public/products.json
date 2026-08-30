@@ -1,10 +1,54 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-08-30T08:45:01.599Z",
+  "generated_at": "2026-08-30T08:56:57.164Z",
   "base_url": "https://simpledesign.co.il",
   "currency": "ILS",
-  "count": 17,
+  "count": 19,
   "products": [
+    {
+      "id": "2f26fce3-b466-4224-814f-82702c6d723b",
+      "slug": "mznvn-dgm-t38vl6",
+      "name": "מזנון דגם ",
+      "name_translations": {},
+      "description": "",
+      "short_description": null,
+      "sku": null,
+      "brand": null,
+      "price": 0,
+      "base_price": 0,
+      "sale_price": null,
+      "currency": "ILS",
+      "images": [
+        "https://simpledesign.co.il/assets/product-1788080206915-sfme1c.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://simpledesign.co.il/product/mznvn-dgm-t38vl6",
+      "categories": [],
+      "updated_at": "2026-08-30T08:56:55.268Z"
+    },
+    {
+      "id": "6b1d96d1-a110-44f1-875d-bd9e68885cb1",
+      "slug": "sph-dgm-gb-mtkvvn-nxulna",
+      "name": "ספה דגם גב מתכוון",
+      "name_translations": {},
+      "description": "",
+      "short_description": "ספה שלוש חלקים מגיע במגוון מידות \nגם מתכוון ",
+      "sku": null,
+      "brand": null,
+      "price": 0,
+      "base_price": 0,
+      "sale_price": null,
+      "currency": "ILS",
+      "images": [
+        "https://simpledesign.co.il/assets/product-1788080144189-7zstja.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://simpledesign.co.il/product/sph-dgm-gb-mtkvvn-nxulna",
+      "categories": [],
+      "updated_at": "2026-08-30T08:56:20.304Z"
+    },
     {
       "id": "be1dbdea-d9a8-4e49-be74-27529543e3e0",
       "slug": "shvlchn-avkl-agvl-alvn-wd488t",
