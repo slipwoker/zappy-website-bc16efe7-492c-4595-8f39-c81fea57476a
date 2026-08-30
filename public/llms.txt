@@ -72,7 +72,14 @@ Information about WCAG compliance and accessibility features.
 
 ## Products
 
-**Total active products: 24**
+**Total active products: 25**
+
+### סט מזנון וזוג שולחנות סלון דגם "אלגנס" – שילוב חזיתות מחורצות וזכוכית ב-4,999 ₪
+https://simpledesign.co.il/product/st-mznvn-vzvg-shvlchnvt-slvn-dgm-algns-shylvb-chzytvt-mchvrtsvt-vzkvkyt-b-4999-3vlkt5
+- Price: 4999.00 ILS
+- Availability: In stock
+- Description: מחפשים סלון מעוצב ויוקרתי? סט דגם אלגנס מציג מזנון עם קצוות מעוגלים בגימור פסים, ויטרינת זכוכית במרכז וזוג שולחנות עגולים תואמים. עכשיו ב-4,999 ₪ ברהיטי סימפל.
+- Image: https://simpledesign.co.il/assets/product-1788102137625-m17t4h.webp
 
 ### סט מזנון וזוג שולחנות סלון דגם "קלאוד" בקווים מעוגלים – 3,999 ₪
 https://simpledesign.co.il/product/st-mznvn-vzvg-shvlchnvt-slvn-dgm-klavd-bkvvym-mavglym-3999-zmnsg7

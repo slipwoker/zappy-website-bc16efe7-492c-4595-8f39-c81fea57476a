@@ -1,10 +1,32 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-08-30T15:02:27.456Z",
+  "generated_at": "2026-08-30T15:04:17.290Z",
   "base_url": "https://simpledesign.co.il",
   "currency": "ILS",
-  "count": 24,
+  "count": 25,
   "products": [
+    {
+      "id": "dbcccc5d-c736-4bd1-b8da-567fc68005a4",
+      "slug": "st-mznvn-vzvg-shvlchnvt-slvn-dgm-algns-shylvb-chzytvt-mchvrtsvt-vzkvkyt-b-4999-3vlkt5",
+      "name": "סט מזנון וזוג שולחנות סלון דגם \"אלגנס\" – שילוב חזיתות מחורצות וזכוכית ב-4,999 ₪",
+      "name_translations": {},
+      "description": "<p class=\"ql-align-right\"><strong>הביאו את העיצוב העילי ישירות אליכם לסלון עם סט המזנון והשולחנות מדגם &quot;אלגנס&quot; של רהיטי סימפל. הסט משלב בתוכו את כל הטרנדים החמים ביותר בעולם עיצוב הפנים: קווים מעוגלים ורכים, טקסטורת פסים תלת-ממדית (חזיתות מחורצות), ושילוב אלגנטי של זכוכית ומתכת שחורה. התוצאה היא מערכת ריהוט יוקרתית, מרשימה וייחודית, עכשיו במחיר של 4,999 ₪ לסט המלא.</strong></p><p class=\"ql-align-right\"><strong>מה הסט כולל?</strong></p><p class=\"ql-align-right\"><strong> מזנון טלוויזיה משולב ומרהיב: המזנון מעוצב עם קצוות מעוגלים בעלי חזית מחורצת (פליסה) המעניקה עומק וטקסטורה עשירה. בחלקו המרכזי תמצאו דלתות זכוכית עם מסגרת שחורה קונטרסטית – מושלם להצגת פריטי נוי או לאחסון מוצרי מדיה וממירים תוך שמירה על קשר עין עם השלט. לצידן, דלתות אחסון אטומות וחלקות לשמירה על סדר מופתי. המזנון ניצב על רגלי מתכת שחורות, המעניקות יציבות וגישה נוחה לשואב אבק.</strong></p><p class=\"ql-align-right\"><strong> זוג שולחנות קפה יוקרתיים: השלמה מושלמת למזנון, הכוללת שני שולחנות עגולים בגדלים וגבהים שונים בעלי בסיס קוני מלא. השולחנות מעוצבים כך שניתן לשלב אותם זה בזה (שולחנות קן) ליצירת מראה מדורג ומעניין, או להשתמש בהם בנפרד בעת אירוח.</strong></p><p class=\"ql-align-right\"><strong> פלטת גוונים מודרנית: גוף ומשטחים בגוון בהיר ויוקרתי, המוארים ומודגשים בעזרת הנגיעות השחורות של מסגרת הזכוכית ורגלי המזנון.</strong></p><p></p>",
+      "short_description": "מחפשים סלון מעוצב ויוקרתי? סט דגם אלגנס מציג מזנון עם קצוות מעוגלים בגימור פסים, ויטרינת זכוכית במרכז וזוג שולחנות עגולים תואמים. עכשיו ב-4,999 ₪ ברהיטי סימפל.",
+      "sku": null,
+      "brand": null,
+      "price": 4999,
+      "base_price": 4999,
+      "sale_price": null,
+      "currency": "ILS",
+      "images": [
+        "https://simpledesign.co.il/assets/product-1788102137625-m17t4h.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://simpledesign.co.il/product/st-mznvn-vzvg-shvlchnvt-slvn-dgm-algns-shylvb-chzytvt-mchvrtsvt-vzkvkyt-b-4999-3vlkt5",
+      "categories": [],
+      "updated_at": "2026-08-30T15:03:43.438Z"
+    },
     {
       "id": "2948eb07-41b0-469f-86b6-671b84667375",
       "slug": "st-mznvn-vzvg-shvlchnvt-slvn-dgm-klavd-bkvvym-mavglym-3999-zmnsg7",
