@@ -1,10 +1,32 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-08-30T08:30:54.926Z",
+  "generated_at": "2026-08-30T08:33:52.104Z",
   "base_url": "https://simpledesign.co.il",
   "currency": "ILS",
-  "count": 14,
+  "count": 15,
   "products": [
+    {
+      "id": "d65f5bd4-62a0-4d77-a1c2-ae702d772627",
+      "slug": "sph-dgm-mryv-f341l6",
+      "name": "ספה דגם מריו",
+      "name_translations": {},
+      "description": "",
+      "short_description": "ספה דגם מריו ניתנת להזמנה בכל צבע ומידה . \nהספה מגיעה בחלק שלם או שני חלקים לפי בקשה הלקוח",
+      "sku": null,
+      "brand": null,
+      "price": 0,
+      "base_price": 0,
+      "sale_price": null,
+      "currency": "ILS",
+      "images": [
+        "https://simpledesign.co.il/assets/product-enhanced-1788078763842-eirzlh.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://simpledesign.co.il/product/sph-dgm-mryv-f341l6",
+      "categories": [],
+      "updated_at": "2026-08-30T08:33:15.876Z"
+    },
     {
       "id": "3647d028-d703-48e6-bb73-6b30541d931c",
       "slug": "myth-shrh-wr096h",
