@@ -1,10 +1,32 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-08-30T14:52:31.358Z",
+  "generated_at": "2026-08-30T14:55:17.467Z",
   "base_url": "https://simpledesign.co.il",
   "currency": "ILS",
-  "count": 21,
+  "count": 22,
   "products": [
+    {
+      "id": "c534666c-ce5d-44e2-bdd0-3bcea26a3853",
+      "slug": "arvn-bgdym-yvkrty-dgm-bvtyk-shylvb-dltvt-zkvkyt-vtavrt-led-pnymyt-48hy3k",
+      "name": "ארון בגדים יוקרתי דגם \"בוטיק\" – שילוב דלתות זכוכית ותאורת LED פנימית",
+      "name_translations": {},
+      "description": "<p class=\"ql-align-right\"><strong>הכניסו לחדר השינה שלכם אווירה של מלון יוקרה עם ארון הבגדים מדגם &quot;בוטיק&quot;. הארון מציג שילוב חומרים עדכני ומתוחכם, המחבר בין חללי אחסון נסתרים מאחורי דלתות בגימור חלק ואלגנטי, לבין חלל תצוגה מרכזי סגור בדלתות זכוכית. עיצוב זה מאפשר לכם ליהנות מסדר מופתי, לצד הצגת הפריטים האהובים עליכם ממש כמו בחנות אופנה יוקרתית.</strong></p><p class=\"ql-align-right\"><strong>היתרונות הבולטים של דגם בוטיק:</strong></p><p class=\"ql-align-right\"><strong> ויטרינת זכוכית מוארת: החלק המרכזי של הארון מצויד בדלתות זכוכית עם מסגרת כהה ופסי תאורת לד (LED) חמה המובנים בתוך המדפים. זהו המקום המושלם להציג תיקים, נעליים מיוחדות, בישום או אקססוריז.</strong></p><p class=\"ql-align-right\"><strong> עיצוב קונטרסטי ומודרני: גוון בהיר ומרגיע לדלתות הארון, המקבל מסגרת ותיחום באמצעות צוקל, קרניז עליון וידיות מתכת אנכיות וארוכות בגוון כהה, ליצירת מראה נקי, סימטרי ומרשים.</strong></p><p class=\"ql-align-right\"><strong> ניצול חלל חכם: מבנה הארון מאפשר ניצול מקסימלי של גובה החדר, כולל דלתות עליונות נפרדות לאחסון עונתי (שמיכות חורף, מזוודות וכדומה).</strong></p><p class=\"ql-align-right\"><strong> סדר וארגון: חלוקה פנימית רחבה המשלבת אזורי תלייה, מידוף עמוק ואפשרות למגירות פנימיות נסתרות בחלקים האטומים של הארון, לשמירה על סדר מופתי</strong></p><p></p>",
+      "short_description": "שדרגו את חדר השינה עם ארון קיר יוקרתי המשלב דלתות חלקות, ויטרינת זכוכית מרכזית ותאורת לד פנימית. עיצוב מודרני, פונקציונלי ומותאם אישית. היכנסו לפרטים!",
+      "sku": null,
+      "brand": null,
+      "price": 0,
+      "base_price": 0,
+      "sale_price": null,
+      "currency": "ILS",
+      "images": [
+        "https://simpledesign.co.il/assets/product-1788101601606-qirn5p.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://simpledesign.co.il/product/arvn-bgdym-yvkrty-dgm-bvtyk-shylvb-dltvt-zkvkyt-vtavrt-led-pnymyt-48hy3k",
+      "categories": [],
+      "updated_at": "2026-08-30T14:54:58.215Z"
+    },
     {
       "id": "467e6c0d-99e0-403b-b0cc-2000e4ee41b3",
       "slug": "st-mznvn-vshvlchn-slvn-dgm-hrmvny-shylvb-ats-tbay-vmtkt-shchvrh-yk60p5",
