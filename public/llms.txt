@@ -75,10 +75,11 @@ Information about WCAG compliance and accessibility features.
 **Total active products: 24**
 
 ### סט מזנון וזוג שולחנות סלון דגם "קלאוד" בקווים מעוגלים – 3,999 ₪
-https://simpledesign.co.il/product/st-mznvn-vzvg-shvlchnvt-slvn-dgm-klavd-bkvvym-mavglym-3999-rl8adv
-- Price: 0.00 ILS
+https://simpledesign.co.il/product/st-mznvn-vzvg-shvlchnvt-slvn-dgm-klavd-bkvvym-mavglym-3999-zmnsg7
+- Price: 3999.00 ILS
 - Availability: In stock
 - Description: שדרגו את הסלון עם סט יוקרתי הכולל מזנון טלוויזיה מעוצב עם קצוות מעוגלים וזוג שולחנות קפה תואמים. עיצוב מודרני בגימור בהיר ואלגנטי, עכשיו ב-3,999 ₪ ברהיטי סימפל.
+- Image: https://simpledesign.co.il/assets/product-ai-fit-1788102102921-w0b6jc.webp
 
 ### סלון שזלונג מפנק דגם "סוהו" – נוחות ועיצוב מודרני ב-2,999 ₪ בלבד!
 https://simpledesign.co.il/product/slvn-shzlvng-mpnk-dgm-svhv-nvchvt-vaytsvb-mvdrny-b-2999-blbd-fvi34a

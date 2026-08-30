@@ -1,29 +1,31 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-08-30T15:00:02.292Z",
+  "generated_at": "2026-08-30T15:02:27.456Z",
   "base_url": "https://simpledesign.co.il",
   "currency": "ILS",
   "count": 24,
   "products": [
     {
       "id": "2948eb07-41b0-469f-86b6-671b84667375",
-      "slug": "st-mznvn-vzvg-shvlchnvt-slvn-dgm-klavd-bkvvym-mavglym-3999-rl8adv",
+      "slug": "st-mznvn-vzvg-shvlchnvt-slvn-dgm-klavd-bkvvym-mavglym-3999-zmnsg7",
       "name": "סט מזנון וזוג שולחנות סלון דגם \"קלאוד\" בקווים מעוגלים – 3,999 ₪",
       "name_translations": {},
       "description": "<p class=\"ql-align-right\"><strong>הכניסו טאץ&#39; של רכות ויוקרה לחלל המגורים שלכם עם הסט המרהיב מדגם &quot;קלאוד&quot; מבית רהיטי סימפל. הסט תוכנן כדי לשבור את הקווים הישרים והנוקשים, ומציג שילוב הרמוני של צורות מעוגלות, גוון בהיר ומרגיע וטקסטורה אלגנטית, שיחד מעניקים לסלון מראה נקי, מרווח ועדכני. והכל במחיר מבצע של 3,999 ₪ לסט המלא!</strong></p><p class=\"ql-align-right\"><strong>מה הסט כולל?</strong></p><p class=\"ql-align-right\"><strong> מזנון טלוויזיה מרהיב: עיצוב א-סימטרי ייחודי עם קצוות מעוגלים היוצרים זרימה טבעית בחלל. המזנון מציע תאי אחסון סגורים נרחבים בגימור חלק, לצד אזור מרכזי כהה המיועד לממירים, קונסולות ומוצרי מדיה. המזנון מוגבה על רגלי מתכת שחורות ומינימליסטיות המקלות על הניקיון השוטף ומאפשרות גישה חופשית לשואב האבק הרובוטי.</strong></p><p class=\"ql-align-right\"><strong> זוג שולחנות קפה תואמים: קומפוזיציה מושלמת של שני שולחנות עגולים בגבהים וקוטר שונים. השולחנות מעוצבים עם בסיס קוני (בצורת חרוט קטום) רחב ויציב המעניק נוכחות פיסולית בחלל. ניתן לשלב אותם זה תחת זה ליצירת מראה מדורג ומעניין, או להפריד ביניהם בעת אירוח.</strong></p><p class=\"ql-align-right\"><strong> גימור ואיכות: הסט מגיע בגימור בגוון אבן/שמנת בהיר עם טקסטורה עדינה, המשתלב בקלות עם ספות בהירות או כהות ומכניס המון אור הביתה.</strong></p><p></p>",
       "short_description": "שדרגו את הסלון עם סט יוקרתי הכולל מזנון טלוויזיה מעוצב עם קצוות מעוגלים וזוג שולחנות קפה תואמים. עיצוב מודרני בגימור בהיר ואלגנטי, עכשיו ב-3,999 ₪ ברהיטי סימפל.",
       "sku": null,
       "brand": null,
-      "price": 0,
-      "base_price": 0,
+      "price": 3999,
+      "base_price": 3999,
       "sale_price": null,
       "currency": "ILS",
-      "images": [],
+      "images": [
+        "https://simpledesign.co.il/assets/product-ai-fit-1788102102921-w0b6jc.webp"
+      ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://simpledesign.co.il/product/st-mznvn-vzvg-shvlchnvt-slvn-dgm-klavd-bkvvym-mavglym-3999-rl8adv",
+      "url": "https://simpledesign.co.il/product/st-mznvn-vzvg-shvlchnvt-slvn-dgm-klavd-bkvvym-mavglym-3999-zmnsg7",
       "categories": [],
-      "updated_at": "2026-08-30T14:59:27.496Z"
+      "updated_at": "2026-08-30T15:01:52.990Z"
     },
     {
       "id": "f7aac4a7-6cda-4e46-bafd-3a4a7cf4604e",
