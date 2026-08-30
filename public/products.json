@@ -1,10 +1,32 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-08-30T15:10:27.679Z",
+  "generated_at": "2026-08-30T15:12:57.523Z",
   "base_url": "https://simpledesign.co.il",
   "currency": "ILS",
-  "count": 28,
+  "count": 29,
   "products": [
+    {
+      "id": "9d183956-4f15-42a0-84a2-8d948c6985ac",
+      "slug": "slvn-mavtsb-mbd-ashyr-am-kdr-kvntrsty-mbtsa-myvchd-0kynqk",
+      "name": "סלון מעוצב מבד עשיר עם קדר קונטרסטי – מבצע מיוחד!",
+      "name_translations": {},
+      "description": "<p class=\"ql-align-right\"><strong>הגיע הזמן להתחדש ברהיטים איכותיים במחירים שלא תמצאו במקום אחר! הכניסו חמימות, סטייל ונוחות בלתי מתפשרת לסלון שלכם עם ספה מעוצבת המציגה את הטרנדים הבולטים ביותר בעולם הריהוט. הספה משלבת טקסטורות עשירות ועיצוב מוקפד, ויוצרת פינת ישיבה מזמינה ויוקרתית.</strong></p><p class=\"ql-align-right\"><strong>מה הופך את הסלון הזה לייחודי?</strong></p><p class=\"ql-align-right\"><strong> עיצוב עוטף ומוקפד: ספה בעלת צללית רחבה ומפנקת, המאופיינת בגימור קדר (פס תפר) כהה הממסגר את קווי המתאר שלה ומדגיש את המראה הגיאומטרי והנקי.</strong></p><p class=\"ql-align-right\"><strong> בד עשיר ומפנק: ריפוד בגוון בהיר וחמים בעל טקסטורה עשירה (בסגנון בד בוקלה/טדי), המעניק מראה רך ונעים למגע המזמין אתכם לשקוע לתוכו בסוף היום.</strong></p><p class=\"ql-align-right\"><strong> סט כריות תואם: הספה מגיעה עם שילוב של כריות נוי תואמות מבד הספה וכריות בגוון קאמל-חום (במראה עור), היוצרות קונטרסט מושלם ומראה מלא בסטייל.</strong></p><p class=\"ql-align-right\"><strong> השלמה מושלמת – שולחנות מחורצים: בתמונה מוצגים זוג שולחנות קפה עגולים עם בסיס מחורץ (פליסה) לבן ופלטה במראה אבן טבעית/שיש, המשתלבים בצורה הרמונית עם הספה ומעניקים טאץ&#39; מודרני לחלל (ניתנים לרכישה כסט).</strong></p><p class=\"ql-align-right\"><strong> הקלה על הכיס: תתחדשו בראש שקט עם פריסה סופר-נוחה של עד 24 תשלומים ללא תפיסת מסגרת האשראי!</strong></p><p></p>",
+      "short_description": "הגיע הזמן להתחדש! ספה מרווחת ומפנקת מבד במראה בוקלה יוקרתי עם גימור קדר כהה, ושולחנות קפה מחורצים. עכשיו במבצע ברהיטי סימפל, עד 24 תשלומים ללא תפיסת מסגרת!",
+      "sku": null,
+      "brand": null,
+      "price": 0,
+      "base_price": 0,
+      "sale_price": null,
+      "currency": "ILS",
+      "images": [
+        "https://simpledesign.co.il/assets/product-1788102665607-11uyfz.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://simpledesign.co.il/product/slvn-mavtsb-mbd-ashyr-am-kdr-kvntrsty-mbtsa-myvchd-0kynqk",
+      "categories": [],
+      "updated_at": "2026-08-30T15:12:24.269Z"
+    },
     {
       "id": "f1cd141a-871f-4dbb-a879-c3d5911694c9",
       "slug": "st-mznvn-vshvlchn-slvn-dgm-avrgnyk-aytsvb-amvrpy-mvdrny-sq5l6c",
