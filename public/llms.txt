@@ -72,7 +72,14 @@ Information about WCAG compliance and accessibility features.
 
 ## Products
 
-**Total active products: 16**
+**Total active products: 17**
+
+### שולחן אוכל עגול אלון 
+https://simpledesign.co.il/product/shvlchn-avkl-agvl-alvn-wd488t
+- Price: 0.00 ILS
+- Availability: In stock
+- Description: שולחן אוכל עגול נפתח צבע אלון טבעי מגיע במגוון צבעים לבחירה ומגוון מידות
+- Image: https://simpledesign.co.il/assets/product-enhanced-1788079075614-42cw0h.webp
 
 ### ספה דגם אנגל
 https://simpledesign.co.il/product/sph-dgm-angl-pne4y3
