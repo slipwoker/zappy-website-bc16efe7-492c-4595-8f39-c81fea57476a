@@ -1,10 +1,30 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-08-30T08:56:57.164Z",
+  "generated_at": "2026-08-30T08:57:31.582Z",
   "base_url": "https://simpledesign.co.il",
   "currency": "ILS",
-  "count": 19,
+  "count": 20,
   "products": [
+    {
+      "id": "62c829c8-4ff4-47bd-ba57-d8d5244b7d9e",
+      "slug": "shvlchn-slvn-agvz-dgm-myyk-8w4vtm",
+      "name": "שולחן סלון אגוז דגם מייק",
+      "name_translations": {},
+      "description": "",
+      "short_description": null,
+      "sku": null,
+      "brand": null,
+      "price": 0,
+      "base_price": 0,
+      "sale_price": null,
+      "currency": "ILS",
+      "images": [],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://simpledesign.co.il/product/shvlchn-slvn-agvz-dgm-myyk-8w4vtm",
+      "categories": [],
+      "updated_at": "2026-08-30T08:57:29.779Z"
+    },
     {
       "id": "2f26fce3-b466-4224-814f-82702c6d723b",
       "slug": "mznvn-dgm-t38vl6",
