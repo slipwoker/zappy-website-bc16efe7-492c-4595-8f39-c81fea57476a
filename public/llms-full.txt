@@ -159,6 +159,8 @@ Description: חנות רהיטים מודרניים לזוגות צעירים ו
 ## קנו לפי קטגוריה
 
 
+טוען מוצרים...
+
 
 
 
@@ -1550,6 +1552,8 @@ Description: המוצרים שלנו - רהיטים סימפל | Simple Design
 
 
 
+
+טוען מוצרים...
 
 
 
@@ -3753,6 +3757,8 @@ Description: מוצרים - רהיטים סימפל | Simple Design
 
 
 
+טוען מוצרים...
+
 
 
 
@@ -5138,7 +5144,7 @@ Terms & Conditions  |
 ## Product Catalog
 
 ### סט מזנון ושולחן סלון דגם "הרמוני" – שילוב עץ טבעי ומתכת שחורה
-URL: https://simpledesign.co.il/product/st-mznvn-vshvlchn-slvn-dgm-hrmvny-shylvb-ats-tbay-vmtkt-shchvrh-zp15ru
+URL: https://simpledesign.co.il/product/st-mznvn-vshvlchn-slvn-dgm-hrmvny-shylvb-ats-tbay-vmtkt-shchvrh-yk60p5
 Price: 0.00 ILS
 Availability: In stock
 

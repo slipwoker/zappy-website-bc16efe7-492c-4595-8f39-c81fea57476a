@@ -1,13 +1,13 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-08-30T14:51:49.882Z",
+  "generated_at": "2026-08-30T14:52:21.502Z",
   "base_url": "https://simpledesign.co.il",
   "currency": "ILS",
   "count": 21,
   "products": [
     {
       "id": "467e6c0d-99e0-403b-b0cc-2000e4ee41b3",
-      "slug": "st-mznvn-vshvlchn-slvn-dgm-hrmvny-shylvb-ats-tbay-vmtkt-shchvrh-zp15ru",
+      "slug": "st-mznvn-vshvlchn-slvn-dgm-hrmvny-shylvb-ats-tbay-vmtkt-shchvrh-yk60p5",
       "name": "סט מזנון ושולחן סלון דגם \"הרמוני\" – שילוב עץ טבעי ומתכת שחורה",
       "name_translations": {},
       "description": "<p class=\"ql-align-right\"><strong>הכניסו אווירה מודרנית, חמה ומלאת סטייל לסלון שלכם עם סט דגם &quot;הרמוני&quot; מבית רהיטי סימפל. הסט מציג שילוב חומרים וצבעים מדויק – מבנה שחור ואלגנטי יחד עם טקסטורת עץ חמימה, המעניקים לחלל מראה נקי, עכשווי ומתוחכם שמתכתב עם עיצוב הג&#39;פנדי והנורדי.</strong></p><p class=\"ql-align-right\"><strong>מה הסט כולל?</strong></p><p class=\"ql-align-right\"><strong> מזנון טלוויזיה אלגנטי ופונקציונלי: בנוי מגוף שחור מט בשילוב חזית עץ בעיצוב פסים (דמוי תריס) המעניקה טאץ&#39; עיצובי ייחודי ומסתירה חלל אחסון מרווח. לצד האחסון הסגור, תמצאו תא פתוח ונגיש להנחת ממירים, קונסולות משחק או פריטי נוי. המזנון מוגבה על רגלי מתכת שחורות ויציבות, המאפשרות גישה קלה לשואב אבק רובוטי.</strong></p><p class=\"ql-align-right\"><strong> שולחן סלון גיאומטרי תואם: שולחן קפה מלבני בעל משטח עליון מחולק בצורה א-סימטרית – אזור רחב בגימור עץ טבעי ואזור קומפקטי בצבע שחור. המשטח מעוצב בצורת &quot;מגש&quot; עם שוליים מוגבהים למניעת החלקת חפצים (כמו כוסות או שלטים) ולשמירה על מראה מסודר, והכל יושב על מסגרת מתכת שחורה וקלילה.</strong></p><p></p>",
@@ -19,13 +19,13 @@
       "sale_price": null,
       "currency": "ILS",
       "images": [
-        "https://simpledesign.co.il/assets/product-1788101341028-hp1e15.webp"
+        "https://simpledesign.co.il/assets/product-enhanced-1788101498884-dy304.webp"
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://simpledesign.co.il/product/st-mznvn-vshvlchn-slvn-dgm-hrmvny-shylvb-ats-tbay-vmtkt-shchvrh-zp15ru",
+      "url": "https://simpledesign.co.il/product/st-mznvn-vshvlchn-slvn-dgm-hrmvny-shylvb-ats-tbay-vmtkt-shchvrh-yk60p5",
       "categories": [],
-      "updated_at": "2026-08-30T14:51:01.707Z"
+      "updated_at": "2026-08-30T14:51:58.456Z"
     },
     {
       "id": "62c829c8-4ff4-47bd-ba57-d8d5244b7d9e",
