@@ -1,10 +1,32 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-08-30T14:55:31.540Z",
+  "generated_at": "2026-08-30T14:58:12.270Z",
   "base_url": "https://simpledesign.co.il",
   "currency": "ILS",
-  "count": 22,
+  "count": 23,
   "products": [
+    {
+      "id": "f7aac4a7-6cda-4e46-bafd-3a4a7cf4604e",
+      "slug": "slvn-shzlvng-mpnk-dgm-svhv-nvchvt-vaytsvb-mvdrny-b-2999-blbd-fvi34a",
+      "name": "סלון שזלונג מפנק דגם \"סוהו\" – נוחות ועיצוב מודרני ב-2,999 ₪ בלבד!",
+      "name_translations": {},
+      "description": "<p class=\"ql-align-right\"><strong>הכירו את הספה שתהפוך את הסלון שלכם למקום האהוב בבית. מערכת ישיבה פינתית עם שזלונג (סלון ריש) דגם &quot;סוהו&quot;, המשלבת עיצוב מודרני, קווים נקיים ונוחות מקסימלית לרביצה ואירוח – והכל במחיר מבצע משתלם במיוחד של 2,999 ₪ בלבד.</strong></p><p class=\"ql-align-right\"><strong>הספה עוצבה במיוחד כדי להעניק מראה עשיר ויוקרתי לחלל המגורים, תוך שמירה על פרקטיות ונוחות יומיומית לחוויית ישיבה מושלמת.</strong></p><p class=\"ql-align-right\"><strong>למה תתאהבו בסלון שלנו?</strong></p><p class=\"ql-align-right\"><strong> נוחות יוצאת דופן (Deep Seating): מושבים עמוקים ומלאים בספוג איכותי המעניקים תמיכה מצוינת, בשילוב שזלונג רחב וארוך המאפשר השתרעות מלאה ומפנקת בסוף היום.</strong></p><p class=\"ql-align-right\"><strong> ריפוד פרימיום: בד קטיפתי, עשיר ונעים למגע בגוון אפור-חום חמים. הבד עמיד, פרקטי וקל לתחזוקה וניקיון.</strong></p><p class=\"ql-align-right\"><strong> מראה מרחף וקליל: הספה ניצבת על רגלי מתכת שחורות, דקות ואלגנטיות. מעבר למראה המודרני, ההגבהה מאפשרת ניקוי קל ופשוט של הרצפה וגישה נוחה לשואב אבק רובוטי.</strong></p><p class=\"ql-align-right\"><strong> תמיכה מושלמת בגב: הסלון מגיע עם כריות גב תפוחות, ובנוסף כולל כריות תמיכה מאורכות (כריות כליות) לתמיכה ארגונומית בגב התחתון, בדיוק כמו בתמונה.</strong></p><p></p>",
+      "short_description": "שדרגו את הסלון עם מערכת ישיבה פינתית מפנקת. ספת שזלונג בעיצוב מודרני, ריפוד בד קטיפתי נעים למגע, רגלי מתכת גבוהות וכריות נוי במחיר מבצע. היכנסו לפרטים!",
+      "sku": null,
+      "brand": null,
+      "price": 2999,
+      "base_price": 2999,
+      "sale_price": null,
+      "currency": "ILS",
+      "images": [
+        "https://simpledesign.co.il/assets/product-enhanced-1788101824292-gzgtvo.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://simpledesign.co.il/product/slvn-shzlvng-mpnk-dgm-svhv-nvchvt-vaytsvb-mvdrny-b-2999-blbd-fvi34a",
+      "categories": [],
+      "updated_at": "2026-08-30T14:57:39.007Z"
+    },
     {
       "id": "c534666c-ce5d-44e2-bdd0-3bcea26a3853",
       "slug": "arvn-bgdym-yvkrty-dgm-bvtyk-shylvb-dltvt-zkvkyt-vtavrt-led-pnymyt-48hy3k",
