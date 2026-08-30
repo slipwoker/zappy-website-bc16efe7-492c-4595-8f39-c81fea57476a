@@ -1,10 +1,33 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-08-30T08:33:52.104Z",
+  "generated_at": "2026-08-30T08:37:15.567Z",
   "base_url": "https://simpledesign.co.il",
   "currency": "ILS",
-  "count": 15,
+  "count": 16,
   "products": [
+    {
+      "id": "314b6097-1115-484b-ae3b-153265d17c02",
+      "slug": "sph-dgm-angl-pne4y3",
+      "name": "ספה דגם אנגל",
+      "name_translations": {},
+      "description": "",
+      "short_description": "ספה דגם אנגלי מגיעה עם ספוג אורטפדי \nהספה מגיעה במגוון מידות וצבעים ",
+      "sku": null,
+      "brand": null,
+      "price": 0,
+      "base_price": 0,
+      "sale_price": null,
+      "currency": "ILS",
+      "images": [
+        "https://simpledesign.co.il/assets/product-enhanced-1788078899993-6tkdo9.webp",
+        "https://simpledesign.co.il/assets/product-1788078955880-ueqxvv.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://simpledesign.co.il/product/sph-dgm-angl-pne4y3",
+      "categories": [],
+      "updated_at": "2026-08-30T08:36:27.871Z"
+    },
     {
       "id": "d65f5bd4-62a0-4d77-a1c2-ae702d772627",
       "slug": "sph-dgm-mryv-f341l6",

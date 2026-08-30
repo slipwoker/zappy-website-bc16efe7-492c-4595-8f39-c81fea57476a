@@ -72,7 +72,14 @@ Information about WCAG compliance and accessibility features.
 
 ## Products
 
-**Total active products: 15**
+**Total active products: 16**
+
+### ספה דגם אנגל
+https://simpledesign.co.il/product/sph-dgm-angl-pne4y3
+- Price: 0.00 ILS
+- Availability: In stock
+- Description: ספה דגם אנגלי מגיעה עם ספוג אורטפדי הספה מגיעה במגוון מידות וצבעים
+- Image: https://simpledesign.co.il/assets/product-enhanced-1788078899993-6tkdo9.webp
 
 ### ספה דגם מריו
 https://simpledesign.co.il/product/sph-dgm-mryv-f341l6
