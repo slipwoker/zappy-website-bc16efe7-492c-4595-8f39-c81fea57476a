@@ -1,10 +1,32 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-08-30T15:06:41.974Z",
+  "generated_at": "2026-08-30T15:08:52.703Z",
   "base_url": "https://simpledesign.co.il",
   "currency": "ILS",
-  "count": 26,
+  "count": 27,
   "products": [
+    {
+      "id": "4ce089ce-e36d-4c8d-b249-524db49efefd",
+      "slug": "st-mznvn-vshvlchnvt-slvn-dgm-shrh-aytsvb-tbay-bkvvym-mavglym-fee00d",
+      "name": "סט מזנון ושולחנות סלון דגם \"סהרה\" – עיצוב טבעי בקווים מעוגלים",
+      "name_translations": {},
+      "description": "<p class=\"ql-align-right\"><strong>הגיע הזמן להתחדש ברהיטים איכותיים במחירים שלא תמצאו במקום אחר! סט מזנון ושולחנות הסלון מדגם &quot;סהרה&quot; מביא אליכם הביתה את שיא העיצוב המודרני, עם מראה טבעי, רך ויוקרתי. הסט מתאפיין בטקסטורה עדינה ואורגנית (דמוית עץ/אבן טבעית) ועיצוב השובר את הקווים הישרים המסורתיים, ליצירת חלל סלון זורם, פתוח ומזמין.</strong></p><p class=\"ql-align-right\"><strong>למה הסט הזה מושלם עבורכם?</strong></p><p class=\"ql-align-right\"><strong> מזנון בעיצוב פיסולי: מזנון טלוויזיה בעל מבנה ייחודי עם קצוות מעוגלים (קפסולה). המזנון ניצב על זוג רגליים קוניות רחבות (בצורת חרוט) המעניקות לו מראה של יצירת אומנות, וכולל חללי אחסון מרווחים מאחורי חזיתות חלקות ונקיות.</strong></p><p class=\"ql-align-right\"><strong> זוג שולחנות קפה תואמים: השלמה הרמונית למזנון בדמות שני שולחנות קפה עגולים הניצבים על בסיסים קוניים תואמים. המבנה המדורג מאפשר משחק עיצובי בחלל וגמישות מרבית בעת אירוח.</strong></p><p></p>",
+      "short_description": "הגיע הזמן להתחדש! סט מזנון ושולחנות קפה בעיצוב יוקרתי, קווים עגולים וגימור טבעי. עכשיו במבצע ברהיטי סימפל. עד 24 תשלומים ללא תפיסת מסגרת!",
+      "sku": null,
+      "brand": null,
+      "price": 0,
+      "base_price": 0,
+      "sale_price": null,
+      "currency": "ILS",
+      "images": [
+        "https://simpledesign.co.il/assets/product-1788102394735-xv38h94.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://simpledesign.co.il/product/st-mznvn-vshvlchnvt-slvn-dgm-shrh-aytsvb-tbay-bkvvym-mavglym-fee00d",
+      "categories": [],
+      "updated_at": "2026-08-30T15:08:16.819Z"
+    },
     {
       "id": "5731b801-95ea-45db-bc63-297ed24caf19",
       "slug": "pynt-avkl-avblyt-nptcht-mrhybh-bsys-mchvrts-vkysavt-ats-mavtsbym-wbd7o8",

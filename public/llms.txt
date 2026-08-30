@@ -72,7 +72,14 @@ Information about WCAG compliance and accessibility features.
 
 ## Products
 
-**Total active products: 26**
+**Total active products: 27**
+
+### סט מזנון ושולחנות סלון דגם "סהרה" – עיצוב טבעי בקווים מעוגלים
+https://simpledesign.co.il/product/st-mznvn-vshvlchnvt-slvn-dgm-shrh-aytsvb-tbay-bkvvym-mavglym-fee00d
+- Price: 0.00 ILS
+- Availability: In stock
+- Description: הגיע הזמן להתחדש! סט מזנון ושולחנות קפה בעיצוב יוקרתי, קווים עגולים וגימור טבעי. עכשיו במבצע ברהיטי סימפל. עד 24 תשלומים ללא תפיסת מסגרת!
+- Image: https://simpledesign.co.il/assets/product-1788102394735-xv38h94.webp
 
 ### פינת אוכל אובלית נפתחת מרהיבה – בסיס מחורץ וכיסאות עץ מעוצבים
 https://simpledesign.co.il/product/pynt-avkl-avblyt-nptcht-mrhybh-bsys-mchvrts-vkysavt-ats-mavtsbym-wbd7o8
