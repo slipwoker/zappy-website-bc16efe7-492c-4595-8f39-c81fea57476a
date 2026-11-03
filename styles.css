@@ -10360,6 +10360,15 @@ body {
     aspect-ratio: 4 / 3;
   }
 }
+
+:root {
+  --text-muted: #4a4a4a;
+  --text-secondary-color: #4a4a4a;
+}
+
+.site-footer .company-tagline {
+  color: #FFFDF7 !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,

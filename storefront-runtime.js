@@ -4475,7 +4475,17 @@ function updateCartCount() {
             websiteId: websiteId,
             code: code,
             subtotal: subtotal,
-            customerEmail: customerEmail || null
+            customerEmail: customerEmail || null,
+            cartItems: (typeof cart !== 'undefined' && cart ? cart : []).map(function(item) {
+              return {
+                productId: item.productId || item.id,
+                id: item.id,
+                price: (typeof getItemPrice === 'function') ? getItemPrice(item) : item.price,
+                quantity: item.quantity,
+                quantityStep: item.quantityStep,
+                quantityUnit: item.quantityUnit
+              };
+            })
           })
         });
         
@@ -10513,6 +10523,153 @@ async function loadRelatedProducts(currentProduct, t) {
   }
 })();
 /* ZAPPY_CUSTOM_JS_END:0e14a8fb9545 */
+
+/* ZAPPY_CUSTOM_JS_START:1674e368e80c */
+(function () {
+  function __zappyCustomInit() {
+    try {
+/* נגישות: הוספת תוויות aria לאלמנטים אינטראקטיביים שחסר להם */
+(function () {
+  function ensureAria(el, label) {
+    if (el && !el.getAttribute('aria-label')) {
+      el.setAttribute('aria-label', label);
+    }
+  }
+
+  // חיפוש
+  var navSearch = document.getElementById('nav-search-input');
+  if (navSearch && !navSearch.getAttribute('aria-label')) navSearch.setAttribute('aria-label', 'חיפוש מוצרים');
+  var navSearchBtn = document.getElementById('nav-search-btn');
+  if (navSearchBtn) ensureAria(navSearchBtn, 'חיפוש');
+  var mobileSearchToggle = document.getElementById('mobile-search-toggle');
+  if (mobileSearchToggle) ensureAria(mobileSearchToggle, 'פתיחת חיפוש');
+  var mobileSearchInput = document.getElementById('mobile-search-input');
+  if (mobileSearchInput && !mobileSearchInput.getAttribute('aria-label')) mobileSearchInput.setAttribute('aria-label', 'חיפוש מוצרים');
+  var mobileSearchSubmit = document.getElementById('mobile-search-submit');
+  if (mobileSearchSubmit) ensureAria(mobileSearchSubmit, 'חיפוש');
+  var closeMobileSearch = document.getElementById('close-mobile-search');
+  if (closeMobileSearch && !closeMobileSearch.getAttribute('aria-label')) closeMobileSearch.setAttribute('aria-label', 'סגירת חיפוש');
+
+  // ניווט נייד
+  var mobileToggle = document.getElementById('mobileToggle');
+  if (mobileToggle && !mobileToggle.getAttribute('aria-label')) {
+    mobileToggle.setAttribute('aria-label', 'תפריט ניווט');
+    mobileToggle.setAttribute('aria-expanded', 'false');
+    mobileToggle.addEventListener('click', function () {
+      var expanded = mobileToggle.getAttribute('aria-expanded') === 'true';
+      mobileToggle.setAttribute('aria-expanded', String(!expanded));
+    });
+  }
+
+  // עגלת קניות
+  var cart = document.getElementById('cart-drawer-toggle');
+  if (cart) ensureAria(cart, 'עגלת קניות');
+  var login = document.querySelector('.login-link');
+  if (login) ensureAria(login, 'התחברות');
+  var phoneBtn = document.querySelector('.phone-header-btn');
+  if (phoneBtn) ensureAria(phoneBtn, 'התקשרו אלינו');
+
+  // WhatsApp
+  var wa = document.querySelector('.whatsapp-float');
+  if (wa) ensureAria(wa, 'צרו קשר בוואטסאפ');
+
+  // כפתורי ניווט שקטים — שמירת תוכן SVG לנגישות
+  document.querySelectorAll('button[aria-label], a[aria-label]').forEach(function (el) {
+    if (el.getAttribute('aria-label') && !el.textContent.trim()) {
+      el.setAttribute('role', el.tagName === 'A' ? 'link' : 'button');
+    }
+  });
+})();
+    } catch (e) {
+      if (typeof console !== 'undefined' && console.warn) { console.warn('[zappy-custom-js]', e); }
+    }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', __zappyCustomInit);
+  } else {
+    __zappyCustomInit();
+  }
+})();
+/* ZAPPY_CUSTOM_JS_END:1674e368e80c */
+
+/* ZAPPY_CUSTOM_JS_START:947002e29cd0 */
+(function () {
+  function __zappyCustomInit() {
+    try {
+/* נגישות: מסגרת מיקוד ברורה ואזורי לחיצה מינימליים */
+(function () {
+  var styleId = 'zappy-a11y-styles';
+  if (document.getElementById(styleId)) return;
+  var css = [
+    // מסגרת מיקוד ברורה לניווט מקלדת
+    'a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible, [tabindex]:focus-visible {',
+    '  outline: 3px solid #C9A227 !important;',
+    '  outline-offset: 2px !important;',
+    '}',
+    // אזורי לחיצה מינימליים של 44x44px
+    '.nav-search-btn, .nav-search-toggle, .search-submit, .close-search, .mobile-submenu-toggle, .whatsapp-float {',
+    '  min-width: 44px !important;',
+    '  min-height: 44px !important;',
+    '  display: inline-flex !important;',
+    '  align-items: center !important;',
+    '  justify-content: center !important;',
+    '}',
+    '.login-link, .cart-link {',
+    '  min-width: 44px !important;',
+    '  min-height: 44px !important;',
+    '  display: inline-flex !important;',
+    '  align-items: center !important;',
+    '  justify-content: center !important;',
+    '}',
+    // דילוג לתוכן עבור משתמשי מקלדת
+    '.skip-link {',
+    '  position: absolute;',
+    '  top: -40px;',
+    '  left: 0;',
+    '  background: #C9A227;',
+    '  color: #1F2A1F;',
+    '  padding: 8px 16px;',
+    '  z-index: 2000;',
+    '  transition: top 0.2s;',
+    '}',
+    '.skip-link:focus { top: 0; }',
+    // כיבוד העדפת פחות תנועה
+    '@media (prefers-reduced-motion: reduce) {',
+    '  *, *::before, *::after {',
+    '    animation-duration: 0.01ms !important;',
+    '    animation-iteration-count: 1 !important;',
+    '    transition-duration: 0.01ms !important;',
+    '    scroll-behavior: auto !important;',
+    '  }',
+    '}'
+  ].join('\n');
+  var style = document.createElement('style');
+  style.id = styleId;
+  style.textContent = css;
+  document.head.appendChild(style);
+
+  // הוספת קישור "דילוג לתוכן" בתחילת ה-body
+  var skip = document.createElement('a');
+  skip.href = '#main-content';
+  skip.className = 'skip-link';
+  skip.textContent = 'דילוג לתוכן המרכזי';
+  document.body.insertBefore(skip, document.body.firstChild);
+
+  // הוספת id לתוכן הראשי
+  var main = document.querySelector('main');
+  if (main && !main.id) main.id = 'main-content';
+})();
+    } catch (e) {
+      if (typeof console !== 'undefined' && console.warn) { console.warn('[zappy-custom-js]', e); }
+    }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', __zappyCustomInit);
+  } else {
+    __zappyCustomInit();
+  }
+})();
+/* ZAPPY_CUSTOM_JS_END:947002e29cd0 */
 
 
 /* ZAPPY_PUBLISHED_LIGHTBOX_RUNTIME */
