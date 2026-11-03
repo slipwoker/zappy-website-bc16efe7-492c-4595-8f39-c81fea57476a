@@ -10671,6 +10671,144 @@ async function loadRelatedProducts(currentProduct, t) {
 })();
 /* ZAPPY_CUSTOM_JS_END:947002e29cd0 */
 
+/* ZAPPY_CUSTOM_JS_START:41cf725a98d3 */
+(function () {
+  function __zappyCustomInit() {
+    try {
+(function () {
+  if (window.__zappyA11yInit) return;
+  window.__zappyA11yInit = true;
+
+  function buildToolbar() {
+    var host = document.createElement('div');
+    host.id = 'zappy-a11y-toolbar';
+
+    host.innerHTML = '' +
+      '<button type="button" class="za11y-launcher" id="za11y-launcher" aria-label="תפריט נגישות" title="נגישות">' +
+        '<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+          '<circle cx="12" cy="4" r="2"></circle>' +
+          '<path d="M12 6v6"></path><path d="M8 9h8"></path>' +
+          '<path d="M5 15c1.5 1 3 1.5 7 1.5s5.5-.5 7-1.5"></path>' +
+          '<path d="M7 20l2-4"></path><path d="M17 20l-2-4"></path>' +
+        '</svg>' +
+      '</button>' +
+      '<div class="za11y-panel" id="za11y-panel" role="dialog" aria-label="אפשרויות נגישות" hidden>' +
+        '<div class="za11y-head">' +
+          '<strong>נגישות</strong>' +
+          '<button type="button" id="za11y-close" aria-label="סגור">&#10005;</button>' +
+        '</div>' +
+        '<div class="za11y-group">' +
+          '<span class="za11y-label">גודל טקסט</span>' +
+          '<div class="za11y-row">' +
+            '<button type="button" data-za11y="font-dec" aria-label="הקטן טקסט">A-</button>' +
+            '<button type="button" data-za11y="font-inc" aria-label="הגדל טקסט">A+</button>' +
+            '<button type="button" data-za11y="font-reset" aria-label="איפוס טקסט">אפס</button>' +
+          '</div>' +
+        '</div>' +
+        '<div class="za11y-group">' +
+          '<button type="button" data-za11y="contrast" class="za11y-toggle" aria-pressed="false">ניגודיות גבוהה</button>' +
+        '</div>' +
+        '<div class="za11y-group">' +
+          '<button type="button" data-za11y="links" class="za11y-toggle" aria-pressed="false">הדגשת קישורים</button>' +
+        '</div>' +
+        '<div class="za11y-group">' +
+          '<button type="button" data-za11y="grayscale" class="za11y-toggle" aria-pressed="false">מצב אפור</button>' +
+        '</div>' +
+        '<div class="za11y-group">' +
+          '<button type="button" data-za11y="reset" class="za11y-reset">איפוס כל ההגדרות</button>' +
+        '</div>' +
+      '</div>';
+
+    document.body.appendChild(host);
+
+    var panel = document.getElementById('za11y-panel');
+    var launcher = document.getElementById('za11y-launcher');
+    var close = document.getElementById('za11y-close');
+
+    launcher.addEventListener('click', function () {
+      panel.hidden = !panel.hidden;
+      launcher.setAttribute('aria-expanded', String(!panel.hidden));
+    });
+    close.addEventListener('click', function () {
+      panel.hidden = true;
+      launcher.setAttribute('aria-expanded', 'false');
+    });
+
+    var size = 1;
+    var bodyClass = '';
+
+    function applySize() {
+      document.documentElement.style.fontSize = size * 100 + '%';
+    }
+
+    host.addEventListener('click', function (e) {
+      var btn = e.target.closest('[data-za11y]');
+      if (!btn) return;
+
+      var action = btn.getAttribute('data-za11y');
+
+      if (action === 'font-inc') { size = Math.min(2, size + 0.1); applySize(); }
+      else if (action === 'font-dec') { size = Math.max(0.8, size - 0.1); applySize(); }
+      else if (action === 'font-reset') { size = 1; applySize(); }
+      else if (action === 'reset') {
+        size = 1; applySize();
+        document.body.classList.remove('za11y-contrast', 'za11y-links', 'za11y-grayscale');
+        host.querySelectorAll('.za11y-toggle').forEach(function (t) { t.setAttribute('aria-pressed', 'false'); });
+      }
+
+      var isToggle = btn.classList.contains('za11y-toggle');
+      if (isToggle) {
+        var cls = 'za11y-' + action;
+        var on = btn.getAttribute('aria-pressed') === 'true';
+        btn.setAttribute('aria-pressed', String(!on));
+        document.body.classList.toggle(cls, !on);
+      }
+    });
+  }
+
+  function injectCss() {
+    var css = '' +
+      '#zappy-a11y-toolbar{position:fixed;bottom:90px;' + (document.dir === 'rtl' ? 'left' : 'right') + ':20px;z-index:999999;font-family:inherit;}' +
+      '#za11y-launcher{display:flex;align-items:center;justify-content:center;width:56px;height:56px;border-radius:50%;background:#2F3E2F;color:#FFFDF7;border:none;cursor:pointer;box-shadow:0 4px 16px rgba(0,0,0,.25);}' +
+      '#za11y-launcher:hover{background:#1F2A1F;}' +
+      '#za11y-panel{position:fixed;bottom:155px;' + (document.dir === 'rtl' ? 'left' : 'right') + ':20px;width:260px;background:#fff;border:1px solid #ddd;border-radius:12px;box-shadow:0 8px 30px rgba(0,0,0,.18);overflow:hidden;}' +
+      '#za11y-panel .za11y-head{display:flex;align-items:center;justify-content:space-between;padding:12px 14px;background:#2F3E2F;color:#FFFDF7;}' +
+      '#za11y-panel .za11y-head button{background:none;border:none;color:#FFFDF7;cursor:pointer;font-size:14px;}' +
+      '#za11y-panel .za11y-group{padding:12px 14px;border-bottom:1px solid #eee;}' +
+      '#za11y-panel .za11y-label{display:block;font-size:13px;color:#333;margin-bottom:8px;font-weight:600;}' +
+      '#za11y-panel .za11y-row{display:flex;gap:8px;}' +
+      '#za11y-panel .za11y-row button,#za11y-panel .za11y-toggle,#za11y-panel .za11y-reset{flex:1;padding:8px 6px;font-size:13px;border:1px solid #ccc;border-radius:6px;background:#f7f7f7;color:#333;cursor:pointer;}' +
+      '#za11y-panel .za11y-toggle[aria-pressed="true"]{background:#C9A227;color:#fff;border-color:#C9A227;}' +
+      '#za11y-panel .za11y-reset{background:#efefef;}' +
+      'body.za11y-contrast{filter:contrast(1.3);}' +
+      'body.za11y-grayscale{filter:grayscale(1);}' +
+      'body.za11y-links a{text-decoration:underline !important;font-weight:700 !important;outline:2px solid #C9A227 !important;}';
+    var st = document.createElement('style');
+    st.textContent = css;
+    document.head.appendChild(st);
+  }
+
+  function init() {
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', function () { injectCss(); buildToolbar(); });
+    } else {
+      injectCss(); buildToolbar();
+    }
+  }
+  init();
+})();
+    } catch (e) {
+      if (typeof console !== 'undefined' && console.warn) { console.warn('[zappy-custom-js]', e); }
+    }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', __zappyCustomInit);
+  } else {
+    __zappyCustomInit();
+  }
+})();
+/* ZAPPY_CUSTOM_JS_END:41cf725a98d3 */
+
 
 /* ZAPPY_PUBLISHED_LIGHTBOX_RUNTIME */
 (function(){
