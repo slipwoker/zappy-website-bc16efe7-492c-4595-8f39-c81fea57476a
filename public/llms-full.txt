@@ -1907,6 +1907,8 @@ Description: המוצרים שלנו - רהיטים סימפל | Simple Design
 
 
 
+טוען מוצרים...
+
 
 
 
@@ -4173,6 +4175,8 @@ Description: מוצרים - רהיטים סימפל | Simple Design
 
 
 
+טוען מוצרים...
+
 
 
 
@@ -5588,6 +5592,13 @@ Terms & Conditions  |
 ---
 
 ## Product Catalog
+
+### שולחן סלון דגם טסט קטגוריה
+URL: https://simpledesign.co.il/product/shvlchn-slvn-dgm-tst-ktgvryh-knl5xt
+Price: 1490.00 ILS
+Availability: In stock
+
+---
 
 ### מערכת סלון מלאה דגם "קלאסיק" – ספה, 2 כורסאות ושולחן קפה
 URL: https://simpledesign.co.il/product/markt-slvn-mlah-dgm-klasyk-sph-2-kvrsavt-vshvlchn-kph-qb2we6
