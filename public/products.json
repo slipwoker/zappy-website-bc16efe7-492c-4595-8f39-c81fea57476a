@@ -1,6 +1,6 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-11-06T18:25:57.322Z",
+  "generated_at": "2026-11-06T18:26:52.290Z",
   "base_url": "https://simpledesign.co.il",
   "currency": "ILS",
   "count": 91,
@@ -53,10 +53,10 @@
     },
     {
       "id": "bbad1350-e61f-45d3-952a-e9bef69c3f2c",
-      "slug": "shvlchn-avkl-agvl-shysh-120-sm-4-mkvmvt-tger9s",
+      "slug": "shvlchn-avkl-agvl-shysh-120-sm-4-mkvmvt-dbpktc",
       "name": "שולחן אוכל עגול שיש 120 ס\"מ – 4 מקומות",
       "name_translations": {},
-      "description": "שולחן אוכל עגול במשטח שיש 120 ס\"מ עם בסיס מרכזי יציב, ל-4 סועדים. יוקרה יומיומית.",
+      "description": "<p>שולחן אוכל עגול במשטח שיש 120 ס&quot;מ עם בסיס מרכזי יציב, ל-4 סועדים. יוקרה יומיומית.</p>",
       "short_description": null,
       "sku": null,
       "brand": null,
@@ -64,12 +64,14 @@
       "base_price": 3650,
       "sale_price": null,
       "currency": "ILS",
-      "images": [],
+      "images": [
+        "https://simpledesign.co.il/assets/image-product-image-1793989561240-jykt65.webp"
+      ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://simpledesign.co.il/product/shvlchn-avkl-agvl-shysh-120-sm-4-mkvmvt-tger9s",
+      "url": "https://simpledesign.co.il/product/shvlchn-avkl-agvl-shysh-120-sm-4-mkvmvt-dbpktc",
       "categories": [],
-      "updated_at": "2026-11-06T18:18:52.117Z"
+      "updated_at": "2026-11-06T18:26:17.777Z"
     },
     {
       "id": "c036ff3e-459a-41bc-a479-34617e787f14",
