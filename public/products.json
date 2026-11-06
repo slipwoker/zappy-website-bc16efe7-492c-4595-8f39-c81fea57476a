@@ -1,6 +1,6 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-11-06T18:26:52.290Z",
+  "generated_at": "2026-11-06T18:27:52.570Z",
   "base_url": "https://simpledesign.co.il",
   "currency": "ILS",
   "count": 91,
@@ -75,10 +75,10 @@
     },
     {
       "id": "c036ff3e-459a-41bc-a479-34617e787f14",
-      "slug": "shvlchn-slvn-st-2-gdlym-shysh-shchvr-s2wn5x",
+      "slug": "shvlchn-slvn-st-2-gdlym-shysh-shchvr-l2pq93",
       "name": "שולחן סלון סט 2 גדלים – שיש שחור",
       "name_translations": {},
-      "description": "סט 2 שולחנות סלון בגדלים שונים במשטח שיש שחור, משתלבים בעיצוב מודרני.",
+      "description": "<p>סט 2 שולחנות סלון בגדלים שונים במשטח שיש שחור, משתלבים בעיצוב מודרני.</p>",
       "short_description": null,
       "sku": null,
       "brand": null,
@@ -86,12 +86,14 @@
       "base_price": 1850,
       "sale_price": null,
       "currency": "ILS",
-      "images": [],
+      "images": [
+        "https://simpledesign.co.il/assets/image-product-image-1793989627090-iiakor.webp"
+      ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://simpledesign.co.il/product/shvlchn-slvn-st-2-gdlym-shysh-shchvr-s2wn5x",
+      "url": "https://simpledesign.co.il/product/shvlchn-slvn-st-2-gdlym-shysh-shchvr-l2pq93",
       "categories": [],
-      "updated_at": "2026-11-06T18:18:52.030Z"
+      "updated_at": "2026-11-06T18:27:19.947Z"
     },
     {
       "id": "6477152d-ccbf-4fa5-828c-980de8d54c8b",
