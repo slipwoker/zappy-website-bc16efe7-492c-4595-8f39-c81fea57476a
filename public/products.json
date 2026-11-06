@@ -1,10 +1,30 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-11-06T18:16:42.216Z",
+  "generated_at": "2026-11-06T18:17:26.982Z",
   "base_url": "https://simpledesign.co.il",
   "currency": "ILS",
-  "count": 50,
+  "count": 51,
   "products": [
+    {
+      "id": "862bf269-6cf9-4676-af81-994eeca016da",
+      "slug": "mzrn-avrtvpdy-dgm-drym-160200-spvg-zykrvn-7k0ywi",
+      "name": "מזרן אורתופדי דגם \"דרים\" 160×200 – ספוג זיכרון",
+      "name_translations": {},
+      "description": "מזרן אורתופדי דו-צדדי בגובה 25 ס\"מ, שכבת לטקס וספוג זיכרון, תמיכה אופטימלית לגב.",
+      "short_description": null,
+      "sku": null,
+      "brand": null,
+      "price": 3290,
+      "base_price": 3290,
+      "sale_price": null,
+      "currency": "ILS",
+      "images": [],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://simpledesign.co.il/product/mzrn-avrtvpdy-dgm-drym-160200-spvg-zykrvn-7k0ywi",
+      "categories": [],
+      "updated_at": "2026-11-06T18:16:50.953Z"
+    },
     {
       "id": "31eddaee-3536-48c0-a8e8-cd7810ca21f8",
       "slug": "shvlchn-slvn-dgm-tst-ktgvryh-knl5xt",

@@ -72,7 +72,13 @@ Information about WCAG compliance and accessibility features.
 
 ## Products
 
-**Total active products: 50**
+**Total active products: 51**
+
+### מזרן אורתופדי דגם "דרים" 160×200 – ספוג זיכרון
+https://simpledesign.co.il/product/mzrn-avrtvpdy-dgm-drym-160200-spvg-zykrvn-7k0ywi
+- Price: 3290.00 ILS
+- Availability: In stock
+- Description: מזרן אורתופדי דו-צדדי בגובה 25 ס"מ, שכבת לטקס וספוג זיכרון, תמיכה אופטימלית לגב.
 
 ### שולחן סלון דגם טסט קטגוריה
 https://simpledesign.co.il/product/shvlchn-slvn-dgm-tst-ktgvryh-knl5xt
