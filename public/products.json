@@ -1,6 +1,6 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-11-06T18:25:07.742Z",
+  "generated_at": "2026-11-06T18:25:57.322Z",
   "base_url": "https://simpledesign.co.il",
   "currency": "ILS",
   "count": 91,
@@ -31,10 +31,10 @@
     },
     {
       "id": "5afcfd08-d3e5-46ff-aa7e-769961500caa",
-      "slug": "kysa-mshrd-argvnvmy-am-mshant-rsht-idax5t",
+      "slug": "kysa-mshrd-argvnvmy-am-mshant-rsht-5i8bo0",
       "name": "כיסא משרד ארגונומי עם משענת רשת",
       "name_translations": {},
-      "description": "כיסא ארגונומי עם משענת רשת נושמת, תמיכת מותניים וגובה מתכוונן. מתאים למשרד ביתי.",
+      "description": "<p>כיסא ארגונומי עם משענת רשת נושמת, תמיכת מותניים וגובה מתכוונן. מתאים למשרד ביתי.</p>",
       "short_description": null,
       "sku": null,
       "brand": null,
@@ -42,12 +42,14 @@
       "base_price": 1150,
       "sale_price": null,
       "currency": "ILS",
-      "images": [],
+      "images": [
+        "https://simpledesign.co.il/assets/image-product-image-1793989514651-6akxxx.webp"
+      ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://simpledesign.co.il/product/kysa-mshrd-argvnvmy-am-mshant-rsht-idax5t",
+      "url": "https://simpledesign.co.il/product/kysa-mshrd-argvnvmy-am-mshant-rsht-5i8bo0",
       "categories": [],
-      "updated_at": "2026-11-06T18:18:52.222Z"
+      "updated_at": "2026-11-06T18:25:23.914Z"
     },
     {
       "id": "bbad1350-e61f-45d3-952a-e9bef69c3f2c",
