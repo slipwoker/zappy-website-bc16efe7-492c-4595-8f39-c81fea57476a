@@ -72,7 +72,79 @@ Information about WCAG compliance and accessibility features.
 
 ## Products
 
-**Total active products: 31**
+**Total active products: 43**
+
+### ארון בגדים 3 דלתות דגם "סטודיו" – דלתות הזזה ותאורת LED
+https://simpledesign.co.il/product/arvn-bgdym-3-dltvt-dgm-stvdyv-dltvt-hzzh-vtavrt-led-q4rufb
+- Price: 4290.00 ILS
+- Availability: In stock
+- Description: ארון בגדים 3 דלתות עם דלתות הזזה ותאורת LED פנימית, עומק 60 ס"מ.
+
+### שידת לילה דגם "מיני" – 2 מגירות ועץ טבעי
+https://simpledesign.co.il/product/shydt-lylh-dgm-myny-2-mgyrvt-vats-tbay-dhetzj
+- Price: 890.00 ILS
+- Availability: In stock
+- Description: שידת לילה עם 2 מגירות ומדף פתוח, גימור עץ טבעי ופרזול מתכת.
+
+### מזנון + יחידת טלוויזיה דגם "מודרן" – אלון טבעי, 6 מגירות
+https://simpledesign.co.il/product/mznvn-ychydt-tlvvyzyh-dgm-mvdrn-alvn-tbay-6-mgyrvt-qzo9vz
+- Price: 3790.00 ILS
+- Availability: In stock
+- Description: מזנון רחב עם 6 מגירות ויחידת מדיה משולבת, עץ אלון בגימור טבעי חם.
+
+### שולחן קפה עגול דגם "אורביט" – אגוז ובסיס מחורץ
+https://simpledesign.co.il/product/shvlchn-kph-agvl-dgm-avrbyt-agvz-vbsys-mchvrts-uusmwu
+- Price: 1290.00 ILS
+- Availability: In stock
+- Description: שולחן קפה עגול מעץ אגוז עם בסיס מחורץ יוקרתי, לשילוב עם סט הסלון.
+
+### כיסא אוכל דגם "לופט" – מסגרת מתכת שחורה וריפוד בז'
+https://simpledesign.co.il/product/kysa-avkl-dgm-lvpt-msgrt-mtkt-shchvrh-vrypvd-bz-pq218a
+- Price: 590.00 ILS
+- Availability: In stock
+- Description: כיסא אוכל עם מסגרת מתכת שחורה ומושב ריפוד בז', עיצוב תעשייתי-מודרני.
+
+### ספה פינתית דגם "אמסטרדם" – ריפוד אפור עם שולחן קפה משולב
+https://simpledesign.co.il/product/sph-pyntyt-dgm-amstrdm-rypvd-apvr-am-shvlchn-kph-mshvlb-fgi2dx
+- Price: 5490.00 ILS
+- Availability: In stock
+- Description: ספה פינתית רחבה בריפוד אפור עם שולחן קפה תואם, פתרון מלא לסלון המרווח.
+
+### ספה 3 מושבים דגם "קופנהגן" – בד אפור בהיר עם רגלי עץ אלון
+https://simpledesign.co.il/product/sph-3-mvshbym-dgm-kvpnhgn-bd-apvr-bhyr-am-rgly-ats-alvn-i7vz5q
+- Price: 4590.00 ILS
+- Availability: In stock
+- Description: ספת 3 מושבים נוחה בסגנון מודרני, ריפוד בד בהיר ורגלי עץ אלון מלא, אידיאלית לסלון המשפחתי.
+
+### מיטה זוגית מרופדת דגם "רויאל" 160×200 – ראש מיטה קטיפה
+https://simpledesign.co.il/product/myth-zvgyt-mrvpdt-dgm-rvyal-160200-rash-myth-ktyph-6zqidm
+- Price: 3990.00 ILS
+- Availability: In stock
+- Description: מיטה זוגית עם ראש מיטה מרופד קטיפה בגוון נייטרלי, מסגרת עץ יציבה ומראה יוקרתי לחדר השינה.
+
+### שולחן אוכל מלבני אלון מלא דגם "פארם" – 180 ס"מ
+https://simpledesign.co.il/product/shvlchn-avkl-mlbny-alvn-mla-dgm-parm-180-sm-kwrxrb
+- Price: 3290.00 ILS
+- Availability: In stock
+- Description: שולחן אוכל מלבני מעץ אלון מלא בגימור טבעי, ישיבה נוחה ל-6–8 סועדים, עמיד לאורך שנים.
+
+### כורסת אגף מעוצבת בד צמר דגם "נורדיק" – משולבת הדום
+https://simpledesign.co.il/product/kvrst-agp-mavtsbt-bd-tsmr-dgm-nvrdyk-mshvlbt-hdvm-8uuol7
+- Price: 2390.00 ILS
+- Availability: In stock
+- Description: כורסת אגף בסגנון סקנדינבי עם ריפוד בד צמר נעים והדום תואם, מושלמת לפינת קריאה.
+
+### כורסת טלוויזיה מפנקת דגם "לאונג'" – ריפוד קטיפה עם משענת מתכווננת
+https://simpledesign.co.il/product/kvrst-tlvvyzyh-mpnkt-dgm-lavng-rypvd-ktyph-am-mshant-mtkvvnnt-1v7soa
+- Price: 1890.00 ILS
+- Availability: In stock
+- Description: כורסה רחבה ומפנקת בריפוד קטיפה רך, עם משענת גב מתכווננת לתמיכה מושלמת בזמן צפייה או קריאה.
+
+### כיסא אוכל מעוצב דגם "אלגנט" – עץ אגוז וריפוד קטיפה
+https://simpledesign.co.il/product/kysa-avkl-mavtsb-dgm-algnt-ats-agvz-vrypvd-ktyph-xd1vq2
+- Price: 749.00 ILS
+- Availability: In stock
+- Description: כיסא אוכל איכותי עם מסגרת עץ אגוז מלא וריפוד קטיפה נעים, עיצוב מודרני שמשתלב בכל פינת אוכל.
 
 ### פינת אוכל אובלית יוקרתית – שילוב פלטת דמוי שיש ורגלי עץ מעוצבות
 https://simpledesign.co.il/product/pynt-avkl-avblyt-yvkrtyt-shylvb-pltt-dmvy-shysh-vrgly-ats-mavtsbvt-cnrtxg
