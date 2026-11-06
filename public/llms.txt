@@ -75,10 +75,12 @@ Information about WCAG compliance and accessibility features.
 **Total active products: 91**
 
 ### שידת איפור צרה עם מגירות – ורוד פסטל
-https://simpledesign.co.il/product/shydt-aypvr-tsrh-am-mgyrvt-vrvd-pstl-6bm3lx
+https://simpledesign.co.il/product/shydt-aypvr-tsrh-am-mgyrvt-vrvd-pstl-et0sra
 - Price: 1650.00 ILS
 - Availability: In stock
+- Category: שידות 
 - Description: שידת איפור צרה וחסכונית עם 4 מגירות בגוון ורוד פסטל, כולל מראה. נשית ומקסימה.
+- Image: https://simpledesign.co.il/assets/image-product-image-1793989429048-bjewky.webp
 
 ### כיסא משרד ארגונומי עם משענת רשת
 https://simpledesign.co.il/product/kysa-mshrd-argvnvmy-am-mshant-rsht-idax5t

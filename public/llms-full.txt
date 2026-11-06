@@ -1907,6 +1907,8 @@ Description: המוצרים שלנו - רהיטים סימפל | Simple Design
 
 
 
+טוען מוצרים...
+
 
 
 
@@ -4173,6 +4175,8 @@ Description: מוצרים - רהיטים סימפל | Simple Design
 
 
 
+טוען מוצרים...
+
 
 
 
@@ -5590,7 +5594,7 @@ Terms & Conditions  |
 ## Product Catalog
 
 ### שידת איפור צרה עם מגירות – ורוד פסטל
-URL: https://simpledesign.co.il/product/shydt-aypvr-tsrh-am-mgyrvt-vrvd-pstl-6bm3lx
+URL: https://simpledesign.co.il/product/shydt-aypvr-tsrh-am-mgyrvt-vrvd-pstl-et0sra
 Price: 1650.00 ILS
 Availability: In stock
 

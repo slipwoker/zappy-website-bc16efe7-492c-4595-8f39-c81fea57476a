@@ -1,29 +1,33 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-11-06T18:22:22.515Z",
+  "generated_at": "2026-11-06T18:25:07.742Z",
   "base_url": "https://simpledesign.co.il",
   "currency": "ILS",
   "count": 91,
   "products": [
     {
       "id": "4ff19a97-d394-4845-aa7e-53485af07b27",
-      "slug": "shydt-aypvr-tsrh-am-mgyrvt-vrvd-pstl-6bm3lx",
+      "slug": "shydt-aypvr-tsrh-am-mgyrvt-vrvd-pstl-et0sra",
       "name": "שידת איפור צרה עם מגירות – ורוד פסטל",
       "name_translations": {},
-      "description": "שידת איפור צרה וחסכונית עם 4 מגירות בגוון ורוד פסטל, כולל מראה. נשית ומקסימה.",
-      "short_description": null,
+      "description": "<p>שידת איפור צרה וחסכונית עם 4 מגירות בגוון ורוד פסטל, כולל מראה. נשית ומקסימה.</p>",
+      "short_description": "שידת איפור צרה וחסכונית עם 4 מגירות בגוון ורוד פסטל, כולל מראה. נשית ומקסימה.",
       "sku": null,
       "brand": null,
       "price": 1650,
       "base_price": 1650,
       "sale_price": null,
       "currency": "ILS",
-      "images": [],
+      "images": [
+        "https://simpledesign.co.il/assets/image-product-image-1793989429048-bjewky.webp"
+      ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://simpledesign.co.il/product/shydt-aypvr-tsrh-am-mgyrvt-vrvd-pstl-6bm3lx",
-      "categories": [],
-      "updated_at": "2026-11-06T18:18:52.318Z"
+      "url": "https://simpledesign.co.il/product/shydt-aypvr-tsrh-am-mgyrvt-vrvd-pstl-et0sra",
+      "categories": [
+        "שידות "
+      ],
+      "updated_at": "2026-11-06T18:24:34.365Z"
     },
     {
       "id": "5afcfd08-d3e5-46ff-aa7e-769961500caa",
