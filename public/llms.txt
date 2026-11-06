@@ -20,35 +20,35 @@ https://simpledesign.co.il/about
 
 ### Products
 https://simpledesign.co.il/products
-המוצרים שלנו - רהיטים סימפל | Simple Design
+כל מוצרי הרהיטים של רהיטים סימפל | Simple Design — מזנונים, שידות וסטים מעוצבים בסגנון מודרני במחירים שפויים. עיצוב נקי, חומרים איכותיים ומשלוח מהיר לכל הארץ.
 
 ### Cart
 https://simpledesign.co.il/cart
-עגלת הקניות שלך
+עגלת הקניות שלכם ברהיטים סימפל | Simple Design — סקרו את המוצרים שבחרתם והמשיכו לתשלום בצורה מהירה ופשוטה.
 
 ### Checkout
 https://simpledesign.co.il/checkout
-תשלום
+השלמת הזמנה ברהיטים סימפל | Simple Design — תשלום מאובטח, משלוח והרכבה מהירים. מסיימים את הקנייה תוך דקות.
 
 ### Login
 https://simpledesign.co.il/login
-התחברות לקוחות
+התחברות לחשבון הלקוח ברהיטים סימפל | Simple Design — גישה להזמנות, פרטים אישיים ומעקב משלוחים.
 
 ### Account
 https://simpledesign.co.il/account
-החשבון שלי
+אזור אישי ברהיטים סימפל | Simple Design — ניהול ההזמנות, עדכון הפרטים והעדפות הקנייה שלכם במקום אחד.
 
 ### Order Success
 https://simpledesign.co.il/order-success
-תודה על ההזמנה
+ההזמנה התקבלה בהצלחה ברהיטים סימפל | Simple Design — תודה שרכשתם אצלנו. נשמח לעמוד לרשותכם בכל שאלה.
 
 ### Product Detail
 https://simpledesign.co.il/product/:slug
-פרטי המוצר - רהיטים סימפל | Simple Design
+רהיטים מודרניים בעיצוב נקי במחיר שפוי — מזנונים, שידות וסטים של רהיטים סימפל | Simple Design. חומרים איכותיים, משלוח והרכבה מהירים.
 
 ### Category
 https://simpledesign.co.il/category/:slug
-מוצרים - רהיטים סימפל | Simple Design
+גלו את קולקציית הרהיטים של רהיטים סימפל | Simple Design — עיצוב מודרני, מחירים שפויים ומבחר רחב לכל חדר בבית.
 
 ### בואו נדבר על הרהיטים שחלמתם עליהם — רהיטים סימפל | Simple Design
 https://simpledesign.co.il/contact

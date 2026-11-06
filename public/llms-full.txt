@@ -1663,12 +1663,12 @@ Terms & Conditions  |
 
 ---
 
-## מוצרים
+## כל המוצרים — רהיטים מודרניים במחיר שפוי | רהיטים סימפל
 
 URL: https://simpledesign.co.il/products
-Description: המוצרים שלנו - רהיטים סימפל | Simple Design
+Description: כל מוצרי הרהיטים של רהיטים סימפל | Simple Design — מזנונים, שידות וסטים מעוצבים בסגנון מודרני במחירים שפויים. עיצוב נקי, חומרים איכותיים ומשלוח מהיר לכל הארץ.
 
-מוצרים - רהיטים סימפל | Simple Design
+כל המוצרים — רהיטים מודרניים במחיר שפוי | רהיטים סימפל
 
 
 
@@ -1914,7 +1914,7 @@ Terms & Conditions  |
 ## עגלת קניות
 
 URL: https://simpledesign.co.il/cart
-Description: עגלת הקניות שלך
+Description: עגלת הקניות שלכם ברהיטים סימפל | Simple Design — סקרו את המוצרים שבחרתם והמשיכו לתשלום בצורה מהירה ופשוטה.
 
 עגלת קניות - רהיטים סימפל | Simple Design
 
@@ -2140,7 +2140,7 @@ Terms & Conditions  |
 ## תשלום
 
 URL: https://simpledesign.co.il/checkout
-Description: תשלום
+Description: השלמת הזמנה ברהיטים סימפל | Simple Design — תשלום מאובטח, משלוח והרכבה מהירים. מסיימים את הקנייה תוך דקות.
 
 תשלום - רהיטים סימפל | Simple Design
 
@@ -2552,7 +2552,7 @@ Terms & Conditions  |
 ## התחברות
 
 URL: https://simpledesign.co.il/login
-Description: התחברות לקוחות
+Description: התחברות לחשבון הלקוח ברהיטים סימפל | Simple Design — גישה להזמנות, פרטים אישיים ומעקב משלוחים.
 
 התחברות - רהיטים סימפל | Simple Design
 
@@ -2785,7 +2785,7 @@ Terms & Conditions  |
 ## החשבון שלי
 
 URL: https://simpledesign.co.il/account
-Description: החשבון שלי
+Description: אזור אישי ברהיטים סימפל | Simple Design — ניהול ההזמנות, עדכון הפרטים והעדפות הקנייה שלכם במקום אחד.
 
 החשבון שלי - רהיטים סימפל | Simple Design
 
@@ -3173,7 +3173,7 @@ Terms & Conditions  |
 ## ההזמנה התקבלה!
 
 URL: https://simpledesign.co.il/order-success
-Description: תודה על ההזמנה
+Description: ההזמנה התקבלה בהצלחה ברהיטים סימפל | Simple Design — תודה שרכשתם אצלנו. נשמח לעמוד לרשותכם בכל שאלה.
 
 ההזמנה התקבלה! - רהיטים סימפל | Simple Design
 
@@ -3702,7 +3702,7 @@ Terms & Conditions  |
 ## פרטי המוצר
 
 URL: https://simpledesign.co.il/product/:slug
-Description: פרטי המוצר - רהיטים סימפל | Simple Design
+Description: רהיטים מודרניים בעיצוב נקי במחיר שפוי — מזנונים, שידות וסטים של רהיטים סימפל | Simple Design. חומרים איכותיים, משלוח והרכבה מהירים.
 
 פרטי המוצר - רהיטים סימפל | Simple Design
 
@@ -3930,7 +3930,7 @@ Terms & Conditions  |
 ## מוצרים
 
 URL: https://simpledesign.co.il/category/:slug
-Description: מוצרים - רהיטים סימפל | Simple Design
+Description: גלו את קולקציית הרהיטים של רהיטים סימפל | Simple Design — עיצוב מודרני, מחירים שפויים ומבחר רחב לכל חדר בבית.
 
 מוצרים - רהיטים סימפל | Simple Design
 
