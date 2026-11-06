@@ -72,7 +72,43 @@ Information about WCAG compliance and accessibility features.
 
 ## Products
 
-**Total active products: 43**
+**Total active products: 49**
+
+### מערכת סלון מלאה דגם "קלאסיק" – ספה, 2 כורסאות ושולחן קפה
+https://simpledesign.co.il/product/markt-slvn-mlah-dgm-klasyk-sph-2-kvrsavt-vshvlchn-kph-qb2we6
+- Price: 8490.00 ILS
+- Availability: In stock
+- Description: מערכת ישיבה שלמה: ספה 3 מושבים + 2 כורסאות תואמות + שולחן קפה מעץ אגוז, בריפוד טלאים בהיר.
+
+### מזנון כניסה דגם "אנטרה" – אגוז כהה 3 מגירות
+https://simpledesign.co.il/product/mznvn-knysh-dgm-antrh-agvz-khh-3-mgyrvt-z0yn85
+- Price: 2190.00 ILS
+- Availability: In stock
+- Description: מזנון צר וכניסה עם 3 מגירות ומדף פתוח, גימור אגוז כהה, פתרון אחסון אלגנטי למסדרון.
+
+### כיסא בר דגם "סטודיו בר" – מושב ריפוד ומתכת שחורה
+https://simpledesign.co.il/product/kysa-br-dgm-stvdyv-br-mvshb-rypvd-vmtkt-shchvrh-ct2ocb
+- Price: 690.00 ILS
+- Availability: In stock
+- Description: כיסא בר עם מושב ריפוד ורגלי מתכת שחורה, גובה דלפק 65 ס"מ, לאי מטבח ובר ביתי.
+
+### שולחן אוכל עגול אלון דגם "סירקול" 120 ס"מ
+https://simpledesign.co.il/product/shvlchn-avkl-agvl-alvn-dgm-syrkvl-120-sm-lcf0ld
+- Price: 2790.00 ILS
+- Availability: In stock
+- Description: שולחן אוכל עגול אלון מלא בקוטר 120 ס"מ, בסיס מחורץ יוקרתי, ישיבה נוחה ל-4–6 סועדים.
+
+### מיטת יחיד מרופדת דגם "נובה" 90×200 – ראש מיטה בד צמר
+https://simpledesign.co.il/product/mytt-ychyd-mrvpdt-dgm-nvbh-90200-rash-myth-bd-tsmr-6j5hae
+- Price: 1890.00 ILS
+- Availability: In stock
+- Description: מיטת יחיד מרופדת עם ראש מיטה גבוה, ריפוד בד קטיפתי בגוון שמנת, מתאים לחדרי ילדים ואורחים.
+
+### ספה זוגית דגם "מונקו" – קטיפה ירוקה עם רגלי אגוז
+https://simpledesign.co.il/product/sph-zvgyt-dgm-mvnkv-ktyph-yrvkh-am-rgly-agvz-cro4r9
+- Price: 3490.00 ILS
+- Availability: In stock
+- Description: ספה זוגית קומפקטית בריפוד קטיפה ירוק בקבוק, רגלי עץ אגוז, מושלמת לדירות קטנות.
 
 ### ארון בגדים 3 דלתות דגם "סטודיו" – דלתות הזזה ותאורת LED
 https://simpledesign.co.il/product/arvn-bgdym-3-dltvt-dgm-stvdyv-dltvt-hzzh-vtavrt-led-q4rufb
