@@ -11893,6 +11893,45 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Playfair Display', sans-serif; font-weigh
 .nav-cta-btn { color: #333333 !important; }
 /* === BUTTON TEXT OVERRIDES END === */
 
+
+:root {
+  --primary: #2A2A2A;
+  --secondary: var(--accent-color, var(--accent, #C58B5A));
+  --primary-color: #2A2A2A;
+  --secondary-color: var(--accent-color, var(--accent, #C58B5A));
+  --gradient-secondary: linear-gradient(135deg, #2A2A2A 0%, #C78F60 100%);
+  --font-heading: 'Heebo', sans-serif;
+  --font-body: 'Assistant', sans-serif;
+}
+/* zappy-self-heal */
+:root { --primary: #2A2A2A !important; }
+:root { --secondary: var(--accent-color, var(--accent, #C58B5A)) !important; }
+:root { --primary-color: #2A2A2A !important; }
+:root { --secondary-color: var(--accent-color, var(--accent, #C58B5A)) !important; }
+:root { --gradient-secondary: linear-gradient(135deg, #2A2A2A 0%, #C78F60 100%) !important; }
+:root { --font-heading: 'Heebo', sans-serif !important; }
+
+/* zappy-self-heal */
+html body :root { --primary: #2A2A2A !important; }
+html body :root { --secondary: var(--accent-color, var(--accent, #C58B5A)) !important; }
+html body :root { --primary-color: #2A2A2A !important; }
+html body :root { --secondary-color: var(--accent-color, var(--accent, #C58B5A)) !important; }
+html body :root { --gradient-secondary: linear-gradient(135deg, #2A2A2A 0%, #C78F60 100%) !important; }
+html body :root { --font-heading: 'Heebo', sans-serif !important; }
+
+
+:root {
+  --font-heading: 'Heebo', sans-serif !important;
+  --font-body: 'Assistant', sans-serif !important;
+}
+/* zappy-self-heal */
+:root { --font-heading: 'Heebo', sans-serif !important; }
+:root { --font-body: 'Assistant', sans-serif !important; }
+
+/* zappy-self-heal */
+html body :root { --font-heading: 'Heebo', sans-serif !important; }
+html body :root { --font-body: 'Assistant', sans-serif !important; }
+
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
@@ -13354,11 +13393,11 @@ html[dir="ltr"] .zappy-products-dropdown .zappy-nav-child > a {
   --cc-modal-bg: #ffffff;
   --cc-primary-color: #1f2937;
   --cc-secondary-color: #4b5563;
-  --cc-btn-primary-bg: #c58b5a;
+  --cc-btn-primary-bg: #2a2a2a;
   --cc-btn-primary-color: #ffffff;
-  --cc-btn-primary-border: #c58b5a;
-  --cc-btn-primary-hover-bg: #ac7241;
-  --cc-btn-primary-hover-border: #ac7241;
+  --cc-btn-primary-border: #2a2a2a;
+  --cc-btn-primary-hover-bg: #111111;
+  --cc-btn-primary-hover-border: #111111;
   --cc-btn-primary-hover-color: #ffffff;
   /* --cc-btn-secondary-* are used by BOTH the bar's "Customize" link and
    * the preferences modal's "Accept Necessary" / "Save Preferences" pills.
@@ -13372,7 +13411,7 @@ html[dir="ltr"] .zappy-products-dropdown .zappy-nav-child > a {
   --cc-btn-secondary-hover-bg: #e5e7eb;
   --cc-btn-secondary-hover-color: #111827;
   --cc-btn-secondary-hover-border: #d1d5db;
-  --cc-toggle-on-bg: #c58b5a;
+  --cc-toggle-on-bg: #2a2a2a;
 }
 
 #cc-main,
@@ -13398,7 +13437,7 @@ html[dir="ltr"] .zappy-products-dropdown .zappy-nav-child > a {
   -webkit-backdrop-filter: saturate(180%) blur(12px);
   backdrop-filter: saturate(180%) blur(12px);
   border: none !important;
-  border-top: 1px solid rgba(197, 139, 90, 0.18) !important;
+  border-top: 1px solid rgba(42, 42, 42, 0.18) !important;
   border-radius: 0 !important;
   box-shadow: 0 -1px 12px rgba(0, 0, 0, 0.04) !important;
   display: flex !important;
@@ -13485,7 +13524,7 @@ html[dir="ltr"] .zappy-products-dropdown .zappy-nav-child > a {
  * defaults for the preferences modal's two secondary pills). */
 #zappy-cookie-banner .zappy-cookie-banner__button--customize {
   background-color: transparent !important;
-  color: #c58b5a !important;
+  color: #2a2a2a !important;
   border: none !important;
   padding: 0 8px !important;
   height: 32px !important;
@@ -13495,7 +13534,7 @@ html[dir="ltr"] .zappy-products-dropdown .zappy-nav-child > a {
 }
 
 #zappy-cookie-banner .zappy-cookie-banner__button--customize:hover {
-  color: #ac7241 !important;
+  color: #111111 !important;
   background-color: transparent !important;
 }
 
