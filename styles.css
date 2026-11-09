@@ -11268,6 +11268,26 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Playfair Display', sans-serif; font-weigh
 .index-hero-section .index-hero-section__scrim {
   background: linear-gradient(90deg, rgba(18, 22, 18, 0.32) 0%, rgba(18, 22, 18, 0.16) 55%, rgba(18, 22, 18, 0) 100%) !important;
 }
+
+.index-cta-section {
+  background: var(--bg-light) !important;
+  color: var(--text-dark) !important;
+}
+
+.index-cta-section h2,
+.index-cta-section p {
+  color: var(--text-dark) !important;
+}
+
+.index-cta-section .btn-secondary {
+  color: var(--text-dark) !important;
+  border-color: var(--text-dark) !important;
+}
+
+.index-cta-section .btn-primary {
+  background: var(--primary) !important;
+  color: var(--text-light) !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
