@@ -11264,6 +11264,10 @@ body {
 body { font-family: 'Assistant', sans-serif; font-weight: 400; }
 h1, h2, h3, h4, h5, h6 { font-family: 'Playfair Display', sans-serif; font-weight: 600; }
 
+
+.index-hero-section .index-hero-section__scrim {
+  background: linear-gradient(90deg, rgba(18, 22, 18, 0.32) 0%, rgba(18, 22, 18, 0.16) 55%, rgba(18, 22, 18, 0) 100%) !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
