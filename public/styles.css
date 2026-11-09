@@ -11932,6 +11932,51 @@ html body :root { --font-heading: 'Heebo', sans-serif !important; }
 html body :root { --font-heading: 'Heebo', sans-serif !important; }
 html body :root { --font-body: 'Assistant', sans-serif !important; }
 
+
+.index-showcase-section {
+  background: var(--background-color, var(--background, var(--bg-light, #FFFFFF))) !important;
+}
+
+.index-showcase-section .index-showcase-card {
+  background: #FBFAF7 !important;
+  border: 1px solid #8e8676 !important;
+}
+
+.index-showcase-section .index-showcase-main-image-wrapper {
+  border: 2px solid #2A2A2A !important;
+}
+
+.index-showcase-section .index-showcase-secondary-image-wrapper {
+  border: 2px solid #2A2A2A !important;
+}
+
+.index-showcase-section h2,
+.index-showcase-section .index-showcase-card h3 {
+  font-family: 'Heebo', sans-serif !important;
+}
+
+.index-showcase-section .index-showcase-content > p,
+.index-showcase-section .index-showcase-card p {
+  font-family: 'Assistant', sans-serif !important;
+}
+/* zappy-self-heal */
+.index-showcase-section { background: var(--background-color, var(--background, var(--bg-light, #FFFFFF))) !important; }
+.index-showcase-section .index-showcase-card { background: #FBFAF7 !important; }
+.index-showcase-section .index-showcase-card { border: 1px solid #8e8676 !important; }
+.index-showcase-section .index-showcase-main-image-wrapper { border: 2px solid #2A2A2A !important; }
+.index-showcase-section .index-showcase-secondary-image-wrapper { border: 2px solid #2A2A2A !important; }
+.index-showcase-section h2 { font-family: 'Heebo', sans-serif !important; }
+.index-showcase-section .index-showcase-content > p { font-family: 'Assistant', sans-serif !important; }
+
+/* zappy-self-heal */
+html body .index-showcase-section { background: var(--background-color, var(--background, var(--bg-light, #FFFFFF))) !important; }
+html body .index-showcase-section .index-showcase-card { background: #FBFAF7 !important; }
+html body .index-showcase-section .index-showcase-card { border: 1px solid #8e8676 !important; }
+html body .index-showcase-section .index-showcase-main-image-wrapper { border: 2px solid #2A2A2A !important; }
+html body .index-showcase-section .index-showcase-secondary-image-wrapper { border: 2px solid #2A2A2A !important; }
+html body .index-showcase-section h2 { font-family: 'Heebo', sans-serif !important; }
+html body .index-showcase-section .index-showcase-content > p { font-family: 'Assistant', sans-serif !important; }
+
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
