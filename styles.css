@@ -11977,6 +11977,45 @@ html body .index-showcase-section .index-showcase-secondary-image-wrapper { bord
 html body .index-showcase-section h2 { font-family: 'Heebo', sans-serif !important; }
 html body .index-showcase-section .index-showcase-content > p { font-family: 'Assistant', sans-serif !important; }
 
+
+:root {
+  --primary: #2A2A2A !important;
+  --secondary: var(--accent-color, var(--accent, #C58B5A)) !important;
+  --primary-color: #2A2A2A !important;
+  --secondary-color: var(--accent-color, var(--accent, #C58B5A)) !important;
+  --accent: var(--accent-color, var(--accent, #C58B5A)) !important;
+  --accent-color: var(--accent-color, var(--accent, #C58B5A)) !important;
+  --font-heading: 'Heebo', 'Inter', sans-serif !important;
+  --font-body: 'Assistant', 'Inter', sans-serif !important;
+  --gradient-secondary: linear-gradient(135deg, #2A2A2A 0%, #C78F60 100%) !important;
+}
+
+.index-hero-section__btn--primary:hover {
+  background: #3a3a3a !important;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 18px rgba(0,0,0,0.26);
+}
+
+.index-hero-section__btn--secondary:hover {
+  background: #e8e3db !important;
+  transform: translateY(-2px);
+}
+/* zappy-self-heal */
+:root { --primary: #2A2A2A !important; }
+:root { --secondary: var(--accent-color, var(--accent, #C58B5A)) !important; }
+:root { --primary-color: #2A2A2A !important; }
+:root { --secondary-color: var(--accent-color, var(--accent, #C58B5A)) !important; }
+:root { --accent: var(--accent-color, var(--accent, #C58B5A)) !important; }
+:root { --accent-color: var(--accent-color, var(--accent, #C58B5A)) !important; }
+
+/* zappy-self-heal */
+html body :root { --primary: #2A2A2A !important; }
+html body :root { --secondary: var(--accent-color, var(--accent, #C58B5A)) !important; }
+html body :root { --primary-color: #2A2A2A !important; }
+html body :root { --secondary-color: var(--accent-color, var(--accent, #C58B5A)) !important; }
+html body :root { --accent: var(--accent-color, var(--accent, #C58B5A)) !important; }
+html body :root { --accent-color: var(--accent-color, var(--accent, #C58B5A)) !important; }
+
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
