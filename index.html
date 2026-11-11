@@ -777,38 +777,30 @@
               transition: color 0.3s ease !important;
             }
             
-            .nav-menu > li > .menu-group-title:#A3B39E {
-  background: rgba(20,20,20,0.11) !important;
-            }
-              color: var(--nav-color) !important;
+            .nav-menu > li > .menu-group-title:hover,
+            #navMenu > li > .menu-group-title:hover {
+              color: var(--nav-hover-color) !important;
             }
             
-            /* Desktop: show submenu on Menu Group #A3B39E {
-  background: rgba(20,20,20,0.06) */
-            li:has(.menu-group-title):#A3B39E {
-  background: rgba(20,20,20,0.11) !important; {
+            /* Desktop: show submenu on Menu Group hover */
+            li:has(.menu-group-title):hover > .sub-menu {
               opacity: 1 !important;
               visibility: visible !important;
               transform: translateY(0) !important;
-              pointer-events: auto !important; /* Enable interaction when #A3B39E {
-  background: rgba(20,20,20,0.06)ing */
+              pointer-events: auto !important; /* Enable interaction when hovering */
             }
             
-            /* Hide menu items marked as hidden (overrides #A3B39E {
-  background: rgba(20,20,20,0.06) states) */
+            /* Hide menu items marked as hidden (overrides hover states) */
             .zappy-hidden-menu-item,
-            li:has(.menu-group-title):#A3B39E {
-  background: rgba(20,20,20,0.11) !important; .zappy-hidden-menu-item {
+            li:has(.menu-group-title):hover > .sub-menu .zappy-hidden-menu-item {
               display: none !important;
               opacity: 0 !important;
               visibility: hidden !important;
               pointer-events: none !important;
             }
             
-            /* Keep submenu visible when #A3B39E {
-  background: rgba(20,20,20,0.06)ing over the submenu itself */
-            .sub-menu:#A3B39E {
-  background: rgba(20,20,20,0.06) !important;
+            /* Keep submenu visible when hovering over the submenu itself */
+            .sub-menu:hover {
               opacity: 1 !important;
               visibility: visible !important;
               pointer-events: auto !important;
@@ -828,8 +820,7 @@
               box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
               border-radius: 8px;
               padding: 8px 0;
-              margin-top: 0px; /* Remove gap to prevent #A3B39E {
-  background: rgba(20,20,20,0.06) loss */
+              margin-top: 0px; /* Remove gap to prevent hover loss */
               opacity: 0 !important;
               visibility: hidden !important;
               transform: translateY(-10px);
@@ -853,14 +844,10 @@
               right: 0;
             }
             
-            /* Show submenu on parent #A3B39E {
-  background: rgba(20,20,20,0.06) - more specific selectors */
-            .nav-menu li:#A3B39E {
-  background: rgba(20,20,20,0.11) !important;,
-            nav li:#A3B39E {
-  background: rgba(20,20,20,0.11) !important;,
-            .navbar li:#A3B39E {
-  background: rgba(20,20,20,0.11) !important; {
+            /* Show submenu on parent hover - more specific selectors */
+            .nav-menu li:hover > .sub-menu,
+            nav li:hover > .sub-menu,
+            .navbar li:hover > .sub-menu {
               opacity: 1 !important;
               visibility: visible !important;
               transform: translateY(0) !important;
@@ -893,8 +880,7 @@
               cursor: default;
             }
             
-            .sub-menu a:#A3B39E {
-  background: rgba(20,20,20,0.06) !important;
+            .sub-menu a:hover {
               background-color: #f5f5f5;
             }
             
@@ -914,10 +900,9 @@
               transition: color 0.3s ease !important;
             }
             
-            .nav-menu > li > .menu-group-title:#A3B39E {
-  background: rgba(20,20,20,0.11) !important;
-            }
-              color: var(--nav-color) !important;
+            .nav-menu > li > .menu-group-title:hover,
+            #navMenu > li > .menu-group-title:hover {
+              color: var(--nav-hover-color) !important;
               background-color: transparent !important;
             }
             
@@ -956,14 +941,10 @@
                 padding: 8px 16px 8px 0 !important;
               }
               
-              /* Disable #A3B39E {
-  background: rgba(20,20,20,0.06) behavior on mobile */
-              .nav-menu li:#A3B39E {
-  background: rgba(20,20,20,0.11) !important;,
-              nav li:#A3B39E {
-  background: rgba(20,20,20,0.11) !important;,
-              .navbar li:#A3B39E {
-  background: rgba(20,20,20,0.11) !important; {
+              /* Disable hover behavior on mobile */
+              .nav-menu li:hover > .sub-menu,
+              nav li:hover > .sub-menu,
+              .navbar li:hover > .sub-menu {
                 opacity: 0;
                 visibility: hidden;
                 pointer-events: none;
@@ -984,8 +965,7 @@
                 font-size: 14px !important;
               }
               
-              .sub-menu a:#A3B39E {
-  background: rgba(20,20,20,0.06) !important;
+              .sub-menu a:hover {
                 background-color: transparent !important;
               }
               
@@ -1258,8 +1238,7 @@
   cursor: pointer;
 }
 
-.index-categories-section__card:#A3B39E {
-  background: rgba(20,20,20,0.06) !important;
+.index-categories-section__card:hover {
   transform: translateY(-6px);
   box-shadow: 0 12px 28px rgba(0,0,0,0.16);
 }
@@ -1279,8 +1258,7 @@
   transition: transform 0.4s ease;
 }
 
-.index-categories-section__card:#A3B39E {
-  background: rgba(20,20,20,0.11) !important; {
+.index-categories-section__card:hover .index-categories-section__card-image-wrapper img {
   transform: scale(1.05);
 }
 
@@ -1341,8 +1319,7 @@
   transition: background 0.2s ease, box-shadow 0.2s ease;
 }
 
-.index-categories-section__cta:#A3B39E {
-  background: rgba(20,20,20,0.06) !important;
+.index-categories-section__cta:hover {
   background: #2a2a2a;
   box-shadow: 0 4px 14px rgba(0,0,0,0.18);
 }
@@ -1460,8 +1437,7 @@
   min-width: 0;
 }
 
-.index-testimonials-section__card:#A3B39E {
-  background: rgba(20,20,20,0.06) !important;
+.index-testimonials-section__card:hover {
   transform: translateY(-6px);
   box-shadow: 0 16px 40px rgba(196, 147, 74, 0.12);
   border-color: rgba(196, 147, 74, 0.35);
@@ -1649,14 +1625,13 @@ body:has(.zappy-announcement-bar) .navbar:not(.zappy-catalog-menu):not(.mobile-s
       html:not([dir]) #mic-init-access-tool #mic-access-tool-general-button,
       html:not([dir]) ._access-icon { right: 20px !important; left: auto !important; }
       @media (max-width: 768px) { .whatsapp-float { display: flex !important; } }
-      @media (min-width: 769px) { .whatsapp-float { display: none !important; } }
+      @media (min-width: 769px) { .whatsapp-float { display: flex !important; } }
       @media (max-width: 768px) {
         #mic-access-tool-general-button, .mic-access-tool-general-button,
         #mic-init-access-tool .mic-access-tool-general-button, #mic-init-access-tool #mic-access-tool-general-button,
-        ._access-icon { display: flex !important; visibility: visible !important; opacity: 1 !important; pointer-events: auto !important; }
-        #mic-access-tool-box.opened-mic-access-tool, .mic-access-tool-box.opened-mic-access-tool,
-        #mic-init-access-tool #mic-access-tool-box.opened-mic-access-tool {
-          visibility: visible !important; opacity: 1 !important; pointer-events: auto !important;
+        ._access-icon, #mic-access-tool-box, .mic-access-tool-box,
+        #mic-init-access-tool #mic-access-tool-box, div[id*="mic-access-tool-box"], ._access-menu {
+          display: none !important; visibility: hidden !important; opacity: 0 !important; pointer-events: none !important;
         }
       }
       @media (min-width: 769px) {
@@ -1944,12 +1919,84 @@ body:has(.zappy-announcement-bar) .navbar:not(.zappy-catalog-menu):not(.mobile-s
         </filter>
       </defs>
       <rect x="0" y="0" width="1200" height="60" fill="url(#showcase-divider-gradient)" filter="url(#showcase-noise)" opacity="0.4"/>
-      <path d="M0,60 L0,0 L1200,0 L1200,60 Z" fill="#1E1E1E"/>
+      <path d="M0,60 L0,0 L1200,0 L1200,60 Z" fill="var(--bg-light)"/>
     </svg>
   </div>
 </section>
 
+<section class="index-testimonials-section" data-layout-spec="בית-testimonials" dir="rtl">
+    <div class="index-testimonials-section__container">
+      <div class="index-testimonials-section__header">
+        <small class="index-testimonials-section__kicker">הלקוחות שלנו מספרים</small>
+        <h2 class="index-testimonials-section__title">ממליצים על Simple Design</h2>
+      </div>
 
+      <div class="index-testimonials-section__grid">
+        <!-- Card 1 -->
+        <article class="index-testimonials-section__card">
+          <div class="index-testimonials-section__quote-icon" aria-hidden="true">
+            <svg data-element-type="icon" data-icon-type="svg" viewBox="0 0 44 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 36V20C0 8.954 8.954 0 20 0v4C11.163 4 4 11.163 4 20h8v16H0zm24 0V20C24 8.954 32.954 0 44 0v4c-8.837 0-16 7.163-16 16h8v16H24z" fill="var(--accent)" opacity="0.2"/>
+            </svg>
+          </div>
+          <p class="index-testimonials-section__text">
+            "הגענו לחנות בלי הרבה כיוון, וצוות המעצבים עזר לנו לבחור ריהוט שמתאים בדיוק לאופי ולתקציב שלנו. קיבלנו בית מעוצב, צעיר ומלא בסטייל, והכל בתהליך מהיר ונטול כאבי ראש."
+          </p>
+          <div class="index-testimonials-section__author">
+            <div class="index-testimonials-section__author-avatar">
+              <img data-context="Portrait of a smiling young Israeli couple in their late 20s, modern casual style, warm natural lighting, soft background" width="48" height="48" src="/assets/simple-design-image-section-testimonials-index-testimonials-avatar-1.webp" alt="דיוקן לקוח" loading="lazy" decoding="async" fetchpriority="low" />
+            </div>
+            <div class="index-testimonials-section__author-info">
+              <strong class="index-testimonials-section__author-name">נועה ורון כהן</strong>
+              <span class="index-testimonials-section__author-role">זוג צעיר, תל אביב</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="index-testimonials-section__card">
+          <div class="index-testimonials-section__quote-icon" aria-hidden="true">
+            <svg data-element-type="icon" data-icon-type="svg" viewBox="0 0 44 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 36V20C0 8.954 8.954 0 20 0v4C11.163 4 4 11.163 4 20h8v16H0zm24 0V20C24 8.954 32.954 0 44 0v4c-8.837 0-16 7.163-16 16h8v16H24z" fill="var(--accent)" opacity="0.2"/>
+            </svg>
+          </div>
+          <p class="index-testimonials-section__text">
+            "Simple Design הצליחו להפוך דירת קבלן משעממת לבית חם ומלא אופי. אהבתי במיוחד את השילוב של עץ טבעי עם נגיעות שחורות – בדיוק מה שחיפשתי. המחירים הוגנים והשירות אדיב."
+          </p>
+          <div class="index-testimonials-section__author">
+            <div class="index-testimonials-section__author-avatar">
+              <img data-context="Portrait of a stylish woman in her early 30s, sitting on a modern beige sofa, bright apartment interior, Tel Aviv vibe" width="48" height="48" src="/assets/simple-design-image-section-testimonials-index-testimonials-avatar-2.webp" alt="דיוקן לקוחה" loading="lazy" decoding="async" fetchpriority="low" />
+            </div>
+            <div class="index-testimonials-section__author-info">
+              <strong class="index-testimonials-section__author-name">מיכל לוי</strong>
+              <span class="index-testimonials-section__author-role">עורכת דין, רמת גן</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="index-testimonials-section__card">
+          <div class="index-testimonials-section__quote-icon" aria-hidden="true">
+            <svg data-element-type="icon" data-icon-type="svg" viewBox="0 0 44 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 36V20C0 8.954 8.954 0 20 0v4C11.163 4 4 11.163 4 20h8v16H0zm24 0V20C24 8.954 32.954 0 44 0v4c-8.837 0-16 7.163-16 16h8v16H24z" fill="var(--accent)" opacity="0.2"/>
+            </svg>
+          </div>
+          <p class="index-testimonials-section__text">
+            "אחרי חיפושים אינסופיים ברשת, מצאתי בדיוק את מה שרציתי – ספה מודרנית במחיר שפוי. המשלוח היה מהיר, ההרכבה הייתה חלקה, והאיכות עולה על כל הציפיות. ממליץ בחום לכל מי שמחפש עיצוב בלי להתפשר."
+          </p>
+          <div class="index-testimonials-section__author">
+            <div class="index-testimonials-section__author-avatar">
+              <img data-context="Portrait of a bearded man in his mid-30s, leaning against a wooden dining table, relaxed smile, modern apartment with plants" width="48" height="48" src="/assets/simple-design-image-section-testimonials-index-testimonials-avatar-3.webp" alt="דיוקן לקוח" loading="lazy" decoding="async" fetchpriority="low" />
+            </div>
+            <div class="index-testimonials-section__author-info">
+              <strong class="index-testimonials-section__author-name">אורי אברהמי</strong>
+              <span class="index-testimonials-section__author-role">מנהל מוצר, הרצליה</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
 
 <section class="index-cta-section" data-layout-spec="בית-cta" data-zappy-animate="fade-in" data-zappy-anim-duration="0.8s" data-zappy-anim-delay="4.6000000000000005s">
   <div class="index-cta-container">
@@ -1979,7 +2026,74 @@ body:has(.zappy-announcement-bar) .navbar:not(.zappy-catalog-menu):not(.mobile-s
 
 
 
+<section class="simpl-categories" dir="rtl" aria-labelledby="simpl-categories-heading" id="simpl-categories">
+  <div class="simpl-categories-container">
+    <h2 id="simpl-categories-heading" class="simpl-categories-title">הקטגוריות שלנו</h2>
+    <p class="simpl-categories-subtitle">כל מה שצריך כדי לרהט את הבית — בסגנון מודרני ובמחיר שפוי</p>
 
+    <div class="simpl-categories-grid" role="list" data-original-item-width="240" data-original-gap="12px" data-original-justify-content="normal" style="display: grid; --zappy-item-width: 240px; --zappy-justify-content: normal; gap: 12px; --zappy-grid-cols: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));" data-zappy-explicit-columns="true">
+      <!-- Category 1: סלונים -->
+      <article class="simpl-category-card" role="listitem" data-grid-item-index="0">
+        <div class="simpl-category-image-wrapper">
+          <img data-image-placeholder="0" alt="סלון מודרני עם ספה אפורה ושולחן קפה מעץ" class="simpl-category-image" loading="lazy" />
+          <div class="simpl-category-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="simpl-category-content">
+          <h3 class="simpl-category-label">סלונים</h3>
+          <p><a href="#sofas" class="simpl-category-btn" aria-label="קנה עכשיו סלונים" data-element-type="button" data-element-id="btn-1793999383367-ebm5z9t0n" data-native-element="true">קנה עכשיו</a>
+        </p></div>
+      </article>
+
+      <!-- Category 2: חדרי שינה -->
+      <article class="simpl-category-card" role="listitem" data-grid-item-index="1">
+        <div class="simpl-category-image-wrapper">
+          <img data-image-placeholder="1" alt="חדר שינה עם מיטה זוגית מרופדת בגוון בז'" class="simpl-category-image" loading="lazy" />
+          <div class="simpl-category-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="simpl-category-content">
+          <h3 class="simpl-category-label">חדרי שינה</h3>
+          <p><a href="#beds" class="simpl-category-btn" aria-label="קנה עכשיו חדרי שינה" data-element-type="button" data-element-id="btn-1793999383367-ooutnkpqg" data-native-element="true">קנה עכשיו</a>
+        </p></div>
+      </article>
+
+      <!-- Category 3: חדרי ילדים -->
+      <article class="simpl-category-card" role="listitem" data-grid-item-index="2">
+        <div class="simpl-category-image-wrapper">
+          <img data-image-placeholder="2" alt="חדר ילדים עם מיטת יחיד ושידת עץ בגוון טבעי" class="simpl-category-image" loading="lazy" />
+          <div class="simpl-category-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="simpl-category-content">
+          <h3 class="simpl-category-label">חדרי ילדים</h3>
+          <p><a href="#kids" class="simpl-category-btn" aria-label="קנה עכשיו חדרי ילדים" data-element-type="button" data-element-id="btn-1793999383367-gz3adf3gm" data-native-element="true">קנה עכשיו</a>
+        </p></div>
+      </article>
+
+      <!-- Category 4: פינות אוכל -->
+      <article class="simpl-category-card" role="listitem" data-grid-item-index="3">
+        <div class="simpl-category-image-wrapper">
+          <img data-image-placeholder="3" alt="פינת אוכל מודרנית עם שולחן עץ וכיסאות מרופדים" class="simpl-category-image" loading="lazy" />
+          <div class="simpl-category-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="simpl-category-content">
+          <h3 class="simpl-category-label">פינות אוכל</h3>
+          <p><a href="#dining" class="simpl-category-btn" aria-label="קנה עכשיו פינות אוכל" data-element-type="button" data-element-id="btn-1793999383367-uice7q1i6" data-native-element="true" style="outline: medium;">קנה עכשיו</a>
+        </p></div>
+      </article>
+
+      <!-- Category 5: ארונות -->
+      <article class="simpl-category-card" role="listitem" data-grid-item-index="4">
+        <div class="simpl-category-image-wrapper">
+          <img data-image-placeholder="4" alt="ארון בגדים מודרני עם דלתות הזזה בגוון עץ כהה" class="simpl-category-image" loading="lazy" />
+          <div class="simpl-category-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="simpl-category-content">
+          <h3 class="simpl-category-label">ארונות</h3>
+          <p><a href="#wardrobes" class="simpl-category-btn" aria-label="קנה עכשיו ארונות" data-element-type="button" data-element-id="btn-1793999383367-0gjqqxqzd" data-native-element="true">קנה עכשיו</a>
+        </p></div>
+      </article>
+    </div>
+  </div>
+</section>
 
 
 

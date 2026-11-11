@@ -777,38 +777,30 @@
               transition: color 0.3s ease !important;
             }
             
-            .nav-menu > li > .menu-group-title:#A3B39E {
-  background: rgba(20,20,20,0.11) !important;
-            }
-              color: var(--nav-color) !important;
+            .nav-menu > li > .menu-group-title:hover,
+            #navMenu > li > .menu-group-title:hover {
+              color: var(--nav-hover-color) !important;
             }
             
-            /* Desktop: show submenu on Menu Group #A3B39E {
-  background: rgba(20,20,20,0.06) */
-            li:has(.menu-group-title):#A3B39E {
-  background: rgba(20,20,20,0.11) !important; {
+            /* Desktop: show submenu on Menu Group hover */
+            li:has(.menu-group-title):hover > .sub-menu {
               opacity: 1 !important;
               visibility: visible !important;
               transform: translateY(0) !important;
-              pointer-events: auto !important; /* Enable interaction when #A3B39E {
-  background: rgba(20,20,20,0.06)ing */
+              pointer-events: auto !important; /* Enable interaction when hovering */
             }
             
-            /* Hide menu items marked as hidden (overrides #A3B39E {
-  background: rgba(20,20,20,0.06) states) */
+            /* Hide menu items marked as hidden (overrides hover states) */
             .zappy-hidden-menu-item,
-            li:has(.menu-group-title):#A3B39E {
-  background: rgba(20,20,20,0.11) !important; .zappy-hidden-menu-item {
+            li:has(.menu-group-title):hover > .sub-menu .zappy-hidden-menu-item {
               display: none !important;
               opacity: 0 !important;
               visibility: hidden !important;
               pointer-events: none !important;
             }
             
-            /* Keep submenu visible when #A3B39E {
-  background: rgba(20,20,20,0.06)ing over the submenu itself */
-            .sub-menu:#A3B39E {
-  background: rgba(20,20,20,0.06) !important;
+            /* Keep submenu visible when hovering over the submenu itself */
+            .sub-menu:hover {
               opacity: 1 !important;
               visibility: visible !important;
               pointer-events: auto !important;
@@ -828,8 +820,7 @@
               box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
               border-radius: 8px;
               padding: 8px 0;
-              margin-top: 0px; /* Remove gap to prevent #A3B39E {
-  background: rgba(20,20,20,0.06) loss */
+              margin-top: 0px; /* Remove gap to prevent hover loss */
               opacity: 0 !important;
               visibility: hidden !important;
               transform: translateY(-10px);
@@ -853,14 +844,10 @@
               right: 0;
             }
             
-            /* Show submenu on parent #A3B39E {
-  background: rgba(20,20,20,0.06) - more specific selectors */
-            .nav-menu li:#A3B39E {
-  background: rgba(20,20,20,0.11) !important;,
-            nav li:#A3B39E {
-  background: rgba(20,20,20,0.11) !important;,
-            .navbar li:#A3B39E {
-  background: rgba(20,20,20,0.11) !important; {
+            /* Show submenu on parent hover - more specific selectors */
+            .nav-menu li:hover > .sub-menu,
+            nav li:hover > .sub-menu,
+            .navbar li:hover > .sub-menu {
               opacity: 1 !important;
               visibility: visible !important;
               transform: translateY(0) !important;
@@ -893,8 +880,7 @@
               cursor: default;
             }
             
-            .sub-menu a:#A3B39E {
-  background: rgba(20,20,20,0.06) !important;
+            .sub-menu a:hover {
               background-color: #f5f5f5;
             }
             
@@ -914,10 +900,9 @@
               transition: color 0.3s ease !important;
             }
             
-            .nav-menu > li > .menu-group-title:#A3B39E {
-  background: rgba(20,20,20,0.11) !important;
-            }
-              color: var(--nav-color) !important;
+            .nav-menu > li > .menu-group-title:hover,
+            #navMenu > li > .menu-group-title:hover {
+              color: var(--nav-hover-color) !important;
               background-color: transparent !important;
             }
             
@@ -956,14 +941,10 @@
                 padding: 8px 16px 8px 0 !important;
               }
               
-              /* Disable #A3B39E {
-  background: rgba(20,20,20,0.06) behavior on mobile */
-              .nav-menu li:#A3B39E {
-  background: rgba(20,20,20,0.11) !important;,
-              nav li:#A3B39E {
-  background: rgba(20,20,20,0.11) !important;,
-              .navbar li:#A3B39E {
-  background: rgba(20,20,20,0.11) !important; {
+              /* Disable hover behavior on mobile */
+              .nav-menu li:hover > .sub-menu,
+              nav li:hover > .sub-menu,
+              .navbar li:hover > .sub-menu {
                 opacity: 0;
                 visibility: hidden;
                 pointer-events: none;
@@ -984,8 +965,7 @@
                 font-size: 14px !important;
               }
               
-              .sub-menu a:#A3B39E {
-  background: rgba(20,20,20,0.06) !important;
+              .sub-menu a:hover {
                 background-color: transparent !important;
               }
               
@@ -1259,14 +1239,13 @@ body:has(.zappy-announcement-bar) .navbar:not(.zappy-catalog-menu):not(.mobile-s
       html:not([dir]) #mic-init-access-tool #mic-access-tool-general-button,
       html:not([dir]) ._access-icon { right: 20px !important; left: auto !important; }
       @media (max-width: 768px) { .whatsapp-float { display: flex !important; } }
-      @media (min-width: 769px) { .whatsapp-float { display: none !important; } }
+      @media (min-width: 769px) { .whatsapp-float { display: flex !important; } }
       @media (max-width: 768px) {
         #mic-access-tool-general-button, .mic-access-tool-general-button,
         #mic-init-access-tool .mic-access-tool-general-button, #mic-init-access-tool #mic-access-tool-general-button,
-        ._access-icon { display: flex !important; visibility: visible !important; opacity: 1 !important; pointer-events: auto !important; }
-        #mic-access-tool-box.opened-mic-access-tool, .mic-access-tool-box.opened-mic-access-tool,
-        #mic-init-access-tool #mic-access-tool-box.opened-mic-access-tool {
-          visibility: visible !important; opacity: 1 !important; pointer-events: auto !important;
+        ._access-icon, #mic-access-tool-box, .mic-access-tool-box,
+        #mic-init-access-tool #mic-access-tool-box, div[id*="mic-access-tool-box"], ._access-menu {
+          display: none !important; visibility: hidden !important; opacity: 0 !important; pointer-events: none !important;
         }
       }
       @media (min-width: 769px) {
@@ -1453,7 +1432,7 @@ body:has(.zappy-announcement-bar) .navbar:not(.zappy-catalog-menu):not(.mobile-s
         </linearGradient>
       </defs>
       <path d="M0,60 L0,30 Q300,25 600,30 T1200,30 L1200,60 Z" fill="var(--bg-light)"/>
-      <path d="M0,30 Q300,25 600,30 T1200,30" fill="var(--bg-light)" stroke="#A3B39E" stroke-width="1" opacity="0.4"/>
+      <path d="M0,30 Q300,25 600,30 T1200,30" fill="var(--bg-light)" stroke="#C58B5A" stroke-width="1" opacity="0.4"/>
     </svg>
   </div>
 </section>

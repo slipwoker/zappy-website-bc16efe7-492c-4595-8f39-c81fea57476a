@@ -785,14 +785,13 @@ body:has(.zappy-announcement-bar) .navbar:not(.zappy-catalog-menu):not(.mobile-s
       html:not([dir]) #mic-init-access-tool #mic-access-tool-general-button,
       html:not([dir]) ._access-icon { right: 20px !important; left: auto !important; }
       @media (max-width: 768px) { .whatsapp-float { display: flex !important; } }
-      @media (min-width: 769px) { .whatsapp-float { display: none !important; } }
+      @media (min-width: 769px) { .whatsapp-float { display: flex !important; } }
       @media (max-width: 768px) {
         #mic-access-tool-general-button, .mic-access-tool-general-button,
         #mic-init-access-tool .mic-access-tool-general-button, #mic-init-access-tool #mic-access-tool-general-button,
-        ._access-icon { display: flex !important; visibility: visible !important; opacity: 1 !important; pointer-events: auto !important; }
-        #mic-access-tool-box.opened-mic-access-tool, .mic-access-tool-box.opened-mic-access-tool,
-        #mic-init-access-tool #mic-access-tool-box.opened-mic-access-tool {
-          visibility: visible !important; opacity: 1 !important; pointer-events: auto !important;
+        ._access-icon, #mic-access-tool-box, .mic-access-tool-box,
+        #mic-init-access-tool #mic-access-tool-box, div[id*="mic-access-tool-box"], ._access-menu {
+          display: none !important; visibility: hidden !important; opacity: 0 !important; pointer-events: none !important;
         }
       }
       @media (min-width: 769px) {
@@ -876,38 +875,30 @@ body:has(.zappy-announcement-bar) .navbar:not(.zappy-catalog-menu):not(.mobile-s
               transition: color 0.3s ease !important;
             }
             
-            .nav-menu > li > .menu-group-title:#A3B39E {
-  background: rgba(20,20,20,0.11) !important;
-            }
-              color: var(--nav-color) !important;
+            .nav-menu > li > .menu-group-title:hover,
+            #navMenu > li > .menu-group-title:hover {
+              color: var(--nav-hover-color) !important;
             }
             
-            /* Desktop: show submenu on Menu Group #A3B39E {
-  background: rgba(20,20,20,0.06) */
-            li:has(.menu-group-title):#A3B39E {
-  background: rgba(20,20,20,0.11) !important; {
+            /* Desktop: show submenu on Menu Group hover */
+            li:has(.menu-group-title):hover > .sub-menu {
               opacity: 1 !important;
               visibility: visible !important;
               transform: translateY(0) !important;
-              pointer-events: auto !important; /* Enable interaction when #A3B39E {
-  background: rgba(20,20,20,0.06)ing */
+              pointer-events: auto !important; /* Enable interaction when hovering */
             }
             
-            /* Hide menu items marked as hidden (overrides #A3B39E {
-  background: rgba(20,20,20,0.06) states) */
+            /* Hide menu items marked as hidden (overrides hover states) */
             .zappy-hidden-menu-item,
-            li:has(.menu-group-title):#A3B39E {
-  background: rgba(20,20,20,0.11) !important; .zappy-hidden-menu-item {
+            li:has(.menu-group-title):hover > .sub-menu .zappy-hidden-menu-item {
               display: none !important;
               opacity: 0 !important;
               visibility: hidden !important;
               pointer-events: none !important;
             }
             
-            /* Keep submenu visible when #A3B39E {
-  background: rgba(20,20,20,0.06)ing over the submenu itself */
-            .sub-menu:#A3B39E {
-  background: rgba(20,20,20,0.06) !important;
+            /* Keep submenu visible when hovering over the submenu itself */
+            .sub-menu:hover {
               opacity: 1 !important;
               visibility: visible !important;
               pointer-events: auto !important;
@@ -927,8 +918,7 @@ body:has(.zappy-announcement-bar) .navbar:not(.zappy-catalog-menu):not(.mobile-s
               box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
               border-radius: 8px;
               padding: 8px 0;
-              margin-top: 0px; /* Remove gap to prevent #A3B39E {
-  background: rgba(20,20,20,0.06) loss */
+              margin-top: 0px; /* Remove gap to prevent hover loss */
               opacity: 0 !important;
               visibility: hidden !important;
               transform: translateY(-10px);
@@ -952,14 +942,10 @@ body:has(.zappy-announcement-bar) .navbar:not(.zappy-catalog-menu):not(.mobile-s
               right: 0;
             }
             
-            /* Show submenu on parent #A3B39E {
-  background: rgba(20,20,20,0.06) - more specific selectors */
-            .nav-menu li:#A3B39E {
-  background: rgba(20,20,20,0.11) !important;,
-            nav li:#A3B39E {
-  background: rgba(20,20,20,0.11) !important;,
-            .navbar li:#A3B39E {
-  background: rgba(20,20,20,0.11) !important; {
+            /* Show submenu on parent hover - more specific selectors */
+            .nav-menu li:hover > .sub-menu,
+            nav li:hover > .sub-menu,
+            .navbar li:hover > .sub-menu {
               opacity: 1 !important;
               visibility: visible !important;
               transform: translateY(0) !important;
@@ -992,8 +978,7 @@ body:has(.zappy-announcement-bar) .navbar:not(.zappy-catalog-menu):not(.mobile-s
               cursor: default;
             }
             
-            .sub-menu a:#A3B39E {
-  background: rgba(20,20,20,0.06) !important;
+            .sub-menu a:hover {
               background-color: #f5f5f5;
             }
             
@@ -1013,10 +998,9 @@ body:has(.zappy-announcement-bar) .navbar:not(.zappy-catalog-menu):not(.mobile-s
               transition: color 0.3s ease !important;
             }
             
-            .nav-menu > li > .menu-group-title:#A3B39E {
-  background: rgba(20,20,20,0.11) !important;
-            }
-              color: var(--nav-color) !important;
+            .nav-menu > li > .menu-group-title:hover,
+            #navMenu > li > .menu-group-title:hover {
+              color: var(--nav-hover-color) !important;
               background-color: transparent !important;
             }
             
@@ -1055,14 +1039,10 @@ body:has(.zappy-announcement-bar) .navbar:not(.zappy-catalog-menu):not(.mobile-s
                 padding: 8px 16px 8px 0 !important;
               }
               
-              /* Disable #A3B39E {
-  background: rgba(20,20,20,0.06) behavior on mobile */
-              .nav-menu li:#A3B39E {
-  background: rgba(20,20,20,0.11) !important;,
-              nav li:#A3B39E {
-  background: rgba(20,20,20,0.11) !important;,
-              .navbar li:#A3B39E {
-  background: rgba(20,20,20,0.11) !important; {
+              /* Disable hover behavior on mobile */
+              .nav-menu li:hover > .sub-menu,
+              nav li:hover > .sub-menu,
+              .navbar li:hover > .sub-menu {
                 opacity: 0;
                 visibility: hidden;
                 pointer-events: none;
@@ -1083,8 +1063,7 @@ body:has(.zappy-announcement-bar) .navbar:not(.zappy-catalog-menu):not(.mobile-s
                 font-size: 14px !important;
               }
               
-              .sub-menu a:#A3B39E {
-  background: rgba(20,20,20,0.06) !important;
+              .sub-menu a:hover {
                 background-color: transparent !important;
               }
               
@@ -1432,14 +1411,96 @@ body:has(.zappy-announcement-bar) .navbar:not(.zappy-catalog-menu):not(.mobile-s
   </div>
   <div class="about-values-divider-wrapper">
     <svg aria-hidden="true" viewBox="0 0 1200 40" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0,40 L0,20 L200,20 L200,0 L400,0 L400,20 L600,20 L600,0 L800,0 L800,20 L1000,20 L1000,0 L1200,0 L1200,40 Z" fill="var(--bg-dark)"/>
+      <path d="M0,40 L0,20 L200,20 L200,0 L400,0 L400,20 L600,20 L600,0 L800,0 L800,20 L1000,20 L1000,0 L1200,0 L1200,40 Z" fill="#1E1E1E"/>
     </svg>
   </div>
 </section>
 
+<section class="about-team-section" data-layout-spec="אודות-team">
+  <div class="about-team-container">
+    <div class="about-team-header">
+      <h2>צוות קטן, החלטות מהירות</h2>
+      <p>אנחנו צוות צעיר ודינמי שמאמין בתגובה מהירה ובשירות אישי. כל אחד מאיתנו מביא את התשוקה שלו לעיצוב פשוט וחכם.</p>
+    </div>
 
+    <div class="about-team-grid">
+      <article class="about-team-card">
+        <div class="about-team-card-image">
+          <img data-placeholder="about-team-image-1" data-context="Professional portrait of a young Israeli furniture designer in their late 20s, standing in a modern minimalist furniture showroom with natural wood tones and clean white walls, warm natural lighting, casual-professional attire (black turtleneck), confident friendly expression, shallow depth of field, neutral beige backdrop, high-quality photography" width="300" height="300" src="/assets/site-about-team-image-1.webp" alt="תמונת פרופיל של מעצב הרהיטים הראשי" loading="lazy" decoding="async" fetchpriority="low" />
+        </div>
+        <div class="about-team-card-content">
+          <h3>נועם כהן · עיצוב ופיתוח</h3>
+          <p>אחראי על בחירת הקולקציות והעיצובים. מאמין שריהוט מודרני צריך להיות נגיש לכולם, לא רק למי שיכול להרשות לעצמו מותגי יוקרה.</p>
+        </div>
+      </article>
 
+      <article class="about-team-card">
+        <div class="about-team-card-image">
+          <img data-placeholder="about-team-image-2" data-context="Professional portrait of a young Israeli woman in her early 30s, operations manager in a furniture company, standing in a bright modern office with minimalist decor, warm natural lighting, wearing a beige blazer over white shirt, approachable smile, organized and professional vibe, neutral backdrop, high-quality photography" width="300" height="300" src="/assets/site-about-team-image-2.webp" alt="תמונת פרופיל של מנהלת התפעול" loading="lazy" decoding="async" fetchpriority="low" />
+        </div>
+        <div class="about-team-card-content">
+          <h3>שירה לוי · תפעול ולוגיסטיקה</h3>
+          <p>דואגת שהמשלוחים יגיעו מהר ובזמן. מנהלת את כל תהליך הרכישה כך שהחוויה תהיה חלקה וללא טרחה מיותרת.</p>
+        </div>
+      </article>
 
+      <article class="about-team-card">
+        <div class="about-team-card-image">
+          <img data-placeholder="about-team-image-3" data-context="Professional portrait of a young Israeli man in his late 20s, customer service representative in a furniture showroom, warm friendly smile, wearing a casual black polo shirt, standing near modern furniture displays with natural wood and white tones, approachable and helpful demeanor, neutral backdrop, natural lighting, high-quality photography" width="300" height="300" src="/assets/site-about-team-image-3.webp" alt="תמונת פרופיל של נציג שירות הלקוחות" loading="lazy" decoding="async" fetchpriority="low" />
+        </div>
+        <div class="about-team-card-content">
+          <h3>אורי מזרחי · שירות לקוחות</h3>
+          <p>כאן כדי לענות על כל שאלה ולעזור לכם למצוא את הפריט המושלם. גישה ישירה ותגובה מהירה זה מה שמנחה אותנו.</p>
+        </div>
+      </article>
+
+      <article class="about-team-card">
+        <div class="about-team-card-image">
+          <img data-placeholder="about-team-image-4" data-context="Professional portrait of a young Israeli woman in her mid-20s, interior design consultant in a furniture showroom, standing near a styled living room setup with modern minimalist furniture, beige and natural wood tones, wearing a casual cream sweater, creative and energetic vibe, natural lighting, neutral backdrop, high-quality photography" width="300" height="300" src="/assets/site-about-team-image-4.webp" alt="תמונת פרופיל של יועצת העיצוב" loading="lazy" decoding="async" fetchpriority="low" />
+        </div>
+        <div class="about-team-card-content">
+          <h3>מיכל אברהם · ייעוץ עיצובי</h3>
+          <p>עוזרת ללקוחות לשלב את הרהיטים בצורה חכמה בבית. מתמחה ביצירת מראה מודרני ומאוזן גם בדירות שכורות ובתקציב מוגבל.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <div class="about-team-divider-wrapper">
+    <svg aria-hidden="true" viewBox="0 0 1200 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,80 L0,45 Q150,30 300,38 T600,35 Q750,40 900,32 T1200,40 L1200,80 Z" fill="#FBFAF7"/>
+    </svg>
+  </div>
+</section>
+
+<section class="about-press-section" data-layout-spec="אודות-press">
+  <div class="about-press-container">
+    <div class="about-press-header">
+      <h2>מותג שזכה לאמון של אלפי בתים ישראלים</h2>
+      <p>רהיטים שמתאימים לחיים האמיתיים שלך – פשוט, יפה ובמחיר הוגן</p>
+    </div>
+
+    <div class="about-press-publications">
+      <div class="publication-item">Ynet</div>
+      <div class="publication-item">מגזין עיצוב</div>
+      <div class="publication-item">טיים אאוט</div>
+      <div class="publication-item">וואלה בית ועיצוב</div>
+      <div class="publication-item">גלובס נדל"ן</div>
+      <div class="publication-item">הארץ סופשבוע</div>
+    </div>
+
+    <div class="about-press-quotes">
+      <div class="quote-card">
+        <h3>"עיצוב שנראה פי 3 מהמחיר"</h3>
+        <p>רהיטים סימפל הפכו לכתובת הראשונה של זוגות צעירים בתל אביב שרוצים סלון מודרני בלי להתפשר על התקציב. הקו הנקי והמינימליסטי מתאים בול לדירות השכורות ולסגנון החיים הדינמי של הדור.</p>
+      </div>
+      <div class="quote-card">
+        <h3>"מהירות ונוחות ברמה אחרת"</h3>
+        <p>החוויה פה שונה לגמרי מחנויות הריהוט המסורתיות – הכל ברור, הכל זמין, ואפשר להזמין אונליין בלי להתחייב לשעות של סיורים במרכזי קניות. בדיוק מה שהדור הזה צריך.</p>
+      </div>
+    </div>
+  </div>
+</section>
   </main>
   
   <footer class="site-footer">
