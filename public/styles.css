@@ -12104,6 +12104,8 @@ html body .simpl-categories .simpl-category-card { overflow: hidden !important; 
 html body .simpl-categories .simpl-category-card { box-shadow: 0 6px 24px rgba(46,53,48,0.10) !important; }
 html body .simpl-categories .simpl-category-card__content { background: linear-gradient(180deg, rgba(46,53,48,0) 0%, rgba(46,53,48,0.72) 100%) !important; }
 
+
+
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
@@ -13898,7 +13900,7 @@ html:not([dir]) #mic-init-access-tool .mic-access-tool-general-button,
 html:not([dir]) #mic-init-access-tool #mic-access-tool-general-button,
 html:not([dir]) ._access-icon { right: 20px !important; left: auto !important; }
 @media (max-width: 768px) { .whatsapp-float { display: flex !important; } }
-@media (min-width: 769px) { .whatsapp-float { display: flex !important; } }
+@media (min-width: 769px) { .whatsapp-float { display: none !important; } }
 @media (max-width: 768px) {
   #mic-access-tool-general-button, .mic-access-tool-general-button,
   #mic-init-access-tool .mic-access-tool-general-button,
