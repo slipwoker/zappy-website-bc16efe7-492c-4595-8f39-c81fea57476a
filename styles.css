@@ -11305,6 +11305,10 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Playfair Display', sans-serif; font-weigh
 html body :root { --gradient-overlayDark: linear-gradient(90deg, rgba(255,255,255,0.25) 0%, rgba(255,255,255,0.1) 45%, rgba(255,255,255,0) 100%) !important; }
 html body :root { --gradient-darkSection: linear-gradient(180deg, #fbf9f5 0%, #f2ede4 100%) !important; }
 
+
+.index-hero-section__scrim {
+  background: linear-gradient(90deg, rgba(255,255,255,0.55) 0%, rgba(255,255,255,0.35) 35%, rgba(255,255,255,0.15) 60%, rgba(255,255,255,0) 100%) !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
