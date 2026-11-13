@@ -12115,6 +12115,28 @@ html body :root { --gradient-darkSection: linear-gradient(180deg, #fbf9f5 0%, #f
     font-size: 0.8rem;
   }
 }
+
+html body .navbar .phone-header-btn {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 36px !important;
+  height: 36px !important;
+  color: var(--nav-text, #4A4A4A) !important;
+  background: transparent !important;
+  border: none !important;
+  cursor: pointer !important;
+}
+
+html body .navbar .phone-header-btn svg {
+  width: 20px !important;
+  height: 20px !important;
+  display: block !important;
+}
+
+.navbar .phone-header-btn:hover {
+  color: var(--accent, var(--accent-color, var(--accent, #C9A227))) !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
