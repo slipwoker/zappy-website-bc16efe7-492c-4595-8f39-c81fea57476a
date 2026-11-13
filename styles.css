@@ -12137,6 +12137,46 @@ html body .navbar .phone-header-btn svg {
 .navbar .phone-header-btn:hover {
   color: var(--accent, var(--accent-color, var(--accent, #C9A227))) !important;
 }
+
+.nav-icons-left {
+  display: flex !important;
+  align-items: center !important;
+  gap: 16px !important;
+}
+
+.nav-icons-left .nav-header-phone,
+.nav-icons-left .nav-header-whatsapp,
+.nav-icons-left .nav-login,
+.nav-icons-left .nav-cart {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: var(--nav-text, #4A4A4A) !important;
+  text-decoration: none !important;
+  line-height: 1 !important;
+}
+
+.nav-icons-left .nav-header-phone svg,
+.nav-icons-left .nav-header-whatsapp svg {
+  display: block;
+}
+
+.nav-icons-left .nav-header-phone-num {
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  color: var(--nav-text, #4A4A4A) !important;
+  margin-inline-start: 6px !important;
+  white-space: nowrap;
+}
+
+.nav-icons-left .nav-header-whatsapp {
+  color: #25D366 !important;
+}
+
+.nav-icons-left .nav-header-phone:hover,
+.nav-icons-left .nav-header-phone:hover .nav-header-phone-num {
+  color: var(--accent, var(--accent-color, var(--accent, #C9A227))) !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
